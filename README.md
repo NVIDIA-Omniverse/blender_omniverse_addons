@@ -1,15 +1,15 @@
-# Blender-Addon-OmniPanel
+# blender_omniverse_addons
 
-The Omniverse Panel (OmniPanel) provides a user interface for baking of textures, Omniverse Particle conversion, and USD import and export.
+This repository contains the source code for NVIDIA Omniverse Add-ons for Blender, including:
 
-## Installation
+* [Omni Panel](https://docs.omniverse.nvidia.com/con_connect/con_connect/blender/omni-panel.html) - Utility functions for particles and material conversions.
 
-1. Place the _OmniPanel_ directory inside Blender's _addon_ directory which is located in the installation directory; for example, _blender/Release/3.0/scripts/addons/_.
-2. Start Blender.
-3. Open the _Preferences_ window.
-4. Select _Add-ons_.
-5. Enable the _Omni Panel_ addon.
+* [Audio2Face Panel](https://docs.omniverse.nvidia.com/con_connect/con_connect/blender/audio2face.html) - A tool that helps get characters into Audio2Face, as well as assisting in the import of shape keys and animation clips onto rigged Blender characters.
+
+* [Scene Optimizer](https://docs.omniverse.nvidia.com/con_connect/con_connect/blender/scene-optimizer.html) - A tool for quickly optimizing meshes, correcting bad geometry, creating automated UVs, and generating collision/proxy geometry. The user can pick any of six optional tools to run, and run them all on either selected meshes or all meshes in a given scene.
+
+* UMM - The Universal Material Mapper Add-on for Blender.
 
 ## Usage
 
-More information to follow.
+For information on usage, including video tutorials, please see the [Blender Omniverse documentation](https://docs.omniverse.nvidia.com/con_connect/con_connect/blender.html).
