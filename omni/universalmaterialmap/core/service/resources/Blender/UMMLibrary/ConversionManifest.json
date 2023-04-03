@@ -1,0 +1,42 @@
+{
+    "_header": {
+        "_module": "omni.universalmaterialmap.core.data",
+        "_class_name": "ConversionManifest"
+    },
+    "_content": {
+        "_version_major": 100,
+        "_version_minor": 2,
+        "_conversion_maps": [
+            {
+                "_render_context": "MDL",
+                "_application": "",
+                "_conversion_graph_id": "4c0433dc-a914-4797-98a3-d7d250ebc51f"
+            },
+            {
+                "_render_context": "MDL",
+                "_application": "",
+                "_conversion_graph_id": "cf6cd0e8-a235-4f30-a179-e787224159b2"
+            },
+            {
+                "_render_context": "Blender",
+                "_application": "",
+                "_conversion_graph_id": "74699ed5-3277-4157-b907-4b687291aae8"
+            },
+            {
+                "_render_context": "MDL",
+                "_application": "",
+                "_conversion_graph_id": "1730eb37-ae3b-4629-a0e6-ea2681ec772a"
+            },
+            {
+                "_render_context": "Blender",
+                "_application": "",
+                "_conversion_graph_id": "a418e8c8-b681-4c5f-95a2-c7c157eb1c4a"
+            },
+            {
+                "_render_context": "MDL",
+                "_application": "",
+                "_conversion_graph_id": "4c35e0dc-67c4-4317-bba2-aa883d19ef5e"
+            }
+        ]
+    }
+}

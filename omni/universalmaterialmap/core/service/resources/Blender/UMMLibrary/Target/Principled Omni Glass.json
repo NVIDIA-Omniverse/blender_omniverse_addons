@@ -1,0 +1,963 @@
+{
+    "_header": {
+        "_module": "omni.universalmaterialmap.core.data",
+        "_class_name": "Target"
+    },
+    "_content": {
+        "_id": "6f24859c-7a05-46b0-8101-c9e821a95773",
+        "_inputs": [],
+        "_outputs": [],
+        "_display_name": "Principled Omni Glass",
+        "_position": null,
+        "_expansion_state": 0,
+        "_show_inputs": true,
+        "_show_outputs": true,
+        "_show_peripheral": false,
+        "_nodes": [
+            {
+                "_id": "0f41da46-a4ce-4c55-8773-f8d5d3f2206b",
+                "_inputs": [],
+                "_outputs": [],
+                "_class_name": "Principled Omni Glass"
+            },
+            {
+                "_id": "Frame",
+                "_inputs": [],
+                "_outputs": [],
+                "_class_name": "NodeFrame"
+            },
+            {
+                "_id": "Frame.004",
+                "_inputs": [],
+                "_outputs": [],
+                "_class_name": "NodeFrame"
+            },
+            {
+                "_id": "Frame.003",
+                "_inputs": [],
+                "_outputs": [],
+                "_class_name": "NodeFrame"
+            },
+            {
+                "_id": "Frame.001",
+                "_inputs": [],
+                "_outputs": [],
+                "_class_name": "NodeFrame"
+            },
+            {
+                "_id": "Frame.002",
+                "_inputs": [],
+                "_outputs": [],
+                "_class_name": "NodeFrame"
+            },
+            {
+                "_id": "Frame.005",
+                "_inputs": [],
+                "_outputs": [],
+                "_class_name": "NodeFrame"
+            },
+            {
+                "_id": "Material Output",
+                "_inputs": [],
+                "_outputs": [],
+                "_class_name": "ShaderNodeOutputMaterial"
+            },
+            {
+                "_id": "UV Map",
+                "_inputs": [],
+                "_outputs": [],
+                "_class_name": "ShaderNodeUVMap"
+            },
+            {
+                "_id": "Base Mapping",
+                "_inputs": [
+                    {
+                        "_id": "a65a5c59-3b2a-438b-b8f0-da785647667b",
+                        "_name": "Rotation",
+                        "_display_name": "Texture Rotate",
+                        "_value_type": "list",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "9808b227-ddc8-4c6a-bec7-6268707c99cf",
+                        "_name": "Scale",
+                        "_display_name": "Texture Scale",
+                        "_value_type": "list",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_value": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "2c14160d-35fb-4883-ac1f-8de6f5d8dd5b",
+                        "_name": "Location",
+                        "_display_name": "Texture Translate",
+                        "_value_type": "list",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "b5fb653a-d5ce-43bb-b25b-166cb957e0f3",
+                        "_name": "Rotation",
+                        "_display_name": "Texture Rotate",
+                        "_value_type": "list",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "716aeb91-8a35-451f-8014-4136b12a340c",
+                        "_name": "Scale",
+                        "_display_name": "Texture Scale",
+                        "_value_type": "list",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_value": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "9e1b7060-92f9-42f6-ad82-f1db0601e68a",
+                        "_name": "Location",
+                        "_display_name": "Texture Translate",
+                        "_value_type": "list",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_class_name": "ShaderNodeMapping"
+            },
+            {
+                "_id": "Glass Color Texture",
+                "_inputs": [
+                    {
+                        "_id": "5bbef826-b6ab-418d-b17d-6ff22a41ebb2",
+                        "_name": "image",
+                        "_display_name": "Glass Color Texture",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "63984f84-2788-430a-b45f-271b8fb5469b",
+                        "_name": "image",
+                        "_display_name": "Glass Color Texture",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_class_name": "ShaderNodeTexImage"
+            },
+            {
+                "_id": "Reflection Color Texture",
+                "_inputs": [
+                    {
+                        "_id": "6a7e3518-5941-4462-a270-db469617e2e7",
+                        "_name": "image",
+                        "_display_name": "Reflection Color Texture",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "1de0097a-d427-49dc-9977-3d0dd58a131b",
+                        "_name": "image",
+                        "_display_name": "Reflection Color Texture",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_class_name": "ShaderNodeTexImage"
+            },
+            {
+                "_id": "Roughness Texture",
+                "_inputs": [
+                    {
+                        "_id": "addc0a18-c5cf-4d5a-b7c9-deb51e750604",
+                        "_name": "image",
+                        "_display_name": "Roughness Texture",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "451fef73-35ca-4721-8786-aa0f6fbe1d7a",
+                        "_name": "image",
+                        "_display_name": "Roughness Texture",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_class_name": "ShaderNodeTexImage"
+            },
+            {
+                "_id": "Normal Map",
+                "_inputs": [
+                    {
+                        "_id": "1dd47f1d-bb93-40b0-ada3-1f6ab834ee4c",
+                        "_name": "image",
+                        "_display_name": "Normal Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "5ae7c295-a1f6-4711-93af-aeb9b7fb3497",
+                        "_name": "image",
+                        "_display_name": "Normal Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_class_name": "ShaderNodeTexImage"
+            },
+            {
+                "_id": "Opacity Map",
+                "_inputs": [
+                    {
+                        "_id": "c44513db-c8df-4940-8677-c7ccce275cae",
+                        "_name": "image",
+                        "_display_name": "Opacity Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "cde02b50-7b3d-47fd-aedf-8bb6846c3002",
+                        "_name": "image",
+                        "_display_name": "Opacity Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_class_name": "ShaderNodeTexImage"
+            },
+            {
+                "_id": "OmniGlass Compute",
+                "_inputs": [
+                    {
+                        "_id": "835f72fb-85d8-4539-8558-69cfb1551dc2",
+                        "_name": "Glass Color",
+                        "_display_name": "Glass Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "6017786d-a54d-420f-95f1-945aaff9af74",
+                        "_name": "Use Glass Color Texture",
+                        "_display_name": "Use Glass Color Texture",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 1,
+                        "_value": 1,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "7d8a1959-8803-4922-9127-70fb48f86454",
+                        "_name": "Volume Absorbtion Scale",
+                        "_display_name": "Volume Absorbtion Scale",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0.0010000000474974513,
+                        "_value": 0.0010000000474974513,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "05f45b49-c8ca-4eb6-a4b0-f07437280505",
+                        "_name": "Glass Roughness",
+                        "_display_name": "Glass Roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "6ac305ce-bb3a-47be-b72a-50cda725f6af",
+                        "_name": "Roughness Texture Influence",
+                        "_display_name": "Roughness Texture Influence",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "c3a8b2db-d87e-43d5-ade8-daa39bcdfbc5",
+                        "_name": "Glass IOR",
+                        "_display_name": "Glass IOR",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 1.4910000562667847,
+                        "_value": 1.4910000562667847,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "261bf041-4c70-4ada-b39d-fdee6c1ae7cf",
+                        "_name": "Thin Walled",
+                        "_display_name": "Thin Walled",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "b6943940-3845-4b79-ad79-fbc70cdb8209",
+                        "_name": "Reflection Color",
+                        "_display_name": "Reflection Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "cc6f122e-a40c-449a-9286-210d5591d5cd",
+                        "_name": "Normal Map Strength",
+                        "_display_name": "Normal Map Strength",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 1.0,
+                        "_value": 1.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "df5c3da3-33b5-4921-a72b-0d322341aebe",
+                        "_name": "Enable Opacity",
+                        "_display_name": "Enable Opacity",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "b43912f3-d364-44bc-a744-c547093e1880",
+                        "_name": "Opacity Amount",
+                        "_display_name": "Opacity Amount",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 1.0,
+                        "_value": 1.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "64d728ea-c9a2-4abe-ae48-0c29ce652bf7",
+                        "_name": "Opacity Threshold",
+                        "_display_name": "Opacity Threshold",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "6b073dee-9e26-4973-bc6a-0e69fe23a078",
+                        "_name": "Opacity Mono Source",
+                        "_display_name": "Opacity Mono Source",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 1,
+                        "_value": 1,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "3d832a8e-63a1-4497-9b71-2df571eba0c5",
+                        "_name": "Enable Project UVW Coordinates",
+                        "_display_name": "Enable Project UVW Coordinates",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "c24e1e0f-8ce5-4922-ad9f-ae5f8a5bf043",
+                        "_name": "Enable World Space",
+                        "_display_name": "Enable World Space",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "835e81bc-624b-413a-8635-bba94be89711",
+                        "_name": "UV Space Index",
+                        "_display_name": "UV Space Index",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "6cd3c0d1-0fd7-4b56-9624-af3d9fe2474a",
+                        "_name": "Absorbtion Coeff",
+                        "_display_name": "Absorbtion Coeff",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "94f11e0f-4db2-4b15-9c4c-912393e81a03",
+                        "_name": "Normal Map Flip U Tangent",
+                        "_display_name": "Normal Map Flip U Tangent",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "181a2206-aa30-4b46-96c5-235a3f03f968",
+                        "_name": "Normal Map Flip V Tangent",
+                        "_display_name": "Normal Map Flip V Tangent",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 1,
+                        "_value": 1,
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "f3d5be79-5854-45b1-9985-9b1d22f24431",
+                        "_name": "Glass Color",
+                        "_display_name": "Glass Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "219e550f-7583-4065-928e-75bba3aa344c",
+                        "_name": "Use Glass Color Texture",
+                        "_display_name": "Use Glass Color Texture",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 1,
+                        "_value": 1,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "296447d6-391d-4252-885f-624ecc6f83ea",
+                        "_name": "Volume Absorbtion Scale",
+                        "_display_name": "Volume Absorbtion Scale",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0.0010000000474974513,
+                        "_value": 0.0010000000474974513,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "704b296e-b6d2-4887-b122-c966e8ac09fa",
+                        "_name": "Glass Roughness",
+                        "_display_name": "Glass Roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "db647ff5-aadd-4c70-a6f8-1a9852760397",
+                        "_name": "Roughness Texture Influence",
+                        "_display_name": "Roughness Texture Influence",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "db04cc3d-9712-4cc1-b3d6-208741fcaebc",
+                        "_name": "Glass IOR",
+                        "_display_name": "Glass IOR",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 1.4910000562667847,
+                        "_value": 1.4910000562667847,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "04bfa9e4-858c-428c-b9bb-2e63b3fbee96",
+                        "_name": "Thin Walled",
+                        "_display_name": "Thin Walled",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "5ff64634-4fa8-495f-8d0b-d4f8cb18b0b7",
+                        "_name": "Reflection Color",
+                        "_display_name": "Reflection Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "05acd1f7-c874-4847-ac7e-c7c31aa4e254",
+                        "_name": "Normal Map Strength",
+                        "_display_name": "Normal Map Strength",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 1.0,
+                        "_value": 1.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "a8545b79-b6b1-406e-9c1e-9540346d0df3",
+                        "_name": "Enable Opacity",
+                        "_display_name": "Enable Opacity",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "cfa8adcf-5504-4bd5-a452-d6767d332697",
+                        "_name": "Opacity Amount",
+                        "_display_name": "Opacity Amount",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 1.0,
+                        "_value": 1.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "76f5f342-2d9c-49c5-ad54-4cb23e89f833",
+                        "_name": "Opacity Threshold",
+                        "_display_name": "Opacity Threshold",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "310386ff-7e0f-40d4-81e8-da88abe6a8fb",
+                        "_name": "Opacity Mono Source",
+                        "_display_name": "Opacity Mono Source",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 1,
+                        "_value": 1,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "59bfc1a9-1486-429a-ad74-05c48ae6961c",
+                        "_name": "Enable Project UVW Coordinates",
+                        "_display_name": "Enable Project UVW Coordinates",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "d260ab7e-d335-40e4-8069-10b0fed2ded2",
+                        "_name": "Enable World Space",
+                        "_display_name": "Enable World Space",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "09a551a0-c6f2-4fe0-ad1d-0bb3744047a4",
+                        "_name": "UV Space Index",
+                        "_display_name": "UV Space Index",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "97aa0f87-dfcc-48dc-b6a2-2334f3af2c9f",
+                        "_name": "Absorbtion Coeff",
+                        "_display_name": "Absorbtion Coeff",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "625f222b-36b0-467a-8c59-6b38a813dc02",
+                        "_name": "Normal Map Flip U Tangent",
+                        "_display_name": "Normal Map Flip U Tangent",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "ccd76123-0caa-4d2c-8ce3-4d144723305a",
+                        "_name": "Normal Map Flip V Tangent",
+                        "_display_name": "Normal Map Flip V Tangent",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 1,
+                        "_value": 1,
+                        "_enum_values": []
+                    }
+                ],
+                "_class_name": "ShaderNodeGroup"
+            },
+            {
+                "_id": "Principled BSDF",
+                "_inputs": [],
+                "_outputs": [],
+                "_class_name": "ShaderNodeBsdfPrincipled"
+            }
+        ],
+        "_metadata": {
+            "_category": "Connector Materials",
+            "_name": "",
+            "_keywords": [
+                "Blender",
+                "Principled Omni Glass",
+                "Principled Omni Glass"
+            ],
+            "_supported_clients": [
+                {
+                    "_name": "Blender",
+                    "_version": "any"
+                }
+            ]
+        },
+        "_root_node_id": "0f41da46-a4ce-4c55-8773-f8d5d3f2206b",
+        "_revision": 4,
+        "_connections": []
+    }
+}

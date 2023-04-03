@@ -1,0 +1,168 @@
+{
+    "_header": {
+        "_module": "omni.universalmaterialmap.core.data",
+        "_class_name": "Target"
+    },
+    "_content": {
+        "_id": "46e980f8-2e59-440c-ba87-404e5b15424f",
+        "_inputs": [],
+        "_outputs": [],
+        "_display_name": "ShaderNodeBsdfRefraction",
+        "_position": null,
+        "_expansion_state": 0,
+        "_show_inputs": true,
+        "_show_outputs": true,
+        "_show_peripheral": false,
+        "_nodes": [
+            {
+                "_id": "a3e45046-435e-47a0-91e4-59e9ce0532d2",
+                "_inputs": [
+                    {
+                        "_id": "cb68406d-36c2-4f3f-a920-2cbcac38e753",
+                        "_name": "Color",
+                        "_display_name": "Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ],
+                        "_value": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "526d905d-2bf9-4fc7-bf06-c3dde7da3aea",
+                        "_name": "Roughness",
+                        "_display_name": "Roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "e84ca2a0-a9bc-4b73-bf5c-3791ba272aea",
+                        "_name": "IOR",
+                        "_display_name": "IOR",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 1.4500000476837158,
+                        "_value": 1.4500000476837158
+                    },
+                    {
+                        "_id": "84c04504-a4fc-436c-848c-d6a942b37f24",
+                        "_name": "Normal",
+                        "_display_name": "Normal",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "7b7af7cc-b107-480c-b8fd-c145cf1566aa",
+                        "_name": "Color",
+                        "_display_name": "Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ],
+                        "_value": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "b971307f-88c0-4381-8a6d-91fcd12ddae6",
+                        "_name": "Roughness",
+                        "_display_name": "Roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "e298c85e-0ac4-43a9-9cc5-0d9cd04dfc7e",
+                        "_name": "IOR",
+                        "_display_name": "IOR",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 1.4500000476837158,
+                        "_value": 1.4500000476837158
+                    },
+                    {
+                        "_id": "71d06cbd-a323-40f1-9f8e-f361d3aaad10",
+                        "_name": "Normal",
+                        "_display_name": "Normal",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "_class_name": "bpy.types.ShaderNodeBsdfRefraction"
+            }
+        ],
+        "_metadata": {
+            "_category": "Connector Materials",
+            "_name": "",
+            "_keywords": [
+                "Blender",
+                "bpy.types.ShaderNodeBsdfRefraction",
+                "ShaderNodeBsdfRefraction"
+            ],
+            "_supported_clients": [
+                {
+                    "_name": "Blender",
+                    "_version": "any"
+                }
+            ]
+        },
+        "_root_node_id": "a3e45046-435e-47a0-91e4-59e9ce0532d2",
+        "_revision": 1
+    }
+}

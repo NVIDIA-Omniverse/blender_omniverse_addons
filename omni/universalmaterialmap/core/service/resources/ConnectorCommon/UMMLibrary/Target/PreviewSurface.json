@@ -1,0 +1,332 @@
+{
+    "_header": {
+        "_module": "omni.universalmaterialmap.core.data",
+        "_class_name": "Target"
+    },
+    "_content": {
+        "_id": "c172cfe3-6585-4546-a254-0a321155f78a",
+        "_inputs": [],
+        "_outputs": [],
+        "_display_name": "PreviewSurface",
+        "_position": null,
+        "_expansion_state": 0,
+        "_show_inputs": true,
+        "_show_outputs": true,
+        "_show_peripheral": false,
+        "_nodes": [
+            {
+                "_id": "3ea9d908-44ab-47a1-9699-67fee8e93378",
+                "_inputs": [
+                    {
+                        "_id": "7b88a733-c431-4925-8022-ffb1d2c87a09",
+                        "_name": "clearcoat",
+                        "_display_name": "Clearcoat",
+                        "_value_type": "float",
+                        "_internal_value_type": "float",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0,
+                        "_value": null
+                    },
+                    {
+                        "_id": "2d997ff1-c0e2-443a-ad7e-615f43cd6946",
+                        "_name": "clearcoatRoughness",
+                        "_display_name": "Clearcoat Roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "float",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0,
+                        "_value": null
+                    },
+                    {
+                        "_id": "15ba2e6a-327e-4979-8cbe-53bf018806e3",
+                        "_name": "diffuseColor",
+                        "_display_name": "Diffuse Color",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "color3f",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "_value": null
+                    },
+                    {
+                        "_id": "81fcce88-ae70-4163-b301-f7b132e8ec23",
+                        "_name": "ior",
+                        "_display_name": "Ior",
+                        "_value_type": "float",
+                        "_internal_value_type": "float",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0,
+                        "_value": null
+                    },
+                    {
+                        "_id": "d60570a2-e7fe-4b1f-8be8-58317e57bb1a",
+                        "_name": "metallic",
+                        "_display_name": "Metallic",
+                        "_value_type": "float",
+                        "_internal_value_type": "float",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0,
+                        "_value": null
+                    },
+                    {
+                        "_id": "f88604db-5ec1-4c45-80ab-44497c09217d",
+                        "_name": "normal",
+                        "_display_name": "Normal",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "normal3f",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0,
+                            0,
+                            1
+                        ],
+                        "_value": null
+                    },
+                    {
+                        "_id": "8010ffd7-6643-4918-b84b-3ce74e79e4a8",
+                        "_name": "occlusion",
+                        "_display_name": "Occlusion",
+                        "_value_type": "float",
+                        "_internal_value_type": "float",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 1,
+                        "_value": null
+                    },
+                    {
+                        "_id": "0da9098a-c65b-49ba-b75d-d4237f1ef3e0",
+                        "_name": "opacity",
+                        "_display_name": "Opacity",
+                        "_value_type": "float",
+                        "_internal_value_type": "float",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 1,
+                        "_value": null
+                    },
+                    {
+                        "_id": "e0e0c737-dc92-4d59-9530-58ef2b994643",
+                        "_name": "opacityThreshold",
+                        "_display_name": "Opacity Threshold",
+                        "_value_type": "float",
+                        "_internal_value_type": "float",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0,
+                        "_value": null
+                    },
+                    {
+                        "_id": "b3cf46e7-6cbb-4085-87a4-a16c5ddcc993",
+                        "_name": "roughness",
+                        "_display_name": "Roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "float",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0,
+                        "_value": null
+                    },
+                    {
+                        "_id": "8bd69fcf-f717-49c6-b125-2d06325775f1",
+                        "_name": "specularColor",
+                        "_display_name": "Specular Color",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "color3f",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "_value": null
+                    },
+                    {
+                        "_id": "ff4a3a40-e2a1-4cc8-976b-9f4240ee52a4",
+                        "_name": "useSpecularWorkflow",
+                        "_display_name": "Use Specular Workflow",
+                        "_value_type": "any",
+                        "_internal_value_type": "int",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0,
+                        "_value": null
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "f9f7adb5-0a32-488d-bbf9-a78bcf3a8e15",
+                        "_name": "clearcoat",
+                        "_display_name": "Clearcoat",
+                        "_value_type": "float",
+                        "_internal_value_type": "float",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0,
+                        "_value": null
+                    },
+                    {
+                        "_id": "ab3e3a78-177b-433d-80f6-c1eb32f75f82",
+                        "_name": "clearcoatRoughness",
+                        "_display_name": "Clearcoat Roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "float",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0,
+                        "_value": null
+                    },
+                    {
+                        "_id": "db9c9666-8515-4838-9066-85103bb26842",
+                        "_name": "diffuseColor",
+                        "_display_name": "Diffuse Color",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "color3f",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "_value": null
+                    },
+                    {
+                        "_id": "c98748ac-e8a0-4031-9d2f-63da20e275bf",
+                        "_name": "ior",
+                        "_display_name": "Ior",
+                        "_value_type": "float",
+                        "_internal_value_type": "float",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0,
+                        "_value": null
+                    },
+                    {
+                        "_id": "4f9abe5a-2f0b-4df1-a9ba-72f6fab615db",
+                        "_name": "metallic",
+                        "_display_name": "Metallic",
+                        "_value_type": "float",
+                        "_internal_value_type": "float",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0,
+                        "_value": null
+                    },
+                    {
+                        "_id": "615fcd77-4fb1-481b-8117-11f141de144a",
+                        "_name": "normal",
+                        "_display_name": "Normal",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "normal3f",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0,
+                            0,
+                            1
+                        ],
+                        "_value": null
+                    },
+                    {
+                        "_id": "0d68f2d1-45fc-44db-aa91-8f6faf21bc3f",
+                        "_name": "occlusion",
+                        "_display_name": "Occlusion",
+                        "_value_type": "float",
+                        "_internal_value_type": "float",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 1,
+                        "_value": null
+                    },
+                    {
+                        "_id": "f3d3a601-6958-4ef8-a534-a1ae08929d49",
+                        "_name": "opacity",
+                        "_display_name": "Opacity",
+                        "_value_type": "float",
+                        "_internal_value_type": "float",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 1,
+                        "_value": null
+                    },
+                    {
+                        "_id": "22f6ff6b-0dd2-47b0-9da1-12ab463933fe",
+                        "_name": "opacityThreshold",
+                        "_display_name": "Opacity Threshold",
+                        "_value_type": "float",
+                        "_internal_value_type": "float",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0,
+                        "_value": null
+                    },
+                    {
+                        "_id": "f0994e4b-9c55-4c7f-8a59-1a89accdcda3",
+                        "_name": "roughness",
+                        "_display_name": "Roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "float",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0,
+                        "_value": null
+                    },
+                    {
+                        "_id": "15cf31db-aefd-454c-a589-128780035bdf",
+                        "_name": "specularColor",
+                        "_display_name": "Specular Color",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "color3f",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "_value": null
+                    },
+                    {
+                        "_id": "8ff10fcb-eafb-4720-a308-af4d9e3be95c",
+                        "_name": "useSpecularWorkflow",
+                        "_display_name": "Use Specular Workflow",
+                        "_value_type": "any",
+                        "_internal_value_type": "int",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0,
+                        "_value": null
+                    }
+                ],
+                "_class_name": "PreviewSurface"
+            }
+        ],
+        "_metadata": {
+            "_category": "Connector Materials",
+            "_name": "",
+            "_keywords": [
+                "USDPreview",
+                "PreviewSurface",
+                "PreviewSurface"
+            ],
+            "_supported_clients": [
+                {
+                    "_name": "Maya",
+                    "_version": "any"
+                }
+            ]
+        },
+        "_root_node_id": "3ea9d908-44ab-47a1-9699-67fee8e93378",
+        "_revision": 1
+    }
+}

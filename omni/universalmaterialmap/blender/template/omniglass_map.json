@@ -1,0 +1,172 @@
+{
+    "maps": [
+        {
+            "blender_node": "OmniGlass Compute",
+            "blender_socket": "Absorbtion Coeff",
+            "mdl_name": "",
+            "umm_display_name": "Absorbtion Coeff"
+        },
+        {
+            "blender_node": "OmniGlass Compute",
+            "blender_socket": "Glass Color",
+            "mdl_name": "",
+            "umm_display_name": "Glass Color"
+        },
+        {
+            "blender_node": "OmniGlass Compute",
+            "blender_socket": "Use Glass Color Texture",
+            "mdl_name": "",
+            "umm_display_name": "Use Glass Color Texture"
+        },
+        {
+            "blender_node": "OmniGlass Compute",
+            "blender_socket": "Volume Absorbtion Scale",
+            "mdl_name": "",
+            "umm_display_name": "Volume Absorbtion Scale"
+        },
+        {
+            "blender_node": "OmniGlass Compute",
+            "blender_socket": "Glass Roughness",
+            "mdl_name": "",
+            "umm_display_name": "Glass Roughness"
+        },
+        {
+            "blender_node": "OmniGlass Compute",
+            "blender_socket": "Roughness Texture Influence",
+            "mdl_name": "",
+            "umm_display_name": "Roughness Texture Influence"
+        },
+        {
+            "blender_node": "OmniGlass Compute",
+            "blender_socket": "Glass IOR",
+            "mdl_name": "",
+            "umm_display_name": "Glass IOR"
+        },
+        {
+            "blender_node": "OmniGlass Compute",
+            "blender_socket": "Thin Walled",
+            "mdl_name": "",
+            "umm_display_name": "Thin Walled"
+        },
+        {
+            "blender_node": "OmniGlass Compute",
+            "blender_socket": "Reflection Color",
+            "mdl_name": "",
+            "umm_display_name": "Reflection Color"
+        },
+        {
+            "blender_node": "OmniGlass Compute",
+            "blender_socket": "Normal Map Strength",
+            "mdl_name": "",
+            "umm_display_name": "Normal Map Strength"
+        },
+        {
+            "blender_node": "OmniGlass Compute",
+            "blender_socket": "Enable Opacity",
+            "mdl_name": "",
+            "umm_display_name": "Enable Opacity"
+        },
+        {
+            "blender_node": "OmniGlass Compute",
+            "blender_socket": "Opacity Amount",
+            "mdl_name": "",
+            "umm_display_name": "Opacity Amount"
+        },
+        {
+            "blender_node": "OmniGlass Compute",
+            "blender_socket": "Opacity Threshold",
+            "mdl_name": "",
+            "umm_display_name": "Opacity Threshold"
+        },
+        {
+            "blender_node": "OmniGlass Compute",
+            "blender_socket": "Opacity Mono Source",
+            "mdl_name": "",
+            "umm_display_name": "Opacity Mono Source"
+        },
+        {
+            "blender_node": "OmniGlass Compute",
+            "blender_socket": "Enable Project UVW Coordinates",
+            "mdl_name": "",
+            "umm_display_name": "Enable Project UVW Coordinates"
+        },
+        {
+            "blender_node": "OmniGlass Compute",
+            "blender_socket": "Enable World Space",
+            "mdl_name": "",
+            "umm_display_name": "Enable World Space"
+        },
+        {
+            "blender_node": "OmniGlass Compute",
+            "blender_socket": "UV Space Index",
+            "mdl_name": "",
+            "umm_display_name": "UV Space Index"
+        },
+        {
+            "blender_node": "Base Mapping",
+            "blender_socket": "Rotation",
+            "mdl_name": "texture_rotate",
+            "umm_display_name": "Texture Rotate"
+        },
+        {
+            "blender_node": "Base Mapping",
+            "blender_socket": "Scale",
+            "mdl_name": "texture_scale",
+            "umm_display_name": "Texture Scale"
+        },
+        {
+            "blender_node": "Base Mapping",
+            "blender_socket": "Location",
+            "mdl_name": "texture_translate",
+            "umm_display_name": "Texture Translate"
+        },
+        {
+            "blender_node": "Glass Color Texture",
+            "blender_socket": "image",
+            "mdl_name": "",
+            "umm_display_name": "Glass Color Texture"
+        },
+        {
+            "blender_node": "Reflection Color Texture",
+            "blender_socket": "image",
+            "mdl_name": "",
+            "umm_display_name": "Reflection Color Texture"
+        },
+        {
+            "blender_node": "Roughness Color Texture",
+            "blender_socket": "image",
+            "mdl_name": "",
+            "umm_display_name": "Roughness Color Texture"
+        },
+        {
+            "blender_node": "Normal Map",
+            "blender_socket": "image",
+            "mdl_name": "",
+            "umm_display_name": "Normal Map"
+        },
+        {
+            "blender_node": "Opacity Map",
+            "blender_socket": "image",
+            "mdl_name": "",
+            "umm_display_name": "Opacity Map"
+        },
+        {
+            "blender_node": "Roughness Texture",
+            "blender_socket": "image",
+            "mdl_name": "",
+            "umm_display_name": "Roughness Texture"
+        },
+        {
+            "blender_node": "OmniGlass Compute",
+            "blender_socket": "Normal Map Flip U Tangent",
+            "mdl_name": "flip_tangent_u",
+            "umm_display_name": "Normal Map Flip U Tangent"
+        },
+        {
+            "blender_node": "OmniGlass Compute",
+            "blender_socket": "Normal Map Flip V Tangent",
+            "mdl_name": "flip_tangent_v",
+            "umm_display_name": "Normal Map Flip V Tangent"
+        }
+    ]
+}

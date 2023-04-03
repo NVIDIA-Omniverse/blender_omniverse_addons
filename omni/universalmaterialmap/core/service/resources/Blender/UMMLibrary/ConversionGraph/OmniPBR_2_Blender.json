@@ -1,0 +1,3057 @@
+{
+    "_header": {
+        "_module": "omni.universalmaterialmap.core.data",
+        "_class_name": "ConversionGraph"
+    },
+    "_content": {
+        "_id": "03adede3-149a-4d68-a701-7180c0076c24",
+        "_target_instances": [
+            {
+                "_id": "61898949-4ad0-434d-be4e-14e2be10be18",
+                "_inputs": [],
+                "_outputs": [],
+                "_display_name": "Omni PBR",
+                "_position": [
+                    -1835.790283203125,
+                    366.8086242675781
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": false,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_target_id": "a81af2ab-f6d8-41fa-a3cc-fdd6fe4ea065"
+            },
+            {
+                "_id": "b51dcb4b-4d19-42ae-ba61-c524fdb9b74a",
+                "_inputs": [],
+                "_outputs": [],
+                "_display_name": "ShaderNodeBsdfPrincipled",
+                "_position": [
+                    1700.070556640625,
+                    802.86328125
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_target_id": "3be6ad50-a5cd-41f7-9d60-6ce7d9461752"
+            }
+        ],
+        "_operator_instances": [
+            {
+                "_id": "e9572c14-f2dd-4e6d-9773-158df9d4823a",
+                "_inputs": [
+                    {
+                        "_id": "9fbe7cbe-bc52-4401-8df9-3ee1e6f2c4b2",
+                        "_name": "input_node_id",
+                        "_display_name": "Node Id",
+                        "_value_type": "node_id",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": "3be6ad50-a5cd-41f7-9d60-6ce7d9461752",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "3d88a9de-4c19-48d1-bb3a-c7b354869f39",
+                        "_name": "output_node_id",
+                        "_display_name": "Node Id",
+                        "_value_type": "node_id",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": "3be6ad50-a5cd-41f7-9d60-6ce7d9461752",
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Graph Output",
+                "_position": [
+                    2371.261962890625,
+                    1020.2876586914062
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.data",
+                "_operator_class_name": "GraphOutput"
+            },
+            {
+                "_id": "c4d40008-63fe-41be-a010-0ea215837925",
+                "_inputs": [
+                    {
+                        "_id": "2c3771fa-1882-4589-862a-ea79f6cf74da",
+                        "_name": "input_boolean",
+                        "_display_name": "Boolean",
+                        "_value_type": "bool",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": true,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "a737ed40-77c9-445b-917b-124e9146d905",
+                        "_name": "on_true",
+                        "_display_name": "True Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            0.20000000298023224,
+                            0.20000000298023224,
+                            0.20000000298023224,
+                            1.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "7406f92b-0214-4fec-a607-85ad7c554a29",
+                        "_name": "on_false",
+                        "_display_name": "False Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            "",
+                            "sRGB"
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "2cf103e4-dad6-49a0-8180-8b69b696a6a8",
+                        "_name": "output",
+                        "_display_name": "Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            0.20000000298023224,
+                            0.20000000298023224,
+                            0.20000000298023224,
+                            1.0
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "RGB or Texture",
+                "_position": [
+                    819.0,
+                    -350.0
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "BooleanSwitch"
+            },
+            {
+                "_id": "f3e9e9cf-8f6c-4064-8929-0d97b4b9228b",
+                "_inputs": [
+                    {
+                        "_id": "5203da0d-8481-4622-bd03-bef66446c44e",
+                        "_name": "value_1",
+                        "_display_name": "Value 1",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": "",
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "af071953-2a26-4806-9976-2f3f228f8af2",
+                        "_name": "value_1",
+                        "_display_name": "Value 2",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": "",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "6c53a343-a358-417c-a99d-a47c35bf020b",
+                        "_name": "output",
+                        "_display_name": "Are Equal",
+                        "_value_type": "bool",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": true,
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Is Empty String",
+                "_position": [
+                    283.0,
+                    -477.0
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "Equal"
+            },
+            {
+                "_id": "f5dac915-840e-4207-95a9-4e9614648e9e",
+                "_inputs": [],
+                "_outputs": [
+                    {
+                        "_id": "1975e2a0-f3f6-4356-9704-93f2be0df177",
+                        "_name": "value",
+                        "_display_name": "String",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "",
+                        "_value": "",
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Constant String",
+                "_position": [
+                    48.0,
+                    -334.0
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "ConstantString"
+            },
+            {
+                "_id": "c87a78eb-f166-404a-b77e-1ed94ad39025",
+                "_inputs": [
+                    {
+                        "_id": "642032ff-51ea-41ff-880d-b8f3ae826361",
+                        "_name": "list",
+                        "_display_name": "List",
+                        "_value_type": "list",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            "",
+                            "auto"
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "c602d381-a64f-42c7-8205-d5e409bc3d4f",
+                        "_name": "index",
+                        "_display_name": "Index",
+                        "_value_type": "int",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": 0,
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "b6627266-e604-4274-bcdc-768b269fd7f6",
+                        "_name": "output",
+                        "_display_name": "Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": "",
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "List Index",
+                "_position": [
+                    43.0,
+                    -504.0
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "ListIndex"
+            },
+            {
+                "_id": "64d07c1b-a0bf-4297-aa12-80afd58dcf14",
+                "_inputs": [
+                    {
+                        "_id": "79b9dc58-64ae-4fdc-954e-2d786d2852f5",
+                        "_name": "color_space",
+                        "_display_name": "Color Space",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "",
+                        "_value": "auto",
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "3e97cd10-f22a-4410-b179-63798d62e6aa",
+                        "_name": "from_color_space",
+                        "_display_name": "From",
+                        "_value_type": "enum",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "MDL",
+                        "_value": "MDL",
+                        "_enum_values": [
+                            "MDL"
+                        ]
+                    },
+                    {
+                        "_id": "4ae59151-30bf-46a1-bbd4-3de2bcb4c6e6",
+                        "_name": "to_color_space",
+                        "_display_name": "To",
+                        "_value_type": "enum",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "Blender",
+                        "_value": "Blender",
+                        "_enum_values": [
+                            "Blender"
+                        ]
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "7036cb78-8c33-4cf8-b961-2edb0e72da84",
+                        "_name": "color_space",
+                        "_display_name": "Color Space",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "",
+                        "_value": "sRGB",
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Color Space Resolver",
+                "_position": [
+                    310.0,
+                    -79.0
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "ColorSpaceResolver"
+            },
+            {
+                "_id": "926e84b6-6792-4ffb-ac22-f217efa5c379",
+                "_inputs": [
+                    {
+                        "_id": "8767087d-0638-4f29-a0e4-a2cb540de4af",
+                        "_name": "list",
+                        "_display_name": "List",
+                        "_value_type": "list",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": [
+                            "",
+                            "auto"
+                        ],
+                        "_value": [
+                            "",
+                            "auto"
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "3dfa015b-8189-4b76-9ca3-18de2d1e2abc",
+                        "_name": "texture_path",
+                        "_display_name": "Texture Path",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "",
+                        "_value": "",
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "c450ab88-27e0-4fee-a032-e41508eb04bb",
+                        "_name": "color_space",
+                        "_display_name": "Color Space",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "auto",
+                        "_value": "auto",
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Split Texture Data",
+                "_position": [
+                    35.0,
+                    -160.0
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "SplitTextureData"
+            },
+            {
+                "_id": "b09850f8-b114-414b-8cb9-636b970e5495",
+                "_inputs": [
+                    {
+                        "_id": "a002182b-17eb-4f1c-9ea2-7d19f1e88c77",
+                        "_name": "[0]",
+                        "_display_name": "[0]",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": true,
+                        "_default_value": null,
+                        "_value": "",
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "e6ae4e69-29c4-40c4-8226-450acea316d2",
+                        "_name": "[1]",
+                        "_display_name": "[1]",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": true,
+                        "_default_value": null,
+                        "_value": "sRGB",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "51be4ea6-cb1b-425b-8486-27ae8d67dd40",
+                        "_name": "list",
+                        "_display_name": "list",
+                        "_value_type": "list",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            "",
+                            "sRGB"
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "List Generator",
+                "_position": [
+                    528.0,
+                    -209.0
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "ListGenerator"
+            },
+            {
+                "_id": "86f7dc5d-7e2f-44a8-8693-a42fa25a31d0",
+                "_inputs": [
+                    {
+                        "_id": "1f7a3607-590c-41c6-af84-96219213d0ff",
+                        "_name": "list",
+                        "_display_name": "List",
+                        "_value_type": "list",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": [
+                            "",
+                            "auto"
+                        ],
+                        "_value": [
+                            "",
+                            "auto"
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "bf9d8dc3-17f1-48ee-824a-fc93aa3442e3",
+                        "_name": "texture_path",
+                        "_display_name": "Texture Path",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "",
+                        "_value": "",
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "d2d966a7-dd1f-46c2-9a64-36936a82577d",
+                        "_name": "color_space",
+                        "_display_name": "Color Space",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "auto",
+                        "_value": "auto",
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Split Texture Data",
+                "_position": [
+                    -72.0,
+                    599.0
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "SplitTextureData"
+            },
+            {
+                "_id": "5e461dcc-9f3e-4d0e-a7aa-bc334f1bf877",
+                "_inputs": [
+                    {
+                        "_id": "9775d372-d422-403a-ab74-7fcacee38d85",
+                        "_name": "color_space",
+                        "_display_name": "Color Space",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "",
+                        "_value": "auto",
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "72219b83-2617-44d2-bbda-a68b84e52356",
+                        "_name": "from_color_space",
+                        "_display_name": "From",
+                        "_value_type": "enum",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "MDL",
+                        "_value": "MDL",
+                        "_enum_values": [
+                            "MDL"
+                        ]
+                    },
+                    {
+                        "_id": "88e0c132-4a3a-4db7-af4f-b5adf5bd680a",
+                        "_name": "to_color_space",
+                        "_display_name": "To",
+                        "_value_type": "enum",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "Blender",
+                        "_value": "Blender",
+                        "_enum_values": [
+                            "Blender"
+                        ]
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "7893b032-3f50-44f0-994e-160884dfd871",
+                        "_name": "color_space",
+                        "_display_name": "Color Space",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "",
+                        "_value": "sRGB",
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Color Space Resolver",
+                "_position": [
+                    163.0,
+                    680.0
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "ColorSpaceResolver"
+            },
+            {
+                "_id": "db50b367-e4ca-47d6-a884-ae0da6591d59",
+                "_inputs": [
+                    {
+                        "_id": "cb95084a-62b0-40b9-9614-bd8c5d0209e7",
+                        "_name": "[0]",
+                        "_display_name": "[0]",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": true,
+                        "_default_value": null,
+                        "_value": "",
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "6e022d6e-a51b-4c02-8a33-23fc46500d6e",
+                        "_name": "[1]",
+                        "_display_name": "[1]",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": true,
+                        "_default_value": null,
+                        "_value": "sRGB",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "af42d931-f04d-414b-822e-6438ddcfd90d",
+                        "_name": "list",
+                        "_display_name": "list",
+                        "_value_type": "list",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            "",
+                            "sRGB"
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "List Generator",
+                "_position": [
+                    382.0,
+                    627.0
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "ListGenerator"
+            },
+            {
+                "_id": "51cb46e8-723c-4587-a4c1-064496dc7020",
+                "_inputs": [
+                    {
+                        "_id": "36f3fdee-274b-48cb-bbb2-bde2e149dce7",
+                        "_name": "input_boolean",
+                        "_display_name": "Boolean",
+                        "_value_type": "bool",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": false,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "4017f19f-9f5b-4d1b-ba3c-4e1580ebc332",
+                        "_name": "on_true",
+                        "_display_name": "True Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            "",
+                            "auto"
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "befc1162-d911-40c6-bd22-7e69f14b3ed4",
+                        "_name": "on_false",
+                        "_display_name": "False Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            "",
+                            "auto"
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "c6e6768c-9514-4303-80a7-d847d0125ec3",
+                        "_name": "output",
+                        "_display_name": "Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            "",
+                            "auto"
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Boolean Switch",
+                "_position": [
+                    -298.0,
+                    588.0
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "BooleanSwitch"
+            },
+            {
+                "_id": "f8158fe4-8977-4b79-a36e-1c4f39b32dd8",
+                "_inputs": [
+                    {
+                        "_id": "2f3d38f3-e384-4a83-a39d-2e01409df1de",
+                        "_name": "value_1",
+                        "_display_name": "Value 1",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": "",
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "bcb4d2a4-515e-40eb-b472-42e83d261279",
+                        "_name": "value_1",
+                        "_display_name": "Value 2",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": "",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "14584191-3944-42cd-9236-32aa39e5333d",
+                        "_name": "output",
+                        "_display_name": "Are Equal",
+                        "_value_type": "bool",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": true,
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Equal",
+                "_position": [
+                    245.0,
+                    388.0
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "Equal"
+            },
+            {
+                "_id": "4c8143e9-5ceb-4de8-b8a8-f8a33971266c",
+                "_inputs": [],
+                "_outputs": [
+                    {
+                        "_id": "a4c165c6-d527-49cf-a8ce-3377dea339fd",
+                        "_name": "value",
+                        "_display_name": "String",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "",
+                        "_value": "",
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Constant String",
+                "_position": [
+                    -1.0,
+                    447.0
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "ConstantString"
+            },
+            {
+                "_id": "18706f51-b64e-4a8a-b8c7-67ea6baf37d3",
+                "_inputs": [
+                    {
+                        "_id": "57d91420-db44-4518-80c9-b43db5c00a12",
+                        "_name": "input_boolean",
+                        "_display_name": "Boolean",
+                        "_value_type": "bool",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": true,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "2ff020df-01c4-4086-ba4d-62fef41f0268",
+                        "_name": "on_true",
+                        "_display_name": "True Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": 0.5,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "0024d2dc-62dd-49e6-81de-3db4e3ecc2f7",
+                        "_name": "on_false",
+                        "_display_name": "False Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            "",
+                            "sRGB"
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "e9383d55-d2c4-4ae0-aa8d-c14df5e53f89",
+                        "_name": "output",
+                        "_display_name": "Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": 0.5,
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Boolean Switch",
+                "_position": [
+                    618.0,
+                    519.0
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "BooleanSwitch"
+            },
+            {
+                "_id": "fe0cb4bf-95a2-4cdf-8d4f-4838480ba855",
+                "_inputs": [
+                    {
+                        "_id": "b4328fa1-be4f-4f42-98b9-18572e81b052",
+                        "_name": "list",
+                        "_display_name": "List",
+                        "_value_type": "list",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": [
+                            "",
+                            "auto"
+                        ],
+                        "_value": [
+                            "",
+                            "auto"
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "e36298ce-1953-4b5e-b4a4-f0eb6c02cf77",
+                        "_name": "texture_path",
+                        "_display_name": "Texture Path",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "",
+                        "_value": "",
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "e44a5106-618f-42b0-8b7e-3d5adaaa8c47",
+                        "_name": "color_space",
+                        "_display_name": "Color Space",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "auto",
+                        "_value": "auto",
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Split Texture Data",
+                "_position": [
+                    -238.0,
+                    2699.0
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "SplitTextureData"
+            },
+            {
+                "_id": "f1097d70-3cc8-4000-9ec8-2c266bc22517",
+                "_inputs": [
+                    {
+                        "_id": "749b0c14-3841-4cb3-9a4a-8233a7af2cde",
+                        "_name": "color_space",
+                        "_display_name": "Color Space",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "",
+                        "_value": "auto",
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "d0ff0b8f-d937-469a-b69e-86fd2845d97a",
+                        "_name": "from_color_space",
+                        "_display_name": "From",
+                        "_value_type": "enum",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "MDL",
+                        "_value": "MDL",
+                        "_enum_values": [
+                            "MDL"
+                        ]
+                    },
+                    {
+                        "_id": "f1aab2cc-f69d-4fc3-b4ff-4e865c0e00f4",
+                        "_name": "to_color_space",
+                        "_display_name": "To",
+                        "_value_type": "enum",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "Blender",
+                        "_value": "Blender",
+                        "_enum_values": [
+                            "Blender"
+                        ]
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "5dcbdc54-d5bd-4dd8-92f0-049220bef0c0",
+                        "_name": "color_space",
+                        "_display_name": "Color Space",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "",
+                        "_value": "sRGB",
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Color Space Resolver",
+                "_position": [
+                    34.0,
+                    2841.0
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "ColorSpaceResolver"
+            },
+            {
+                "_id": "ef0fa6cb-ec5e-412a-b46a-b49e990f39f9",
+                "_inputs": [
+                    {
+                        "_id": "2b557c94-c010-40da-8849-d861893fbabd",
+                        "_name": "[0]",
+                        "_display_name": "[0]",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": true,
+                        "_default_value": null,
+                        "_value": "",
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "9001bcae-167f-4680-9c1f-6598f61f2149",
+                        "_name": "[1]",
+                        "_display_name": "[1]",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": true,
+                        "_default_value": null,
+                        "_value": "sRGB",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "0b4a7260-2bb4-41e6-bf5f-72fbb02a1f43",
+                        "_name": "list",
+                        "_display_name": "list",
+                        "_value_type": "list",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            "",
+                            "sRGB"
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "List Generator",
+                "_position": [
+                    237.0,
+                    2690.0
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "ListGenerator"
+            },
+            {
+                "_id": "a48624b0-6e0d-4437-a049-1a2dacddd8c7",
+                "_inputs": [
+                    {
+                        "_id": "bb026595-eaa7-48d6-a346-c325682a64be",
+                        "_name": "input_boolean",
+                        "_display_name": "Boolean",
+                        "_value_type": "bool",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": false,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "0b8f8571-6e34-4344-ad58-4b3d1063df86",
+                        "_name": "on_true",
+                        "_display_name": "True Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            "",
+                            "auto"
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "22766cba-1941-4f9f-b029-3fa253fa4b41",
+                        "_name": "on_false",
+                        "_display_name": "False Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            "",
+                            "auto"
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "475bf6f5-2668-4cec-b598-4af96b3bdf96",
+                        "_name": "output",
+                        "_display_name": "Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            "",
+                            "auto"
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Boolean Switch",
+                "_position": [
+                    -361.3529052734375,
+                    1254.639404296875
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "BooleanSwitch"
+            },
+            {
+                "_id": "f3afb072-3d3b-4e41-9604-9d97c0cedaef",
+                "_inputs": [
+                    {
+                        "_id": "c09b0e03-7148-4fad-a407-d6b7bf75a65d",
+                        "_name": "list",
+                        "_display_name": "List",
+                        "_value_type": "list",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": [
+                            "",
+                            "auto"
+                        ],
+                        "_value": [
+                            "",
+                            "auto"
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "2826e2ae-a437-4023-b8b4-1c21a1cd53c8",
+                        "_name": "texture_path",
+                        "_display_name": "Texture Path",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "",
+                        "_value": "",
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "9aa02759-eba1-4f55-8a75-092d064c1764",
+                        "_name": "color_space",
+                        "_display_name": "Color Space",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "auto",
+                        "_value": "auto",
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Split Texture Data",
+                "_position": [
+                    -126.3529052734375,
+                    1299.639404296875
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "SplitTextureData"
+            },
+            {
+                "_id": "f81c2127-6876-488a-a457-f14e078bbdad",
+                "_inputs": [
+                    {
+                        "_id": "1f874aaf-527c-4f0d-bc5a-a26076aca66b",
+                        "_name": "color_space",
+                        "_display_name": "Color Space",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "",
+                        "_value": "auto",
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "2131784a-7b72-4443-aaa3-d3f26ca3b132",
+                        "_name": "from_color_space",
+                        "_display_name": "From",
+                        "_value_type": "enum",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "MDL",
+                        "_value": "MDL",
+                        "_enum_values": [
+                            "MDL"
+                        ]
+                    },
+                    {
+                        "_id": "d4dac042-6f1c-428f-bfb1-efb141098e5c",
+                        "_name": "to_color_space",
+                        "_display_name": "To",
+                        "_value_type": "enum",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "Blender",
+                        "_value": "Blender",
+                        "_enum_values": [
+                            "Blender"
+                        ]
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "0bbf92a2-19cf-48ae-9cef-22f9fd65d1d6",
+                        "_name": "color_space",
+                        "_display_name": "Color Space",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "",
+                        "_value": "sRGB",
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Color Space Resolver",
+                "_position": [
+                    108.6470947265625,
+                    1390.639404296875
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "ColorSpaceResolver"
+            },
+            {
+                "_id": "8f094ff5-8358-43fb-9944-8ec8adaa46ba",
+                "_inputs": [
+                    {
+                        "_id": "77957e6c-86e4-43fb-894a-e1850d943405",
+                        "_name": "[0]",
+                        "_display_name": "[0]",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": true,
+                        "_default_value": null,
+                        "_value": "",
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "b0507192-fcfd-4d03-95eb-17c5a4825182",
+                        "_name": "[1]",
+                        "_display_name": "[1]",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": true,
+                        "_default_value": null,
+                        "_value": "sRGB",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "582e5536-bbb1-4983-8af7-0ebdead4ffff",
+                        "_name": "list",
+                        "_display_name": "list",
+                        "_value_type": "list",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            "",
+                            "sRGB"
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "List Generator",
+                "_position": [
+                    329.6470947265625,
+                    1307.639404296875
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "ListGenerator"
+            },
+            {
+                "_id": "57ee9d10-7b78-4cff-b42d-c6af9280996b",
+                "_inputs": [
+                    {
+                        "_id": "a24ba287-7964-4120-abcb-0c3dcb04b5e2",
+                        "_name": "value_1",
+                        "_display_name": "Value 1",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": "",
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "58a3f1ec-fb38-4d88-913f-ff3442b484cc",
+                        "_name": "value_1",
+                        "_display_name": "Value 2",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": "",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "c6e9b6ee-c7c3-4338-bdeb-74b09536446a",
+                        "_name": "output",
+                        "_display_name": "Are Equal",
+                        "_value_type": "bool",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": true,
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Equal",
+                "_position": [
+                    318.6470947265625,
+                    1096.639404296875
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "Equal"
+            },
+            {
+                "_id": "81b7f060-b37f-4f0c-ad4a-6a251f2f04c9",
+                "_inputs": [],
+                "_outputs": [
+                    {
+                        "_id": "f5ed580c-34a6-4266-ae93-2ac5ef52813a",
+                        "_name": "value",
+                        "_display_name": "String",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "",
+                        "_value": "",
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Constant String",
+                "_position": [
+                    97.6470947265625,
+                    1195.639404296875
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "ConstantString"
+            },
+            {
+                "_id": "a10e69be-e6b7-4a25-b08e-b3d62d089344",
+                "_inputs": [
+                    {
+                        "_id": "87b1b2a6-60ba-420a-bf6a-ede8324f4ec4",
+                        "_name": "input_boolean",
+                        "_display_name": "Boolean",
+                        "_value_type": "bool",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": true,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "0619d05c-e88c-4959-af6d-c011875ce1bb",
+                        "_name": "on_true",
+                        "_display_name": "True Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "2002896f-2f03-4f3b-8a85-148d68337741",
+                        "_name": "on_false",
+                        "_display_name": "False Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            "",
+                            "sRGB"
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "8a8aec6c-30de-48d1-86a2-c44183edaa73",
+                        "_name": "output",
+                        "_display_name": "Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Boolean Switch",
+                "_position": [
+                    574.6470947265625,
+                    1198.639404296875
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "BooleanSwitch"
+            },
+            {
+                "_id": "ac4308b2-c8ae-4917-a862-cee254d4102c",
+                "_inputs": [
+                    {
+                        "_id": "f8b4921f-e1e8-4a24-9089-a25b684e1072",
+                        "_name": "list",
+                        "_display_name": "List",
+                        "_value_type": "list",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": [
+                            "",
+                            "auto"
+                        ],
+                        "_value": [
+                            "",
+                            "auto"
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "84236b1d-9368-40ce-8b55-337edf7c07fc",
+                        "_name": "texture_path",
+                        "_display_name": "Texture Path",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "",
+                        "_value": "",
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "b308297b-396a-4c46-b72b-69a86324b30c",
+                        "_name": "color_space",
+                        "_display_name": "Color Space",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "auto",
+                        "_value": "auto",
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Split Texture Data",
+                "_position": [
+                    -267.3529052734375,
+                    1980.639404296875
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "SplitTextureData"
+            },
+            {
+                "_id": "e45a5a40-fe27-4f6f-af6d-d206e016d5c2",
+                "_inputs": [
+                    {
+                        "_id": "e63098d0-2e9c-4ac7-b28d-773180d0bc23",
+                        "_name": "color_space",
+                        "_display_name": "Color Space",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "",
+                        "_value": "auto",
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "f5a97343-e217-4ed0-b40c-2bfade6a48bb",
+                        "_name": "from_color_space",
+                        "_display_name": "From",
+                        "_value_type": "enum",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "MDL",
+                        "_value": "MDL",
+                        "_enum_values": [
+                            "MDL"
+                        ]
+                    },
+                    {
+                        "_id": "c37429f4-3b1e-4192-97cb-036627eba8cb",
+                        "_name": "to_color_space",
+                        "_display_name": "To",
+                        "_value_type": "enum",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "Blender",
+                        "_value": "Blender",
+                        "_enum_values": [
+                            "Blender"
+                        ]
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "5f57079d-0583-4ae5-91d0-4085b6263f5d",
+                        "_name": "color_space",
+                        "_display_name": "Color Space",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "",
+                        "_value": "sRGB",
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Color Space Resolver",
+                "_position": [
+                    -50.3529052734375,
+                    2077.639404296875
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "ColorSpaceResolver"
+            },
+            {
+                "_id": "89fdbb81-dc0d-4b87-aa44-e84b7abb2567",
+                "_inputs": [
+                    {
+                        "_id": "2000699f-ea61-4d55-a07a-562f4b24a15d",
+                        "_name": "[0]",
+                        "_display_name": "[0]",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": true,
+                        "_default_value": null,
+                        "_value": "",
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "8424c4fb-73b7-48d9-ad41-b2bb914abba6",
+                        "_name": "[1]",
+                        "_display_name": "[1]",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": true,
+                        "_default_value": null,
+                        "_value": "sRGB",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "cfa346a7-bec3-410f-9b5f-a7d38b8391d7",
+                        "_name": "list",
+                        "_display_name": "list",
+                        "_value_type": "list",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            "",
+                            "sRGB"
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "List Generator",
+                "_position": [
+                    180.6470947265625,
+                    2020.639404296875
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "ListGenerator"
+            },
+            {
+                "_id": "48cece67-e1bd-4812-85f1-cbf1aa787b95",
+                "_inputs": [
+                    {
+                        "_id": "bb2f20e1-8835-45c8-bb46-7227245126c8",
+                        "_name": "input_boolean",
+                        "_display_name": "Boolean",
+                        "_value_type": "bool",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": true,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "3b22ee35-c76a-4e28-ad8d-4b0e1763e60d",
+                        "_name": "on_true",
+                        "_display_name": "True Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            1.0,
+                            0.10000000149011612,
+                            0.10000000149011612
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "0e4dc3fb-5980-4594-a810-fe572f0b7166",
+                        "_name": "on_false",
+                        "_display_name": "False Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            "",
+                            "sRGB"
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "112fb1fd-40d7-41a2-97cf-c25e08d0930d",
+                        "_name": "output",
+                        "_display_name": "Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            1.0,
+                            0.10000000149011612,
+                            0.10000000149011612
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Boolean Switch",
+                "_position": [
+                    495.64697265625,
+                    1830.639404296875
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "BooleanSwitch"
+            },
+            {
+                "_id": "e7a60660-f770-48b7-8d97-c3876c020cce",
+                "_inputs": [
+                    {
+                        "_id": "75890dc7-3c3a-4538-9ac7-98ebe40996f0",
+                        "_name": "value_1",
+                        "_display_name": "Value 1",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": "",
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "d7631f5e-2f41-446a-86e9-45a912317aeb",
+                        "_name": "value_1",
+                        "_display_name": "Value 2",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": "",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "28c141a9-b22a-4fd3-b60b-f809beb8ef0d",
+                        "_name": "output",
+                        "_display_name": "Are Equal",
+                        "_value_type": "bool",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": true,
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Equal",
+                "_position": [
+                    106.64697265625,
+                    1774.639404296875
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "Equal"
+            },
+            {
+                "_id": "bc35608a-74a0-48f7-bc7e-460383cfdd38",
+                "_inputs": [],
+                "_outputs": [
+                    {
+                        "_id": "6b4d5d5b-0ec6-4ec2-b38e-5041b0f95e92",
+                        "_name": "value",
+                        "_display_name": "String",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "",
+                        "_value": "",
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Constant String",
+                "_position": [
+                    -191.35302734375,
+                    1837.639404296875
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "ConstantString"
+            },
+            {
+                "_id": "9a86d69a-66ac-49c3-911e-da2a5296c41b",
+                "_inputs": [
+                    {
+                        "_id": "cc31ff36-648f-468e-a828-579d164dd2cb",
+                        "_name": "input_boolean",
+                        "_display_name": "Boolean",
+                        "_value_type": "bool",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": false,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "f291d709-d7c9-43d9-a55e-38fa0d2447a9",
+                        "_name": "on_true",
+                        "_display_name": "True Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            1.0,
+                            0.10000000149011612,
+                            0.10000000149011612
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "19a8e7c9-e402-407f-946d-bcfd4666110e",
+                        "_name": "on_false",
+                        "_display_name": "False Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "91093b81-4257-4fcd-87cf-7b371a56f511",
+                        "_name": "output",
+                        "_display_name": "Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Boolean Switch",
+                "_position": [
+                    803.64697265625,
+                    1620.639404296875
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "BooleanSwitch"
+            },
+            {
+                "_id": "a9267d6c-2733-4f9b-9859-b8f06533a6ce",
+                "_inputs": [],
+                "_outputs": [
+                    {
+                        "_id": "4adc39a1-0726-4937-9cc1-89802d9ea9f3",
+                        "_name": "value",
+                        "_display_name": "Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Constant RGBA",
+                "_position": [
+                    542.64697265625,
+                    1689.639404296875
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "ConstantRGBA"
+            },
+            {
+                "_id": "f8df321c-75ca-46f4-b8b8-265492458087",
+                "_inputs": [
+                    {
+                        "_id": "1a4dce6d-fd8b-4e08-a4e3-eae592062ca0",
+                        "_name": "input_boolean",
+                        "_display_name": "Boolean",
+                        "_value_type": "bool",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": false,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "dfa709b4-cefa-47f4-8433-4d131aad8eaa",
+                        "_name": "on_true",
+                        "_display_name": "True Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": 40.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "915bc8f0-ea4e-4181-973a-77751b883bbd",
+                        "_name": "on_false",
+                        "_display_name": "False Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "d4f3a667-8bec-4f95-97b7-4dcf07992f5e",
+                        "_name": "output",
+                        "_display_name": "Output",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Boolean Switch",
+                "_position": [
+                    1158.64697265625,
+                    1937.639404296875
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "BooleanSwitch"
+            },
+            {
+                "_id": "caef0d32-df92-4f6e-8ea9-e95edc69e44b",
+                "_inputs": [],
+                "_outputs": [
+                    {
+                        "_id": "49240c8e-b56d-40ec-a565-c18162fda91d",
+                        "_name": "value",
+                        "_display_name": "Float",
+                        "_value_type": "float",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Constant Float",
+                "_position": [
+                    839.64697265625,
+                    2053.639404296875
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "ConstantFloat"
+            },
+            {
+                "_id": "5bf4325d-81d9-46e3-afdb-ec5f891b6ace",
+                "_inputs": [],
+                "_outputs": [
+                    {
+                        "_id": "c7a1abdc-6684-4ccc-ae18-e60dd914812e",
+                        "_name": "value",
+                        "_display_name": "Float",
+                        "_value_type": "float",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": 1.0,
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Constant Float",
+                "_position": [
+                    -1334.0,
+                    -9.0
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "ConstantFloat"
+            },
+            {
+                "_id": "ef8ff146-36c3-490a-8773-56dbf864b6b6",
+                "_inputs": [
+                    {
+                        "_id": "75fbaae4-2487-4912-8dcd-f4bc35a23e6d",
+                        "_name": "input_r",
+                        "_display_name": "R",
+                        "_value_type": "float",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": 0.20000000298023224,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "2e4c46ac-edbe-4b89-b656-cb28c9c020b3",
+                        "_name": "input_g",
+                        "_display_name": "G",
+                        "_value_type": "float",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": 0.20000000298023224,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "d6cf4a80-8160-406a-adf5-a05a95c28622",
+                        "_name": "input_b",
+                        "_display_name": "B",
+                        "_value_type": "float",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": 0.20000000298023224,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "40962aa7-1702-49be-823c-4a30bf719401",
+                        "_name": "input_a",
+                        "_display_name": "A",
+                        "_value_type": "float",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": 1.0,
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "fbc7da50-feec-4d09-9565-589a63af29a8",
+                        "_name": "rgba",
+                        "_display_name": "RGBA",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            0.20000000298023224,
+                            0.20000000298023224,
+                            0.20000000298023224,
+                            1.0
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Merge RGBA",
+                "_position": [
+                    -1070.0,
+                    -174.0
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "MergeRGBA"
+            },
+            {
+                "_id": "fb05da40-3c33-4d2d-8cac-acfe9be34f1e",
+                "_inputs": [
+                    {
+                        "_id": "08a8a7db-ae13-493b-958c-f75eeb458b85",
+                        "_name": "input_rgb",
+                        "_display_name": "RGB",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            0.20000000298023224,
+                            0.20000000298023224,
+                            0.20000000298023224
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "ead99f7c-12d6-4bf7-a78d-e6b048079d7b",
+                        "_name": "red",
+                        "_display_name": "Red",
+                        "_value_type": "float",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": 0.20000000298023224,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "28e78442-a3bf-421a-b0f7-15730bce49d2",
+                        "_name": "green",
+                        "_display_name": "Green",
+                        "_value_type": "float",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": 0.20000000298023224,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "efe76d52-5ed0-43ef-9f79-9ee233da3ead",
+                        "_name": "blue",
+                        "_display_name": "Blue",
+                        "_value_type": "float",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": 0.20000000298023224,
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Split RGB",
+                "_position": [
+                    -1328.0,
+                    -249.0
+                ],
+                "_expansion_state": 0,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "SplitRGB"
+            },
+            {
+                "_id": "7c9e40b6-8116-4c25-a110-2345624f91bb",
+                "_inputs": [
+                    {
+                        "_id": "402cd9da-3c18-449d-89a8-5e279d2c9744",
+                        "_name": "input",
+                        "_display_name": "Input",
+                        "_value_type": "any",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            0.20000000298023224,
+                            0.20000000298023224,
+                            0.20000000298023224
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "db2a07b6-b9ef-48ac-b68d-e115fb26cc24",
+                        "_name": "boolean",
+                        "_display_name": "Boolean",
+                        "_value_type": "bool",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": false,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "73791276-0074-4dcb-ab63-31b273690328",
+                        "_name": "color",
+                        "_display_name": "Color",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            0.20000000298023224,
+                            0.20000000298023224,
+                            0.20000000298023224
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "7a81a46a-2d8d-424c-9ae5-2648bd765c9f",
+                        "_name": "float",
+                        "_display_name": "Float",
+                        "_value_type": "float",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "cdd5c9e1-1d1b-46f8-8d79-abcf04e25abd",
+                        "_name": "integer",
+                        "_display_name": "Integer",
+                        "_value_type": "int",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "eb526536-b4b0-4295-bd72-929fcea6d6a9",
+                        "_name": "string",
+                        "_display_name": "String",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": "",
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "3e342e7c-3ec7-41ec-8028-c3d483a85b27",
+                        "_name": "rgba",
+                        "_display_name": "RGBA",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "3aa6ee51-da03-4a4f-8c86-7dff6da5d721",
+                        "_name": "list",
+                        "_display_name": "List",
+                        "_value_type": "list",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [],
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "10fcb5e1-58c4-476a-8c22-d1add4dc7447",
+                        "_name": "boolean",
+                        "_display_name": "Boolean",
+                        "_value_type": "bool",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": false,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "841516d4-ad27-42e9-831d-6a935c179b4d",
+                        "_name": "color",
+                        "_display_name": "Color",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            0.20000000298023224,
+                            0.20000000298023224,
+                            0.20000000298023224
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "cf58c3d2-f279-4428-ad04-1e140437d76c",
+                        "_name": "float",
+                        "_display_name": "Float",
+                        "_value_type": "float",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "4da2f47a-8eff-4570-8ac9-473e5d56875b",
+                        "_name": "integer",
+                        "_display_name": "Integer",
+                        "_value_type": "int",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "350cee88-1652-4a60-a380-1a2e4e2c0360",
+                        "_name": "string",
+                        "_display_name": "String",
+                        "_value_type": "str",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": "",
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "4aa77ee4-3b24-4f92-9e52-c78425ab204c",
+                        "_name": "rgba",
+                        "_display_name": "RGBA",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "f6f0d21e-44d9-40dd-8d26-a73dc6c774fc",
+                        "_name": "list",
+                        "_display_name": "List",
+                        "_value_type": "list",
+                        "_internal_value_type": "any",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": null,
+                        "_value": [],
+                        "_enum_values": []
+                    }
+                ],
+                "_display_name": "Value Resolver",
+                "_position": [
+                    -1594.0,
+                    -168.0
+                ],
+                "_expansion_state": 1,
+                "_show_inputs": true,
+                "_show_outputs": true,
+                "_show_peripheral": false,
+                "_description": "",
+                "_operator_module": "omni.universalmaterialmap.core.operator",
+                "_operator_class_name": "ValueResolver"
+            }
+        ],
+        "_connections": [
+            {
+                "_source_id": "3be6ad50-a5cd-41f7-9d60-6ce7d9461752",
+                "_destination_id": "9fbe7cbe-bc52-4401-8df9-3ee1e6f2c4b2"
+            },
+            {
+                "_source_id": "1975e2a0-f3f6-4356-9704-93f2be0df177",
+                "_destination_id": "af071953-2a26-4806-9976-2f3f228f8af2"
+            },
+            {
+                "_source_id": "6c53a343-a358-417c-a99d-a47c35bf020b",
+                "_destination_id": "2c3771fa-1882-4589-862a-ea79f6cf74da"
+            },
+            {
+                "_source_id": "2cf103e4-dad6-49a0-8180-8b69b696a6a8",
+                "_destination_id": "bb8327c4-3ae2-4adc-8511-ba3dd8d0aa01"
+            },
+            {
+                "_source_id": "e6fb3a05-0f8b-472d-8915-db997f291a52",
+                "_destination_id": "9604ae22-71cc-4516-8978-a7f877c4f8c9"
+            },
+            {
+                "_source_id": "45348eec-ce15-440a-b2f1-55ae87ff2621",
+                "_destination_id": "f66e9247-9867-4c64-ba3d-8433c8ce3bfc"
+            },
+            {
+                "_source_id": "5b834ed3-799c-47b7-a3bb-e9b072b60d73",
+                "_destination_id": "335d479c-156a-4f57-b395-384785d7ca0b"
+            },
+            {
+                "_source_id": "e6fb3a05-0f8b-472d-8915-db997f291a52",
+                "_destination_id": "1cb5f137-b534-40f6-a5d2-354272f1319b"
+            },
+            {
+                "_source_id": "26478e23-4769-44d0-900b-8d1235bf07de",
+                "_destination_id": "8ccee948-b165-4bd7-81c7-8c53d7ac984c"
+            },
+            {
+                "_source_id": "e6fb3a05-0f8b-472d-8915-db997f291a52",
+                "_destination_id": "5b3776f3-8976-4182-9a88-88d7e14f1e2f"
+            },
+            {
+                "_source_id": "8601789e-e45c-4087-9328-74b9fbe60ed9",
+                "_destination_id": "3151a118-8019-4e21-a3e6-a318003089a2"
+            },
+            {
+                "_source_id": "48f2c6ce-3059-4bb3-a861-1917bf1a92bf",
+                "_destination_id": "a987a5af-7eb2-4517-967a-94d36a78ca05"
+            },
+            {
+                "_source_id": "fd624951-f44d-40d7-84a6-8270b0db058d",
+                "_destination_id": "a387ea8e-78bb-45bc-9bb1-ee16829fbffd"
+            },
+            {
+                "_source_id": "ee4a83e1-eee0-4ee9-8b9e-0e9bb08ec972",
+                "_destination_id": "4b570ec2-720a-44da-858c-ab3ee0c4cd22"
+            },
+            {
+                "_source_id": "48f2c6ce-3059-4bb3-a861-1917bf1a92bf",
+                "_destination_id": "26c859c0-a622-45c3-9705-34e689fe3432"
+            },
+            {
+                "_source_id": "5d383d5b-cbbc-48d2-8588-458ba62e5a7f",
+                "_destination_id": "a1463892-51fd-41bd-a055-cc32f3b4c02d"
+            },
+            {
+                "_source_id": "53cda191-12e3-48e8-b479-f5522d618cb7",
+                "_destination_id": "e69e3fc6-4104-4911-a3b6-2e484dc737d3"
+            },
+            {
+                "_source_id": "458d693c-02c0-4437-a1c4-66bb34ac6815",
+                "_destination_id": "f2813426-a963-40de-8569-e82749092292"
+            },
+            {
+                "_source_id": "34a72643-a4fc-45ba-9a03-5a410bb2b7d7",
+                "_destination_id": "db284b88-a7a7-457b-bf7b-a9a779e82167"
+            },
+            {
+                "_source_id": "b0127ecd-25a8-4f95-8399-e4cde6a247a4",
+                "_destination_id": "03e11754-cc0e-4669-b366-8af524541719"
+            },
+            {
+                "_source_id": "bcfa191b-b665-44ce-89a4-6f6801d5d799",
+                "_destination_id": "51f3a4c4-5278-41dd-b005-8f694f8916bd"
+            },
+            {
+                "_source_id": "3d7fe2ee-bea4-488b-9474-deef705a92ae",
+                "_destination_id": "952dff7f-5d93-4490-9473-b67eaa5cb57a"
+            },
+            {
+                "_source_id": "015e391c-ba41-4dba-a5f2-869c8b7581c0",
+                "_destination_id": "aceb4e54-f8eb-489e-a9fb-09dc612bc63a"
+            },
+            {
+                "_source_id": "9613e280-1d09-44c2-a045-9d650ea72241",
+                "_destination_id": "8b84cc3d-e616-43b0-acb9-5de0137d65d6"
+            },
+            {
+                "_source_id": "18a73842-9b5c-468d-a7f7-2c63180ed7ec",
+                "_destination_id": "a5e330ad-5831-4bc1-9c70-757f85a50065"
+            },
+            {
+                "_source_id": "bcfa191b-b665-44ce-89a4-6f6801d5d799",
+                "_destination_id": "b799e4ec-2b22-4b1f-9284-d90d3f00c027"
+            },
+            {
+                "_source_id": "96337654-6e8e-4128-86d9-dcd68823f816",
+                "_destination_id": "af0b4f41-2897-410a-9f63-54c38a3907b3"
+            },
+            {
+                "_source_id": "96337654-6e8e-4128-86d9-dcd68823f816",
+                "_destination_id": "bfc5d250-1b67-44f9-9d37-ac8207c8965b"
+            },
+            {
+                "_source_id": "9f417762-9a23-4f0c-85a8-058e2c382cac",
+                "_destination_id": "cd3aa8e2-9308-4265-aaa5-bcacde05ef69"
+            },
+            {
+                "_source_id": "4aae9c78-85d7-4f51-b565-364ca407a54f",
+                "_destination_id": "3bde9bad-978f-46a9-9dec-53e7c38b3afb"
+            },
+            {
+                "_source_id": "5d383d5b-cbbc-48d2-8588-458ba62e5a7f",
+                "_destination_id": "9057f862-3f40-4d74-97bf-1fdeab5abb65"
+            },
+            {
+                "_source_id": "0b087e66-05cf-4b0e-9018-3880657779d0",
+                "_destination_id": "8f4fca05-3986-4ef0-9910-245a9fc27a63"
+            },
+            {
+                "_source_id": "0b087e66-05cf-4b0e-9018-3880657779d0",
+                "_destination_id": "1225cdfe-0c3a-4e2d-be51-bd7d3fe2dbec"
+            },
+            {
+                "_source_id": "e9bb0c6a-567f-4804-bec6-7117e1f5cc8b",
+                "_destination_id": "eadfb26f-7161-49b5-9485-7d81c1df7e6e"
+            },
+            {
+                "_source_id": "f42b13db-e65b-4aef-803d-7ed710f36ff7",
+                "_destination_id": "5ec4159d-d81e-492d-9e41-a38ca7e43d51"
+            },
+            {
+                "_source_id": "862b4c8a-5656-4982-a063-04167f6a3be1",
+                "_destination_id": "447ed3b1-a22d-4942-98c6-01a905b6f454"
+            },
+            {
+                "_source_id": "8fc1a46d-bcd7-4eb1-8d7a-1e5f865b6255",
+                "_destination_id": "b6d4703b-e7f0-40e6-9916-4b65424d0658"
+            },
+            {
+                "_source_id": "c7079a40-499c-431d-a6d8-786cf2cf94f3",
+                "_destination_id": "a41fe344-3e6f-4473-8716-8f4a01832ebd"
+            },
+            {
+                "_source_id": "862b4c8a-5656-4982-a063-04167f6a3be1",
+                "_destination_id": "e256bee5-a582-4d20-8952-82ee26b48db2"
+            },
+            {
+                "_source_id": "8fc1a46d-bcd7-4eb1-8d7a-1e5f865b6255",
+                "_destination_id": "d3bf7ec6-921f-4459-aec6-83597851d386"
+            },
+            {
+                "_source_id": "d395d878-2a62-47dd-bf1e-7dc927210eb6",
+                "_destination_id": "7c760572-e5c9-4a12-8499-adfbf949907f"
+            },
+            {
+                "_source_id": "b6627266-e604-4274-bcdc-768b269fd7f6",
+                "_destination_id": "5203da0d-8481-4622-bd03-bef66446c44e"
+            },
+            {
+                "_source_id": "e9bb0c6a-567f-4804-bec6-7117e1f5cc8b",
+                "_destination_id": "642032ff-51ea-41ff-880d-b8f3ae826361"
+            },
+            {
+                "_source_id": "e9bb0c6a-567f-4804-bec6-7117e1f5cc8b",
+                "_destination_id": "29b0075d-3344-47fb-939c-de622e42e1a1"
+            },
+            {
+                "_source_id": "e9bb0c6a-567f-4804-bec6-7117e1f5cc8b",
+                "_destination_id": "8767087d-0638-4f29-a0e4-a2cb540de4af"
+            },
+            {
+                "_source_id": "c450ab88-27e0-4fee-a032-e41508eb04bb",
+                "_destination_id": "79b9dc58-64ae-4fdc-954e-2d786d2852f5"
+            },
+            {
+                "_source_id": "3dfa015b-8189-4b76-9ca3-18de2d1e2abc",
+                "_destination_id": "a002182b-17eb-4f1c-9ea2-7d19f1e88c77"
+            },
+            {
+                "_source_id": "7036cb78-8c33-4cf8-b961-2edb0e72da84",
+                "_destination_id": "e6ae4e69-29c4-40c4-8226-450acea316d2"
+            },
+            {
+                "_source_id": "51be4ea6-cb1b-425b-8486-27ae8d67dd40",
+                "_destination_id": "7406f92b-0214-4fec-a607-85ad7c554a29"
+            },
+            {
+                "_source_id": "d2d966a7-dd1f-46c2-9a64-36936a82577d",
+                "_destination_id": "9775d372-d422-403a-ab74-7fcacee38d85"
+            },
+            {
+                "_source_id": "bf9d8dc3-17f1-48ee-824a-fc93aa3442e3",
+                "_destination_id": "cb95084a-62b0-40b9-9614-bd8c5d0209e7"
+            },
+            {
+                "_source_id": "7893b032-3f50-44f0-994e-160884dfd871",
+                "_destination_id": "6e022d6e-a51b-4c02-8a33-23fc46500d6e"
+            },
+            {
+                "_source_id": "862b4c8a-5656-4982-a063-04167f6a3be1",
+                "_destination_id": "36f3fdee-274b-48cb-bbb2-bde2e149dce7"
+            },
+            {
+                "_source_id": "e6fb3a05-0f8b-472d-8915-db997f291a52",
+                "_destination_id": "befc1162-d911-40c6-bd22-7e69f14b3ed4"
+            },
+            {
+                "_source_id": "f42b13db-e65b-4aef-803d-7ed710f36ff7",
+                "_destination_id": "4017f19f-9f5b-4d1b-ba3c-4e1580ebc332"
+            },
+            {
+                "_source_id": "c6e6768c-9514-4303-80a7-d847d0125ec3",
+                "_destination_id": "1f7a3607-590c-41c6-af84-96219213d0ff"
+            },
+            {
+                "_source_id": "bf9d8dc3-17f1-48ee-824a-fc93aa3442e3",
+                "_destination_id": "2f3d38f3-e384-4a83-a39d-2e01409df1de"
+            },
+            {
+                "_source_id": "a4c165c6-d527-49cf-a8ce-3377dea339fd",
+                "_destination_id": "bcb4d2a4-515e-40eb-b472-42e83d261279"
+            },
+            {
+                "_source_id": "14584191-3944-42cd-9236-32aa39e5333d",
+                "_destination_id": "57d91420-db44-4518-80c9-b43db5c00a12"
+            },
+            {
+                "_source_id": "015e391c-ba41-4dba-a5f2-869c8b7581c0",
+                "_destination_id": "2ff020df-01c4-4086-ba4d-62fef41f0268"
+            },
+            {
+                "_source_id": "af42d931-f04d-414b-822e-6438ddcfd90d",
+                "_destination_id": "0024d2dc-62dd-49e6-81de-3db4e3ecc2f7"
+            },
+            {
+                "_source_id": "e9383d55-d2c4-4ae0-aa8d-c14df5e53f89",
+                "_destination_id": "904cbb2b-d9d1-47e9-8a63-37df2d98b875"
+            },
+            {
+                "_source_id": "48f2c6ce-3059-4bb3-a861-1917bf1a92bf",
+                "_destination_id": "b4328fa1-be4f-4f42-98b9-18572e81b052"
+            },
+            {
+                "_source_id": "e44a5106-618f-42b0-8b7e-3d5adaaa8c47",
+                "_destination_id": "749b0c14-3841-4cb3-9a4a-8233a7af2cde"
+            },
+            {
+                "_source_id": "e36298ce-1953-4b5e-b4a4-f0eb6c02cf77",
+                "_destination_id": "2b557c94-c010-40da-8849-d861893fbabd"
+            },
+            {
+                "_source_id": "5dcbdc54-d5bd-4dd8-92f0-049220bef0c0",
+                "_destination_id": "9001bcae-167f-4680-9c1f-6598f61f2149"
+            },
+            {
+                "_source_id": "0b4a7260-2bb4-41e6-bf5f-72fbb02a1f43",
+                "_destination_id": "5df4264d-c26e-41ae-a61a-7f4596db6500"
+            },
+            {
+                "_source_id": "862b4c8a-5656-4982-a063-04167f6a3be1",
+                "_destination_id": "bb026595-eaa7-48d6-a346-c325682a64be"
+            },
+            {
+                "_source_id": "f42b13db-e65b-4aef-803d-7ed710f36ff7",
+                "_destination_id": "0b8f8571-6e34-4344-ad58-4b3d1063df86"
+            },
+            {
+                "_source_id": "5d383d5b-cbbc-48d2-8588-458ba62e5a7f",
+                "_destination_id": "22766cba-1941-4f9f-b029-3fa253fa4b41"
+            },
+            {
+                "_source_id": "475bf6f5-2668-4cec-b598-4af96b3bdf96",
+                "_destination_id": "c09b0e03-7148-4fad-a407-d6b7bf75a65d"
+            },
+            {
+                "_source_id": "9aa02759-eba1-4f55-8a75-092d064c1764",
+                "_destination_id": "1f874aaf-527c-4f0d-bc5a-a26076aca66b"
+            },
+            {
+                "_source_id": "2826e2ae-a437-4023-b8b4-1c21a1cd53c8",
+                "_destination_id": "77957e6c-86e4-43fb-894a-e1850d943405"
+            },
+            {
+                "_source_id": "0bbf92a2-19cf-48ae-9cef-22f9fd65d1d6",
+                "_destination_id": "b0507192-fcfd-4d03-95eb-17c5a4825182"
+            },
+            {
+                "_source_id": "2826e2ae-a437-4023-b8b4-1c21a1cd53c8",
+                "_destination_id": "a24ba287-7964-4120-abcb-0c3dcb04b5e2"
+            },
+            {
+                "_source_id": "f5ed580c-34a6-4266-ae93-2ac5ef52813a",
+                "_destination_id": "58a3f1ec-fb38-4d88-913f-ff3442b484cc"
+            },
+            {
+                "_source_id": "c6e9b6ee-c7c3-4338-bdeb-74b09536446a",
+                "_destination_id": "87b1b2a6-60ba-420a-bf6a-ede8324f4ec4"
+            },
+            {
+                "_source_id": "582e5536-bbb1-4983-8af7-0ebdead4ffff",
+                "_destination_id": "2002896f-2f03-4f3b-8a85-148d68337741"
+            },
+            {
+                "_source_id": "3d7fe2ee-bea4-488b-9474-deef705a92ae",
+                "_destination_id": "0619d05c-e88c-4959-af6d-c011875ce1bb"
+            },
+            {
+                "_source_id": "8a8aec6c-30de-48d1-86a2-c44183edaa73",
+                "_destination_id": "5aea8261-a9d6-402e-b07a-90a9d42b8ca3"
+            },
+            {
+                "_source_id": "bcfa191b-b665-44ce-89a4-6f6801d5d799",
+                "_destination_id": "f8b4921f-e1e8-4a24-9089-a25b684e1072"
+            },
+            {
+                "_source_id": "b308297b-396a-4c46-b72b-69a86324b30c",
+                "_destination_id": "e63098d0-2e9c-4ac7-b28d-773180d0bc23"
+            },
+            {
+                "_source_id": "5f57079d-0583-4ae5-91d0-4085b6263f5d",
+                "_destination_id": "8424c4fb-73b7-48d9-ad41-b2bb914abba6"
+            },
+            {
+                "_source_id": "84236b1d-9368-40ce-8b55-337edf7c07fc",
+                "_destination_id": "2000699f-ea61-4d55-a07a-562f4b24a15d"
+            },
+            {
+                "_source_id": "84236b1d-9368-40ce-8b55-337edf7c07fc",
+                "_destination_id": "75890dc7-3c3a-4538-9ac7-98ebe40996f0"
+            },
+            {
+                "_source_id": "6b4d5d5b-0ec6-4ec2-b38e-5041b0f95e92",
+                "_destination_id": "d7631f5e-2f41-446a-86e9-45a912317aeb"
+            },
+            {
+                "_source_id": "28c141a9-b22a-4fd3-b60b-f809beb8ef0d",
+                "_destination_id": "bb2f20e1-8835-45c8-bb46-7227245126c8"
+            },
+            {
+                "_source_id": "cfa346a7-bec3-410f-9b5f-a7d38b8391d7",
+                "_destination_id": "0e4dc3fb-5980-4594-a810-fe572f0b7166"
+            },
+            {
+                "_source_id": "9f417762-9a23-4f0c-85a8-058e2c382cac",
+                "_destination_id": "3b22ee35-c76a-4e28-ad8d-4b0e1763e60d"
+            },
+            {
+                "_source_id": "34a72643-a4fc-45ba-9a03-5a410bb2b7d7",
+                "_destination_id": "cc31ff36-648f-468e-a828-579d164dd2cb"
+            },
+            {
+                "_source_id": "112fb1fd-40d7-41a2-97cf-c25e08d0930d",
+                "_destination_id": "f291d709-d7c9-43d9-a55e-38fa0d2447a9"
+            },
+            {
+                "_source_id": "4adc39a1-0726-4937-9cc1-89802d9ea9f3",
+                "_destination_id": "19a8e7c9-e402-407f-946d-bcfd4666110e"
+            },
+            {
+                "_source_id": "91093b81-4257-4fcd-87cf-7b371a56f511",
+                "_destination_id": "0bd07e9e-4396-4cf3-a392-26b27c9bdac1"
+            },
+            {
+                "_source_id": "34a72643-a4fc-45ba-9a03-5a410bb2b7d7",
+                "_destination_id": "1a4dce6d-fd8b-4e08-a4e3-eae592062ca0"
+            },
+            {
+                "_source_id": "49240c8e-b56d-40ec-a565-c18162fda91d",
+                "_destination_id": "915bc8f0-ea4e-4181-973a-77751b883bbd"
+            },
+            {
+                "_source_id": "91d23368-abd1-4a24-9eba-fef45c87ad98",
+                "_destination_id": "dfa709b4-cefa-47f4-8433-4d131aad8eaa"
+            },
+            {
+                "_source_id": "d4f3a667-8bec-4f95-97b7-4dcf07992f5e",
+                "_destination_id": "45b2b500-84b7-4e41-b8b8-086d1b533a7f"
+            },
+            {
+                "_source_id": "fd973be3-ad89-44f4-9b4a-cf2670b7cf68",
+                "_destination_id": "8cd9574c-e4b4-4f1a-8fc0-3bb7e18e6570"
+            },
+            {
+                "_source_id": "a48481b3-1da9-4844-8919-aae6e3382d24",
+                "_destination_id": "402cd9da-3c18-449d-89a8-5e279d2c9744"
+            },
+            {
+                "_source_id": "841516d4-ad27-42e9-831d-6a935c179b4d",
+                "_destination_id": "08a8a7db-ae13-493b-958c-f75eeb458b85"
+            },
+            {
+                "_source_id": "ead99f7c-12d6-4bf7-a78d-e6b048079d7b",
+                "_destination_id": "75fbaae4-2487-4912-8dcd-f4bc35a23e6d"
+            },
+            {
+                "_source_id": "28e78442-a3bf-421a-b0f7-15730bce49d2",
+                "_destination_id": "2e4c46ac-edbe-4b89-b656-cb28c9c020b3"
+            },
+            {
+                "_source_id": "efe76d52-5ed0-43ef-9f79-9ee233da3ead",
+                "_destination_id": "d6cf4a80-8160-406a-adf5-a05a95c28622"
+            },
+            {
+                "_source_id": "c7a1abdc-6684-4ccc-ae18-e60dd914812e",
+                "_destination_id": "40962aa7-1702-49be-823c-4a30bf719401"
+            },
+            {
+                "_source_id": "fbc7da50-feec-4d09-9565-589a63af29a8",
+                "_destination_id": "a737ed40-77c9-445b-917b-124e9146d905"
+            }
+        ],
+        "_source_node_id": "61898949-4ad0-434d-be4e-14e2be10be18",
+        "_revision": 22
+    }
+}

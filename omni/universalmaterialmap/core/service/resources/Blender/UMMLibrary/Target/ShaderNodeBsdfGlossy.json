@@ -1,0 +1,146 @@
+{
+    "_header": {
+        "_module": "omni.universalmaterialmap.core.data",
+        "_class_name": "Target"
+    },
+    "_content": {
+        "_id": "d41abde8-4d99-4b5a-b57d-259bab45081d",
+        "_inputs": [],
+        "_outputs": [],
+        "_display_name": "ShaderNodeBsdfGlossy",
+        "_position": null,
+        "_expansion_state": 0,
+        "_show_inputs": true,
+        "_show_outputs": true,
+        "_show_peripheral": false,
+        "_nodes": [
+            {
+                "_id": "6c7fa685-f0e9-44de-98a3-fcb04d866c2c",
+                "_inputs": [
+                    {
+                        "_id": "c14367f4-f4fc-45b1-acad-68641c5954cc",
+                        "_name": "Color",
+                        "_display_name": "Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ],
+                        "_value": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "25514c76-9fed-4ecf-944f-5ea19d2f5de5",
+                        "_name": "Roughness",
+                        "_display_name": "Roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.5,
+                        "_value": 0.5
+                    },
+                    {
+                        "_id": "25214c93-e2b3-467c-a94b-77a4cb9ff661",
+                        "_name": "Normal",
+                        "_display_name": "Normal",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "8dbf9784-00bb-4466-bb68-8c4f466286b1",
+                        "_name": "Color",
+                        "_display_name": "Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ],
+                        "_value": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "1c09a532-4f5a-44e8-83dd-86c4cc89642f",
+                        "_name": "Roughness",
+                        "_display_name": "Roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.5,
+                        "_value": 0.5
+                    },
+                    {
+                        "_id": "a29a34dd-d4fa-499b-97bf-7666746b97b1",
+                        "_name": "Normal",
+                        "_display_name": "Normal",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "_class_name": "bpy.types.ShaderNodeBsdfGlossy"
+            }
+        ],
+        "_metadata": {
+            "_category": "Connector Materials",
+            "_name": "",
+            "_keywords": [
+                "Blender",
+                "bpy.types.ShaderNodeBsdfGlossy",
+                "ShaderNodeBsdfGlossy"
+            ],
+            "_supported_clients": [
+                {
+                    "_name": "Blender",
+                    "_version": "any"
+                }
+            ]
+        },
+        "_root_node_id": "6c7fa685-f0e9-44de-98a3-fcb04d866c2c",
+        "_revision": 1
+    }
+}

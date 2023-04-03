@@ -1,0 +1,1547 @@
+{
+    "_header": {
+        "_module": "omni.universalmaterialmap.core.data",
+        "_class_name": "Target"
+    },
+    "_content": {
+        "_id": "6f1b2df1-ff10-4461-b93d-1a6f9497b15d",
+        "_inputs": [],
+        "_outputs": [],
+        "_display_name": "Principled Omni PBR",
+        "_position": null,
+        "_expansion_state": 0,
+        "_show_inputs": true,
+        "_show_outputs": true,
+        "_show_peripheral": false,
+        "_nodes": [
+            {
+                "_id": "c7bd6124-2e74-493e-9448-d5e046e42cd6",
+                "_inputs": [],
+                "_outputs": [],
+                "_class_name": "Principled Omni PBR"
+            },
+            {
+                "_id": "Albedo Map",
+                "_inputs": [
+                    {
+                        "_id": "7bc70f7b-21a2-450e-bd8c-26aedee1fef8",
+                        "_name": "image",
+                        "_display_name": "Albedo Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "fd217f64-2aff-44ec-bcf3-a2012c04f453",
+                        "_name": "image",
+                        "_display_name": "Albedo Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_class_name": "ShaderNodeTexImage"
+            },
+            {
+                "_id": "ORM Map",
+                "_inputs": [
+                    {
+                        "_id": "1bf6fefa-f969-424b-aabd-3b9194d8a477",
+                        "_name": "image",
+                        "_display_name": "ORM Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "cba9e245-12df-43c3-9bf9-1fccfe90a832",
+                        "_name": "image",
+                        "_display_name": "ORM Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_class_name": "ShaderNodeTexImage"
+            },
+            {
+                "_id": "AO Map",
+                "_inputs": [
+                    {
+                        "_id": "c9a8661e-e2cd-45b4-95fa-f61bd02a8e1b",
+                        "_name": "image",
+                        "_display_name": "AO Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "92fa3344-dffa-47dd-86e6-6e11d2e2cc35",
+                        "_name": "image",
+                        "_display_name": "AO Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_class_name": "ShaderNodeTexImage"
+            },
+            {
+                "_id": "Metallic Map",
+                "_inputs": [
+                    {
+                        "_id": "59c95354-7294-4ce2-8a62-09e7b0a4b0a9",
+                        "_name": "image",
+                        "_display_name": "Metallic Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "9572f1fd-13d5-4155-abf9-efbdd55a467c",
+                        "_name": "image",
+                        "_display_name": "Metallic Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_class_name": "ShaderNodeTexImage"
+            },
+            {
+                "_id": "Roughness Map",
+                "_inputs": [
+                    {
+                        "_id": "02f2d4c0-3ffc-4b1d-a8d8-07f01c42cff0",
+                        "_name": "image",
+                        "_display_name": "Roughness Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "4c756497-c71e-4d04-82a5-b5a782d509ab",
+                        "_name": "image",
+                        "_display_name": "Roughness Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_class_name": "ShaderNodeTexImage"
+            },
+            {
+                "_id": "Principled BSDF",
+                "_inputs": [
+                    {
+                        "_id": "56cc72f9-171b-4469-a6b4-21d2bf27d399",
+                        "_name": "Transmission",
+                        "_display_name": "Transmission",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "ec90c9bb-5421-405b-991f-607bc125b770",
+                        "_name": "IOR",
+                        "_display_name": "IOR",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 1.4500000476837158,
+                        "_value": 1.4500000476837158,
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "2676ed22-0d16-49e4-aac4-d68552b1cd70",
+                        "_name": "Transmission",
+                        "_display_name": "Transmission",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "4a9cb63a-cb5a-40e2-a871-0faae8935910",
+                        "_name": "IOR",
+                        "_display_name": "IOR",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 1.4500000476837158,
+                        "_value": 1.4500000476837158,
+                        "_enum_values": []
+                    }
+                ],
+                "_class_name": "ShaderNodeBsdfPrincipled"
+            },
+            {
+                "_id": "Emissive Map",
+                "_inputs": [
+                    {
+                        "_id": "e08cd19b-7ce5-4ee6-9bea-5552dddc46e4",
+                        "_name": "image",
+                        "_display_name": "Emissive Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "c3e92225-fe0c-4743-a627-3f5a0ad57870",
+                        "_name": "image",
+                        "_display_name": "Emissive Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_class_name": "ShaderNodeTexImage"
+            },
+            {
+                "_id": "Normal Map.001",
+                "_inputs": [],
+                "_outputs": [],
+                "_class_name": "ShaderNodeTexImage"
+            },
+            {
+                "_id": "Normal Map",
+                "_inputs": [
+                    {
+                        "_id": "8c6d4085-26a1-4a4e-a297-c9824d5d4377",
+                        "_name": "image",
+                        "_display_name": "Normal Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "4413610f-d048-4ed5-b399-e59099b4a442",
+                        "_name": "image",
+                        "_display_name": "Normal Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_class_name": "ShaderNodeTexImage"
+            },
+            {
+                "_id": "Detail Mapping",
+                "_inputs": [
+                    {
+                        "_id": "5c097c0c-c521-4d4e-8208-3d0aa6d65d09",
+                        "_name": "Rotation",
+                        "_display_name": "Detail Texture Rotate",
+                        "_value_type": "list",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "391386f1-7b60-4fc8-ace4-8e6a19e5b591",
+                        "_name": "Scale",
+                        "_display_name": "Detail Texture Scale",
+                        "_value_type": "list",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_value": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "5a33f391-dfd5-426a-9daf-a540803d52d6",
+                        "_name": "Location",
+                        "_display_name": "Detail Texture Translate",
+                        "_value_type": "list",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "cdcd92a3-306d-457c-ba1e-edd1d0bf20ac",
+                        "_name": "Rotation",
+                        "_display_name": "Detail Texture Rotate",
+                        "_value_type": "list",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "b8b13c5f-daac-4d9f-aac2-9cc1736580ac",
+                        "_name": "Scale",
+                        "_display_name": "Detail Texture Scale",
+                        "_value_type": "list",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_value": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "2ef6f801-2379-4b16-aa4d-dec03ab73b6b",
+                        "_name": "Location",
+                        "_display_name": "Detail Texture Translate",
+                        "_value_type": "list",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_class_name": "ShaderNodeMapping"
+            },
+            {
+                "_id": "Base Mapping",
+                "_inputs": [
+                    {
+                        "_id": "b2fd7847-7450-4713-af3b-e680ccac7764",
+                        "_name": "Rotation",
+                        "_display_name": "Texture Rotate",
+                        "_value_type": "list",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "14778cfd-92c0-443a-9fcf-73ae58e325f7",
+                        "_name": "Scale",
+                        "_display_name": "Texture Scale",
+                        "_value_type": "list",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_value": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "cb7a2081-d8d5-4307-9aa2-b71b71af5725",
+                        "_name": "Location",
+                        "_display_name": "Texture Translate",
+                        "_value_type": "list",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "286a6e8d-cbf1-4bda-9b53-0bcfe71a44a8",
+                        "_name": "Rotation",
+                        "_display_name": "Texture Rotate",
+                        "_value_type": "list",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "951bb09a-d43d-4476-91b3-edf225cab8c5",
+                        "_name": "Scale",
+                        "_display_name": "Texture Scale",
+                        "_value_type": "list",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_value": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "4f92f52c-5678-4665-a814-3af4e20c6b8e",
+                        "_name": "Location",
+                        "_display_name": "Texture Translate",
+                        "_value_type": "list",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_enum_values": []
+                    }
+                ],
+                "_class_name": "ShaderNodeMapping"
+            },
+            {
+                "_id": "UV Map",
+                "_inputs": [],
+                "_outputs": [],
+                "_class_name": "ShaderNodeUVMap"
+            },
+            {
+                "_id": "OmniPBR Compute",
+                "_inputs": [
+                    {
+                        "_id": "27327169-f7a4-4b77-9610-87125d222c10",
+                        "_name": "Albedo Add",
+                        "_display_name": "Albedo Add",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "040f2285-1b8d-4397-8e58-b33d6f685219",
+                        "_name": "Albedo Brightness",
+                        "_display_name": "Albedo Brightness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 1.0,
+                        "_value": 1.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "e02740de-8a71-4e09-b566-2d9bc5ea0f70",
+                        "_name": "Albedo Desaturation",
+                        "_display_name": "Albedo Desaturation",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "baa65222-18d9-4506-86e4-5405cd5be172",
+                        "_name": "AO to Diffuse",
+                        "_display_name": "AO to Diffuse",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "631a737b-c8e2-4a35-9fb2-a10434d53f26",
+                        "_name": "Normal Map Strength",
+                        "_display_name": "Normal Map Strength",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 1.0,
+                        "_value": 1.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "6f95ecea-7691-4ed8-9e7f-1855ba25cfaa",
+                        "_name": "Detail Normal Strength",
+                        "_display_name": "Detail Normal Strength",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 1.0,
+                        "_value": 1.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "c938e31a-98dc-4cdf-8a13-803cb910de54",
+                        "_name": "Albedo RGB",
+                        "_display_name": "Albedo RGB",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": [
+                            0.20000000298023224,
+                            0.20000000298023224,
+                            0.20000000298023224,
+                            1.0
+                        ],
+                        "_value": [
+                            0.20000000298023224,
+                            0.20000000298023224,
+                            0.20000000298023224,
+                            1.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "f022cd14-2f8f-4d33-af13-ace9516fe210",
+                        "_name": "Albedo Tint",
+                        "_display_name": "Albedo Tint",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "279e1f57-1d32-4de2-8339-35903efe0cb1",
+                        "_name": "Emissive Color",
+                        "_display_name": "Emissive Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "66b11ff4-e103-4dcc-82c0-30907d8df6ca",
+                        "_name": "Emissive Intensity",
+                        "_display_name": "Emissive Intensity",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 40.0,
+                        "_value": 40.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "257b714c-a044-4626-918b-f4705f5cf51f",
+                        "_name": "Enable Emission",
+                        "_display_name": "Enable Emission",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "0fe4a168-1a25-4aef-b5f5-d83e669cb748",
+                        "_name": "Use ORM Map",
+                        "_display_name": "Use ORM Map",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "6f468e93-edce-4f75-bc57-fc91b2be5412",
+                        "_name": "Metallic Amount",
+                        "_display_name": "Metallic Amount",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "2513695f-587c-46c0-9c7f-1e2c599e0a20",
+                        "_name": "Metallic Map Influence",
+                        "_display_name": "Metallic Map Influence",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "5db802bb-029b-4d0e-a5b9-d3e5bd1d2fbf",
+                        "_name": "Roughness Amount",
+                        "_display_name": "Roughness Amount",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0.5,
+                        "_value": 0.5,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "9fb6055a-7d85-41dd-9939-9d9c39896e64",
+                        "_name": "Roughness Map Influence",
+                        "_display_name": "Roughness Map Influence",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "42e4c080-de78-4f58-8f47-a6f5cb8dfd7f",
+                        "_name": "Specular",
+                        "_display_name": "Specular",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0.5,
+                        "_value": 0.5,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "77bddccc-5126-47b3-b97b-8ad9d20316fa",
+                        "_name": "Enable Opacity",
+                        "_display_name": "Enable Opacity",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "c8ab57cf-5bef-4d22-b965-61fa2caa7358",
+                        "_name": "Opacity Amount",
+                        "_display_name": "Opacity Amount",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "11c8ed1d-7e94-486c-bb0d-99d2e5ea553b",
+                        "_name": "Enable Opacity Texture",
+                        "_display_name": "Enable Opacity Texture",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "acae313e-9654-439a-be6f-340ed2a5c596",
+                        "_name": "Opacity Threshold",
+                        "_display_name": "Opacity Threshold",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "3bd3f2bc-9c3d-44be-81eb-8c7eac140fa8",
+                        "_name": "Enable Project UVW Coordinates",
+                        "_display_name": "Enable Project UVW Coordinates",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "bbd553cf-741b-4338-a898-4f02a0963b1a",
+                        "_name": "Enable World Space",
+                        "_display_name": "Enable World Space",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "1155a386-73af-417f-9be5-ecd67f900ac9",
+                        "_name": "Opacity Mono Source",
+                        "_display_name": "Opacity Mono Source",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 1,
+                        "_value": 1,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "0d247625-0085-4f5c-9f77-8f8882834dba",
+                        "_name": "UV Space Index",
+                        "_display_name": "UV Space Index",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "6aca8cf7-481e-4d77-8116-113792354b56",
+                        "_name": "Normal Map Flip U Tangent",
+                        "_display_name": "Normal Map Flip U Tangent",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "8ee4ea8c-60e4-4e81-a706-64ec5ba3c606",
+                        "_name": "Normal Map Flip V Tangent",
+                        "_display_name": "Normal Map Flip V Tangent",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": 1,
+                        "_value": 1,
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "8035c987-2d86-4b21-b243-248b760f0921",
+                        "_name": "Albedo Add",
+                        "_display_name": "Albedo Add",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "62990c97-8d21-4b41-80f4-2c348c66b2aa",
+                        "_name": "Albedo Brightness",
+                        "_display_name": "Albedo Brightness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 1.0,
+                        "_value": 1.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "18e6886e-616e-488d-b1c3-bd0c09c5b53d",
+                        "_name": "Albedo Desaturation",
+                        "_display_name": "Albedo Desaturation",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "1d28901c-aa82-4370-88ad-a4eb2059e5d3",
+                        "_name": "AO to Diffuse",
+                        "_display_name": "AO to Diffuse",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "d505b6e1-1c8c-434a-8a41-310d9f7c6411",
+                        "_name": "Normal Map Strength",
+                        "_display_name": "Normal Map Strength",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 1.0,
+                        "_value": 1.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "29520faa-3951-4a5b-9f30-ffd3f9326620",
+                        "_name": "Detail Normal Strength",
+                        "_display_name": "Detail Normal Strength",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 1.0,
+                        "_value": 1.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "6db27867-0a8d-48f8-bf28-62659ca6f1b0",
+                        "_name": "Albedo RGB",
+                        "_display_name": "Albedo RGB",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": [
+                            0.20000000298023224,
+                            0.20000000298023224,
+                            0.20000000298023224,
+                            1.0
+                        ],
+                        "_value": [
+                            0.20000000298023224,
+                            0.20000000298023224,
+                            0.20000000298023224,
+                            1.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "6bde25c2-a5ea-4ecf-a6be-fe5169cb4e32",
+                        "_name": "Albedo Tint",
+                        "_display_name": "Albedo Tint",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "9122f0ee-3617-4ffd-8535-45646df94332",
+                        "_name": "Emissive Color",
+                        "_display_name": "Emissive Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "6c4ea638-4901-43b9-961e-f8019f368262",
+                        "_name": "Emissive Intensity",
+                        "_display_name": "Emissive Intensity",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 40.0,
+                        "_value": 40.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "7ca3672d-5504-4501-9993-3e45ab0089f3",
+                        "_name": "Enable Emission",
+                        "_display_name": "Enable Emission",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "0fb0e24f-dea7-472d-92b8-9e06d5a31aad",
+                        "_name": "Use ORM Map",
+                        "_display_name": "Use ORM Map",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "eba053bd-57c5-400b-865a-510daeffe7d6",
+                        "_name": "Metallic Amount",
+                        "_display_name": "Metallic Amount",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "1866859e-0163-44ac-a263-add902286129",
+                        "_name": "Metallic Map Influence",
+                        "_display_name": "Metallic Map Influence",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "90dfa10f-657e-4516-8b19-68c96e278c5d",
+                        "_name": "Roughness Amount",
+                        "_display_name": "Roughness Amount",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0.5,
+                        "_value": 0.5,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "448df5e0-cdba-4f69-9e2e-ba08292b4805",
+                        "_name": "Roughness Map Influence",
+                        "_display_name": "Roughness Map Influence",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "2246c0b0-4864-4cc5-ae23-32bea2648d66",
+                        "_name": "Specular",
+                        "_display_name": "Specular",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0.5,
+                        "_value": 0.5,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "943b1c5c-8f0e-445d-8f28-cf61d978b957",
+                        "_name": "Enable Opacity",
+                        "_display_name": "Enable Opacity",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "dbda4e78-dc9c-4c1c-8e68-fc313f119bd4",
+                        "_name": "Opacity Amount",
+                        "_display_name": "Opacity Amount",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "ca875221-49e7-4abd-891d-349ee499bf2d",
+                        "_name": "Enable Opacity Texture",
+                        "_display_name": "Enable Opacity Texture",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "12d90cd3-4e06-4d1c-9fb0-868c7aa2bff1",
+                        "_name": "Opacity Threshold",
+                        "_display_name": "Opacity Threshold",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "589e3208-ed4b-4519-8b06-0714c8762eff",
+                        "_name": "Enable Project UVW Coordinates",
+                        "_display_name": "Enable Project UVW Coordinates",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "6f228ca3-675e-4429-a32a-6835681e38bf",
+                        "_name": "Enable World Space",
+                        "_display_name": "Enable World Space",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "e4933be0-5585-4b97-a950-85183be6768a",
+                        "_name": "Opacity Mono Source",
+                        "_display_name": "Opacity Mono Source",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 1,
+                        "_value": 1,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "c103dc61-49e6-468a-a85c-897a7dc1c641",
+                        "_name": "UV Space Index",
+                        "_display_name": "UV Space Index",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "0e0661c4-dc86-4c8e-8970-f3be3eab6f52",
+                        "_name": "Normal Map Flip U Tangent",
+                        "_display_name": "Normal Map Flip U Tangent",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 0,
+                        "_value": 0,
+                        "_enum_values": []
+                    },
+                    {
+                        "_id": "30c3b04a-af6e-470f-a209-8cb02d625fef",
+                        "_name": "Normal Map Flip V Tangent",
+                        "_display_name": "Normal Map Flip V Tangent",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": 1,
+                        "_value": 1,
+                        "_enum_values": []
+                    }
+                ],
+                "_class_name": "ShaderNodeGroup"
+            },
+            {
+                "_id": "Material Output",
+                "_inputs": [],
+                "_outputs": [],
+                "_class_name": "ShaderNodeOutputMaterial"
+            },
+            {
+                "_id": "Detail Normal Map",
+                "_inputs": [
+                    {
+                        "_id": "2a32fd16-7e99-44b5-9a09-fbd9c30c216f",
+                        "_name": "image",
+                        "_display_name": "Detail Normal Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "ffddd34a-adfc-4a16-ba91-62a62744a2d9",
+                        "_name": "image",
+                        "_display_name": "Detail Normal Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_class_name": "ShaderNodeTexImage"
+            },
+            {
+                "_id": "Mapping",
+                "_inputs": [],
+                "_outputs": [],
+                "_class_name": "ShaderNodeMapping"
+            },
+            {
+                "_id": "Mapping.001",
+                "_inputs": [],
+                "_outputs": [],
+                "_class_name": "ShaderNodeMapping"
+            },
+            {
+                "_id": "Emissive Mask Map",
+                "_inputs": [
+                    {
+                        "_id": "6ffdd438-f65b-4ddd-afa6-1c290ff96114",
+                        "_name": "image",
+                        "_display_name": "Emissive Mask Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "9cb526f6-3e0e-424c-8e22-e10ec52d5c09",
+                        "_name": "image",
+                        "_display_name": "Emissive Mask Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_class_name": "ShaderNodeTexImage"
+            },
+            {
+                "_id": "Opacity Map",
+                "_inputs": [
+                    {
+                        "_id": "6998e9d6-6989-4769-9ff2-9c3cc5ed1283",
+                        "_name": "image",
+                        "_display_name": "Opacity Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "cb1e031c-5bdc-4059-895e-7ca512ee86df",
+                        "_name": "image",
+                        "_display_name": "Opacity Map",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_is_removable": false,
+                        "_default_value": "['', 'raw']",
+                        "_value": "['', 'raw']",
+                        "_enum_values": []
+                    }
+                ],
+                "_class_name": "ShaderNodeTexImage"
+            },
+            {
+                "_id": "Frame.002",
+                "_inputs": [],
+                "_outputs": [],
+                "_class_name": "NodeFrame"
+            },
+            {
+                "_id": "Frame.001",
+                "_inputs": [],
+                "_outputs": [],
+                "_class_name": "NodeFrame"
+            },
+            {
+                "_id": "Frame",
+                "_inputs": [],
+                "_outputs": [],
+                "_class_name": "NodeFrame"
+            },
+            {
+                "_id": "Frame.004",
+                "_inputs": [],
+                "_outputs": [],
+                "_class_name": "NodeFrame"
+            },
+            {
+                "_id": "Frame.003",
+                "_inputs": [],
+                "_outputs": [],
+                "_class_name": "NodeFrame"
+            },
+            {
+                "_id": "Frame.005",
+                "_inputs": [],
+                "_outputs": [],
+                "_class_name": "NodeFrame"
+            }
+        ],
+        "_metadata": {
+            "_category": "Connector Materials",
+            "_name": "",
+            "_keywords": [
+                "Blender",
+                "Principled Omni PBR",
+                "Principled Omni PBR"
+            ],
+            "_supported_clients": [
+                {
+                    "_name": "Blender",
+                    "_version": "any"
+                }
+            ]
+        },
+        "_root_node_id": "c7bd6124-2e74-493e-9448-d5e046e42cd6",
+        "_revision": 18,
+        "_connections": []
+    }
+}

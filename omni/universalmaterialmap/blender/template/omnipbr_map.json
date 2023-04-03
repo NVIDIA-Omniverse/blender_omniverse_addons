@@ -1,0 +1,274 @@
+{
+    "maps": [
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Albedo Add",
+            "mdl_name": "albedo_add",
+            "umm_display_name": "Albedo Add"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Albedo Brightness",
+            "mdl_name": "albedo_brightness",
+            "umm_display_name": "Albedo Brightness"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Albedo Desaturation",
+            "mdl_name": "albedo_desaturation",
+            "umm_display_name": "Albedo Desaturation"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "AO to Diffuse",
+            "mdl_name": "ao_to_diffuse",
+            "umm_display_name": "AO to Diffuse"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Normal Map Strength",
+            "mdl_name": "bump_factor",
+            "umm_display_name": "Normal Map Strength"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Detail Normal Strength",
+            "mdl_name": "detail_bump_factor",
+            "umm_display_name": "Detail Normal Strength"
+        },
+        {
+            "blender_node": "Detail Normal Map",
+            "blender_socket": "image",
+            "mdl_name": "detail_normalmap_texture",
+            "umm_display_name": "Detail Normal Map"
+        },
+        {
+            "blender_node": "AO Map",
+            "blender_socket": "image",
+            "mdl_name": "ao_texture",
+            "umm_display_name": "AO Map"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Albedo RGB",
+            "mdl_name": "diffuse_color_constant",
+            "umm_display_name": "Albedo RGB"
+        },
+        {
+            "blender_node": "Albedo Map",
+            "blender_socket": "image",
+            "mdl_name": "diffuse_texture",
+            "umm_display_name": "Albedo Map"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Albedo Tint",
+            "mdl_name": "diffuse_tint",
+            "umm_display_name": "Albedo Tint"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Emissive Color",
+            "mdl_name": "emissive_color",
+            "umm_display_name": "Emissive Color"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Emissive Intensity",
+            "mdl_name": "emissive_intensity",
+            "umm_display_name": "Emissive Intensity"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Enable Emission",
+            "mdl_name": "enable_emission",
+            "umm_display_name": "Enable Emission"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Use ORM Map",
+            "mdl_name": "enable_ORM_texture",
+            "umm_display_name": "Use ORM Map"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Metallic Amount",
+            "mdl_name": "metallic_constant",
+            "umm_display_name": "Metallic Amount"
+        },
+        {
+            "blender_node": "Metallic Map",
+            "blender_socket": "image",
+            "mdl_name": "metallic_texture",
+            "umm_display_name": "Metallic Map"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Metallic Map Influence",
+            "mdl_name": "metallic_texture_influence",
+            "umm_display_name": "Metallic Map Influence"
+        },
+        {
+            "blender_node": "Normal Map",
+            "blender_socket": "image",
+            "mdl_name": "normalmap_texture",
+            "umm_display_name": "Normal Map"
+        },
+        {
+            "blender_node": "ORM Map",
+            "blender_socket": "image",
+            "mdl_name": "ORM_texture",
+            "umm_display_name": "ORM Map"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Roughness Amount",
+            "mdl_name": "reflection_roughness_constant",
+            "umm_display_name": "Roughness Amount"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Roughness Map Influence",
+            "mdl_name": "reflection_roughness_texture_influence",
+            "umm_display_name": "Roughness Map Influence"
+        },
+        {
+            "blender_node": "Roughness Map",
+            "blender_socket": "image",
+            "mdl_name": "reflectionroughness_texture",
+            "umm_display_name": "Roughness Map"
+        },
+        {
+            "blender_node": "Emissive Map",
+            "blender_socket": "image",
+            "mdl_name": "emissive_color_texture",
+            "umm_display_name": "Emissive Map"
+        },
+        {
+            "blender_node": "Emissive Mask Map",
+            "blender_socket": "image",
+            "mdl_name": "emissive_mask_texture",
+            "umm_display_name": "Emissive Mask Map"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Specular",
+            "mdl_name": "specular_level",
+            "umm_display_name": "Specular"
+        },
+        {
+            "blender_node": "Principled BSDF",
+            "blender_socket": "Transmission",
+            "mdl_name": "",
+            "umm_display_name": "Transmission"
+        },
+        {
+            "blender_node": "Principled BSDF",
+            "blender_socket": "IOR",
+            "mdl_name": "",
+            "umm_display_name": "IOR"
+        },
+        {
+            "blender_node": "Base Mapping",
+            "blender_socket": "Rotation",
+            "mdl_name": "texture_rotate",
+            "umm_display_name": "Texture Rotate"
+        },
+        {
+            "blender_node": "Base Mapping",
+            "blender_socket": "Scale",
+            "mdl_name": "texture_scale",
+            "umm_display_name": "Texture Scale"
+        },
+        {
+            "blender_node": "Base Mapping",
+            "blender_socket": "Location",
+            "mdl_name": "texture_translate",
+            "umm_display_name": "Texture Translate"
+        },
+        {
+            "blender_node": "Detail Mapping",
+            "blender_socket": "Rotation",
+            "mdl_name": "detail_texture_rotate",
+            "umm_display_name": "Detail Texture Rotate"
+        },
+        {
+            "blender_node": "Detail Mapping",
+            "blender_socket": "Scale",
+            "mdl_name": "detail_texture_scale",
+            "umm_display_name": "Detail Texture Scale"
+        },
+        {
+            "blender_node": "Detail Mapping",
+            "blender_socket": "Location",
+            "mdl_name": "detail_texture_translate",
+            "umm_display_name": "Detail Texture Translate"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Enable Opacity",
+            "mdl_name": "enable_opacity",
+            "umm_display_name": "Enable Opacity"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Opacity Amount",
+            "mdl_name": "opacity_constant",
+            "umm_display_name": "Opacity Amount"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Enable Opacity Texture",
+            "mdl_name": "enable_opacity_texture",
+            "umm_display_name": "Enable Opacity Texture"
+        },
+        {
+            "blender_node": "Opacity Map",
+            "blender_socket": "image",
+            "mdl_name": "opacity_texture",
+            "umm_display_name": "Opacity Map"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Opacity Threshold",
+            "mdl_name": "opacity_threshold",
+            "umm_display_name": "Opacity Threshold"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Opacity Mono Source",
+            "mdl_name": "opacity_threshold",
+            "umm_display_name": "Opacity Mono Source"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Enable Project UVW Coordinates",
+            "mdl_name": "project_uvw",
+            "umm_display_name": "Enable Project UVW Coordinates"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Enable World Space",
+            "mdl_name": "world_or_object",
+            "umm_display_name": "Enable World Space"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "UV Space Index",
+            "mdl_name": "uv_space_index",
+            "umm_display_name": "UV Space Index"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Normal Map Flip U Tangent",
+            "mdl_name": "flip_tangent_u",
+            "umm_display_name": "Normal Map Flip U Tangent"
+        },
+        {
+            "blender_node": "OmniPBR Compute",
+            "blender_socket": "Normal Map Flip V Tangent",
+            "mdl_name": "flip_tangent_v",
+            "umm_display_name": "Normal Map Flip V Tangent"
+        }
+    ]
+}

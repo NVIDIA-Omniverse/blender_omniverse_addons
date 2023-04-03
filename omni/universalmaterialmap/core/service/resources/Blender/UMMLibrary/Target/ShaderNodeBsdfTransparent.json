@@ -1,0 +1,86 @@
+{
+    "_header": {
+        "_module": "omni.universalmaterialmap.core.data",
+        "_class_name": "Target"
+    },
+    "_content": {
+        "_id": "7698b19b-ebed-4463-a468-637d1c832978",
+        "_inputs": [],
+        "_outputs": [],
+        "_display_name": "ShaderNodeBsdfTransparent",
+        "_position": null,
+        "_expansion_state": 0,
+        "_show_inputs": true,
+        "_show_outputs": true,
+        "_show_peripheral": false,
+        "_nodes": [
+            {
+                "_id": "9ff776d8-ea74-4721-b302-4ad48c6b6611",
+                "_inputs": [
+                    {
+                        "_id": "9a80fbff-de1d-4a30-ba39-8ef958b2a2d5",
+                        "_name": "Color",
+                        "_display_name": "Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "93f3c2e7-addc-4c6d-99f5-9135dff02e04",
+                        "_name": "Color",
+                        "_display_name": "Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "_class_name": "bpy.types.ShaderNodeBsdfTransparent"
+            }
+        ],
+        "_metadata": {
+            "_category": "Connector Materials",
+            "_name": "",
+            "_keywords": [
+                "Blender",
+                "bpy.types.ShaderNodeBsdfTransparent",
+                "ShaderNodeBsdfTransparent"
+            ],
+            "_supported_clients": [
+                {
+                    "_name": "Blender",
+                    "_version": "any"
+                }
+            ]
+        },
+        "_root_node_id": "9ff776d8-ea74-4721-b302-4ad48c6b6611",
+        "_revision": 1
+    }
+}

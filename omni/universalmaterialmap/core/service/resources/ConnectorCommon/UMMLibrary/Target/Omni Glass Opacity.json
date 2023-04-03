@@ -1,0 +1,1964 @@
+{
+    "_content": {
+        "_nodes": [
+            {
+                "_class_name": "OmniGlass_Opacity.mdl|OmniGlass_Opacity", 
+                "_id": "012edf26-7699-4814-a32a-150d8d67dd69", 
+                "_outputs": [
+                    {
+                        "_default_value": null, 
+                        "_is_editable": true, 
+                        "_value_type": "any", 
+                        "_name": "message", 
+                        "_value": null, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "message", 
+                        "_display_name": "Message", 
+                        "_id": "e1edb9c1-50a4-422f-8c76-72958d4336a1", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": true, 
+                        "_value_type": "bool", 
+                        "_name": "caching", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Caching", 
+                        "_id": "0289c5ed-3b44-4d30-9428-b6a719b9221f", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": true, 
+                        "_value_type": "bool", 
+                        "_name": "frozen", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Frozen", 
+                        "_id": "9921bf05-6b2e-4461-9cf8-aec2abe9b100", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": 2, 
+                        "_is_editable": true, 
+                        "_value_type": "any", 
+                        "_name": "isHistoricallyInteresting", 
+                        "_value": 2, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "byte", 
+                        "_display_name": "Is Historically Interesting", 
+                        "_id": "290a11a4-b41f-4139-8104-25cc23d5fb24", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": 0, 
+                        "_is_editable": true, 
+                        "_value_type": "enum", 
+                        "_name": "nodeState", 
+                        "_value": 0, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "enum", 
+                        "_display_name": "Node State", 
+                        "_id": "3fa799f4-84f9-44ed-acb8-c453862b3cd7", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "list", 
+                        "_name": "binMembership", 
+                        "_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "string", 
+                        "_display_name": "Bin Membership", 
+                        "_id": "5557445b-3110-4d2e-bfb0-fd861034f134", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": 1, 
+                        "_is_editable": true, 
+                        "_value_type": "int", 
+                        "_name": "baking_samples", 
+                        "_value": 1, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "short", 
+                        "_display_name": "Baking Samples", 
+                        "_id": "7d7a1733-7075-4653-9c6b-63903ca26f26", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": 2, 
+                        "_is_editable": true, 
+                        "_value_type": "int", 
+                        "_name": "baking_mode", 
+                        "_value": 2, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "short", 
+                        "_display_name": "Baking Mode", 
+                        "_id": "69c7cfec-a5ba-45a1-9f74-69c7d31c5cac", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            "mdl::OmniGlass_Opacity::OmniGlass_Opacity", 
+                            "auto"
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "list", 
+                        "_name": "mdlNodeName", 
+                        "_value": [
+                            "mdl::OmniGlass_Opacity::OmniGlass_Opacity", 
+                            "auto"
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "string", 
+                        "_display_name": "Mdl Node Name", 
+                        "_id": "c23655c2-1243-42d9-bd8a-bf12e6cf08ce", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            "L/Library/MDL/Base/OmniGlass_Opacity/OmniGlass_Opacity", 
+                            "auto"
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "list", 
+                        "_name": "mdlMaterialDescription", 
+                        "_value": [
+                            "L/Library/MDL/Base/OmniGlass_Opacity/OmniGlass_Opacity", 
+                            "auto"
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "string", 
+                        "_display_name": "Mdl Material Description", 
+                        "_id": "c4ac12c0-982d-4a49-871e-ee4bb13778cd", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            1.0, 
+                            1.0, 
+                            1.0
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "vector3", 
+                        "_name": "outColor", 
+                        "_value": [
+                            1.0, 
+                            1.0, 
+                            1.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float3", 
+                        "_display_name": "Out Color", 
+                        "_id": "bee666fb-4f7e-4d88-9c5f-2f6b2ab2ac74", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "list", 
+                        "_name": "outMDL", 
+                        "_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "string", 
+                        "_display_name": "Out M D L", 
+                        "_id": "5509721a-35db-4d27-b427-1bffa24321cd", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": true, 
+                        "_value_type": "bool", 
+                        "_name": "dirtyTrigger", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Dirty Trigger", 
+                        "_id": "1ba9d0c2-b187-4b6d-adb9-8357c5b6d39d", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "vector3", 
+                        "_name": "udimColor", 
+                        "_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float3", 
+                        "_display_name": "Udim Color", 
+                        "_id": "03c548d5-d7f1-47bc-af79-77f8715e7dd9", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "vector3", 
+                        "_name": "pointObj", 
+                        "_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float3", 
+                        "_display_name": "Point Obj", 
+                        "_id": "331ba739-2f6c-48a6-8cb9-377b1d9fee50", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "vector3", 
+                        "_name": "pointWorld", 
+                        "_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float3", 
+                        "_display_name": "Point World", 
+                        "_id": "65c938a8-576c-4056-b368-a2b4c95b3295", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "vector3", 
+                        "_name": "pointCamera", 
+                        "_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float3", 
+                        "_display_name": "Point Camera", 
+                        "_id": "8f67aab9-045b-42a1-bb4d-00058110d5ba", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "vector3", 
+                        "_name": "normalCamera", 
+                        "_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float3", 
+                        "_display_name": "Normal Camera", 
+                        "_id": "8d6bad25-73b2-4411-ac92-95b2fde72f09", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            0.0, 
+                            0.0
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "vector2", 
+                        "_name": "uvCoord", 
+                        "_value": [
+                            0.0, 
+                            0.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float2", 
+                        "_display_name": "Uv Coord", 
+                        "_id": "cb1117ba-07b9-4999-b8a8-6011a974dc06", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "vector3", 
+                        "_name": "transparency", 
+                        "_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float3", 
+                        "_display_name": "Transparency", 
+                        "_id": "a3fc2d81-c05a-4ff9-994c-0c587f574ec6", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "vector3", 
+                        "_name": "outTransparency", 
+                        "_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float3", 
+                        "_display_name": "Out Transparency", 
+                        "_id": "6af55ed8-cc9b-474e-b44b-630731598c36", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            [
+                                0.0, 
+                                0.0, 
+                                0.0
+                            ], 
+                            false, 
+                            [
+                                1.0, 
+                                1.0, 
+                                1.0
+                            ], 
+                            null, 
+                            false, 
+                            0.0, 
+                            1.4910000562667847, 
+                            false, 
+                            0.0010000000474974513, 
+                            1.0, 
+                            null, 
+                            false, 
+                            null, 
+                            false, 
+                            [
+                                1.0, 
+                                1.0, 
+                                1.0
+                            ], 
+                            null, 
+                            false, 
+                            1.0, 
+                            true, 
+                            1.0, 
+                            null, 
+                            false, 
+                            0, 
+                            0.0, 
+                            false, 
+                            false, 
+                            0, 
+                            [
+                                0.0, 
+                                0.0
+                            ], 
+                            0.0, 
+                            [
+                                1.0, 
+                                1.0
+                            ]
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "any", 
+                        "_name": "mdl_material_parameters", 
+                        "_value": [
+                            [
+                                0.0, 
+                                0.0, 
+                                0.0
+                            ], 
+                            false, 
+                            [
+                                1.0, 
+                                1.0, 
+                                1.0
+                            ], 
+                            null, 
+                            false, 
+                            0.0, 
+                            1.4910000562667847, 
+                            false, 
+                            0.0010000000474974513, 
+                            1.0, 
+                            null, 
+                            false, 
+                            null, 
+                            false, 
+                            [
+                                1.0, 
+                                1.0, 
+                                1.0
+                            ], 
+                            null, 
+                            false, 
+                            1.0, 
+                            true, 
+                            1.0, 
+                            null, 
+                            false, 
+                            0, 
+                            0.0, 
+                            false, 
+                            false, 
+                            0, 
+                            [
+                                0.0, 
+                                0.0
+                            ], 
+                            0.0, 
+                            [
+                                1.0, 
+                                1.0
+                            ]
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "TdataCompound", 
+                        "_display_name": "Mdl Material Parameters", 
+                        "_id": "26038628-bcc8-435b-b272-ccf625eb59a2", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "vector3", 
+                        "_name": "absorption_coeff", 
+                        "_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float3", 
+                        "_display_name": "", 
+                        "_id": "605132e2-96de-49be-9bee-f1e04c15c3ac", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": true, 
+                        "_value_type": "bool", 
+                        "_name": "use_glass_color_texture", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "", 
+                        "_id": "cf43d1f9-8dfe-4a1d-9705-67f3d42c1cea", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": [
+                            1.0, 
+                            1.0, 
+                            1.0
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "vector3", 
+                        "_name": "glass_color", 
+                        "_value": [
+                            1.0, 
+                            1.0, 
+                            1.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float3", 
+                        "_display_name": "Glass Color", 
+                        "_id": "a75fcb77-9d43-476f-963b-bdb2fdb6d409", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "list", 
+                        "_name": "glass_color_texture", 
+                        "_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "string", 
+                        "_display_name": "Glass Color Texture", 
+                        "_id": "88dd2158-5800-4ceb-8dcf-6db825bc23dc", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": true, 
+                        "_value_type": "bool", 
+                        "_name": "glass_color_texturesRGB", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Glass Color Textures R G B", 
+                        "_id": "47f1ed58-f575-4f05-b9a3-8f970af5fc24", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": 0.0, 
+                        "_is_editable": true, 
+                        "_value_type": "float", 
+                        "_name": "frosting_roughness", 
+                        "_value": 0.0, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float", 
+                        "_display_name": "Glass Roughness", 
+                        "_id": "cc2fdb26-eb37-4e20-9e4d-057907bef99c", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": 1.4910000562667847, 
+                        "_is_editable": true, 
+                        "_value_type": "float", 
+                        "_name": "glass_ior", 
+                        "_value": 1.4910000562667847, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float", 
+                        "_display_name": "Glass IOR", 
+                        "_id": "1377033c-1201-4a79-b04c-5d27452acba3", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": true, 
+                        "_value_type": "bool", 
+                        "_name": "thin_walled", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Thin Walled", 
+                        "_id": "221bc479-1022-477d-afa5-3d1e7edae5cc", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": 0.0010000000474974513, 
+                        "_is_editable": true, 
+                        "_value_type": "float", 
+                        "_name": "depth", 
+                        "_value": 0.0010000000474974513, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float", 
+                        "_display_name": "Volume Absorption Scale", 
+                        "_id": "aae80362-eb70-486a-b31c-9d86a454ffb3", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": 1.0, 
+                        "_is_editable": true, 
+                        "_value_type": "float", 
+                        "_name": "roughness_texture_influence", 
+                        "_value": 1.0, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float", 
+                        "_display_name": "Roughness Texture Influence", 
+                        "_id": "33d7dc8c-22a3-4d8e-b31b-26140e76e725", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "list", 
+                        "_name": "roughness_texture", 
+                        "_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "string", 
+                        "_display_name": "Roughness Texture", 
+                        "_id": "68574be0-be05-4042-8e21-2876731f9342", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": true, 
+                        "_value_type": "bool", 
+                        "_name": "roughness_texturesRGB", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Roughness Textures R G B", 
+                        "_id": "1a1134f7-a2d9-4b98-98a8-405cf406a7ed", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "list", 
+                        "_name": "reflection_color_texture", 
+                        "_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "string", 
+                        "_display_name": "Reflection Color Texture", 
+                        "_id": "674dc237-d6bd-4835-9c39-267be11d8532", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": true, 
+                        "_value_type": "bool", 
+                        "_name": "reflection_color_texturesRGB", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Reflection Color Textures R G B", 
+                        "_id": "e95c1c87-987c-46e2-a903-60a3b2f4e5f6", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            1.0, 
+                            1.0, 
+                            1.0
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "vector3", 
+                        "_name": "reflection_color", 
+                        "_value": [
+                            1.0, 
+                            1.0, 
+                            1.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float3", 
+                        "_display_name": "Reflection Color", 
+                        "_id": "e3727dea-8ecb-4ce6-adac-8b147df86f2a", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "list", 
+                        "_name": "normal_map_texture", 
+                        "_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "string", 
+                        "_display_name": "Normal Map Texture", 
+                        "_id": "23a736d1-69b5-4655-ae08-3eff0f853236", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": true, 
+                        "_value_type": "bool", 
+                        "_name": "normal_map_texturesRGB", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Normal Map Textures R G B", 
+                        "_id": "44d53208-e9d1-4ecc-937f-fbf3e86c952b", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": 1.0, 
+                        "_is_editable": true, 
+                        "_value_type": "float", 
+                        "_name": "normal_map_strength", 
+                        "_value": 1.0, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float", 
+                        "_display_name": "Normal Map Strength", 
+                        "_id": "a4f2f60a-6c9b-40d2-8216-99456d061bb1", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "list", 
+                        "_name": "cutout_opacity_texture", 
+                        "_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "string", 
+                        "_display_name": "Opacity Map", 
+                        "_id": "513112b0-d1c5-4ef7-b319-2c643c07de7e", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": true, 
+                        "_value_type": "bool", 
+                        "_name": "cutout_opacity_texturesRGB", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Cutout Opacity Textures R G B", 
+                        "_id": "706e6588-7937-4a2f-91c6-2d01cd56fb2d", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": 0, 
+                        "_is_editable": true, 
+                        "_value_type": "enum", 
+                        "_name": "cutout_opacity_mono_source", 
+                        "_value": 0, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "enum", 
+                        "_display_name": "Opacity Mono Source", 
+                        "_id": "9dd70b03-c77c-4582-ab56-8e6345387e82", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": 1.0, 
+                        "_is_editable": true, 
+                        "_value_type": "float", 
+                        "_name": "cutout_opacity", 
+                        "_value": 1.0, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float", 
+                        "_display_name": "Opacity Amount", 
+                        "_id": "90f13d25-c478-4c99-9db3-7ddf0730b2cd", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": true, 
+                        "_value_type": "bool", 
+                        "_name": "project_uvw", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Enable Project UVW Coordinates", 
+                        "_id": "56158c93-4212-44c7-b9c0-58480b24a3d9", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": true, 
+                        "_value_type": "bool", 
+                        "_name": "world_or_object", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Enable World Space", 
+                        "_id": "c2c6d9b8-2af3-455f-99f6-4fc9ec5954c0", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": 0, 
+                        "_is_editable": true, 
+                        "_value_type": "int", 
+                        "_name": "uv_space_index", 
+                        "_value": 0, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "long", 
+                        "_display_name": "UV Space Index", 
+                        "_id": "a84bf869-9a2d-48c6-9abb-a800ed4896bb", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": [
+                            0.0, 
+                            0.0
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "any", 
+                        "_name": "texture_translate", 
+                        "_value": [
+                            0.0, 
+                            0.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "TdataCompound", 
+                        "_display_name": "Texture Translate", 
+                        "_id": "b506bd6c-44de-440d-acc6-89a2a7bc0697", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": 0.0, 
+                        "_is_editable": true, 
+                        "_value_type": "float", 
+                        "_name": "texture_rotate", 
+                        "_value": 0.0, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float", 
+                        "_display_name": "Texture Rotate", 
+                        "_id": "11c2f72f-4533-441f-af77-c10e9c9e07bb", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": [
+                            1.0, 
+                            1.0
+                        ], 
+                        "_is_editable": true, 
+                        "_value_type": "any", 
+                        "_name": "texture_scale", 
+                        "_value": [
+                            1.0, 
+                            1.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "TdataCompound", 
+                        "_display_name": "Texture Scale", 
+                        "_id": "32780c50-dbb4-4c29-bbd0-8fa28a786f46", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": true, 
+                        "_is_editable": true, 
+                        "_value_type": "bool", 
+                        "_name": "enable_opacity", 
+                        "_value": true, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Enable Opacity", 
+                        "_id": "859f2dd6-f4a5-4700-aac8-9f43b3699427", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": 0.0, 
+                        "_is_editable": true, 
+                        "_value_type": "float", 
+                        "_name": "opacity_threshold", 
+                        "_value": 0.0, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float", 
+                        "_display_name": "Opacity Threshold", 
+                        "_id": "8d2bb98b-dad3-49dd-a994-7eb799f5e13a", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": true, 
+                        "_value_type": "bool", 
+                        "_name": "flip_tangent_u", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Normal Map Flip U Tangent", 
+                        "_id": "ecb13d05-2311-4661-8613-96aa1dc0967f", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": true, 
+                        "_is_editable": true, 
+                        "_value_type": "bool", 
+                        "_name": "flip_tangent_v", 
+                        "_value": true, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Normal Map Flip V Tangent", 
+                        "_id": "bd2cda25-ca39-4ebb-8f3e-0391119d4cd6", 
+                        "_is_peripheral": false
+                    }
+                ], 
+                "_inputs": [
+                    {
+                        "_default_value": null, 
+                        "_is_editable": false, 
+                        "_value_type": "any", 
+                        "_name": "message", 
+                        "_value": null, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "message", 
+                        "_display_name": "Message", 
+                        "_id": "472d3e0e-55f9-487a-b494-22a8bb36768a", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": false, 
+                        "_value_type": "bool", 
+                        "_name": "caching", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Caching", 
+                        "_id": "03c384a9-4001-4b0c-a354-4c6e1f49d475", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": false, 
+                        "_value_type": "bool", 
+                        "_name": "frozen", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Frozen", 
+                        "_id": "ac3cafb9-a5d3-4c1d-841c-30c881448ef4", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": 2, 
+                        "_is_editable": false, 
+                        "_value_type": "any", 
+                        "_name": "isHistoricallyInteresting", 
+                        "_value": 2, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "byte", 
+                        "_display_name": "Is Historically Interesting", 
+                        "_id": "d6e865d8-d2ac-4601-8f2c-ade272f57c23", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": 0, 
+                        "_is_editable": false, 
+                        "_value_type": "enum", 
+                        "_name": "nodeState", 
+                        "_value": 0, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "enum", 
+                        "_display_name": "Node State", 
+                        "_id": "5a9a46e1-3524-44a1-9bc8-31c64d5b6245", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "list", 
+                        "_name": "binMembership", 
+                        "_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "string", 
+                        "_display_name": "Bin Membership", 
+                        "_id": "9f546214-c3c8-4204-b9b3-75fd36447b41", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": 1, 
+                        "_is_editable": false, 
+                        "_value_type": "int", 
+                        "_name": "baking_samples", 
+                        "_value": 1, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "short", 
+                        "_display_name": "Baking Samples", 
+                        "_id": "679b75cc-b626-49e8-b6f0-ab0381d3765d", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": 2, 
+                        "_is_editable": false, 
+                        "_value_type": "int", 
+                        "_name": "baking_mode", 
+                        "_value": 2, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "short", 
+                        "_display_name": "Baking Mode", 
+                        "_id": "683fb5a4-f579-4281-8f35-de3640af3813", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            "mdl::OmniGlass_Opacity::OmniGlass_Opacity", 
+                            "auto"
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "list", 
+                        "_name": "mdlNodeName", 
+                        "_value": [
+                            "mdl::OmniGlass_Opacity::OmniGlass_Opacity", 
+                            "auto"
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "string", 
+                        "_display_name": "Mdl Node Name", 
+                        "_id": "3e2bffc1-3c65-4f63-9d25-6e4ab1126a49", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            "L/Library/MDL/Base/OmniGlass_Opacity/OmniGlass_Opacity", 
+                            "auto"
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "list", 
+                        "_name": "mdlMaterialDescription", 
+                        "_value": [
+                            "L/Library/MDL/Base/OmniGlass_Opacity/OmniGlass_Opacity", 
+                            "auto"
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "string", 
+                        "_display_name": "Mdl Material Description", 
+                        "_id": "d61e4026-f5e6-4011-9840-661235f9f0c1", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            1.0, 
+                            1.0, 
+                            1.0
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "vector3", 
+                        "_name": "outColor", 
+                        "_value": [
+                            1.0, 
+                            1.0, 
+                            1.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float3", 
+                        "_display_name": "Out Color", 
+                        "_id": "5f1800cb-f9d9-4c28-a444-b524824f6b14", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "list", 
+                        "_name": "outMDL", 
+                        "_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "string", 
+                        "_display_name": "Out M D L", 
+                        "_id": "2b492293-706a-4a7b-8ff6-398f7100f3f5", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": false, 
+                        "_value_type": "bool", 
+                        "_name": "dirtyTrigger", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Dirty Trigger", 
+                        "_id": "ad7db338-19bb-4a5d-ace9-e635f6386609", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "vector3", 
+                        "_name": "udimColor", 
+                        "_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float3", 
+                        "_display_name": "Udim Color", 
+                        "_id": "f44571e4-965e-4704-ba56-2f1dfce09263", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "vector3", 
+                        "_name": "pointObj", 
+                        "_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float3", 
+                        "_display_name": "Point Obj", 
+                        "_id": "a658e18d-bc29-4214-9c6f-fed966b5d37b", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "vector3", 
+                        "_name": "pointWorld", 
+                        "_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float3", 
+                        "_display_name": "Point World", 
+                        "_id": "f6aedc54-25e4-418d-aa9d-f4102a313924", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "vector3", 
+                        "_name": "pointCamera", 
+                        "_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float3", 
+                        "_display_name": "Point Camera", 
+                        "_id": "2ec5aae2-cde7-4dc3-aea3-471ec3b8102f", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "vector3", 
+                        "_name": "normalCamera", 
+                        "_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float3", 
+                        "_display_name": "Normal Camera", 
+                        "_id": "a2acf0a3-9d21-4631-9f05-8ccc58b49a91", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            0.0, 
+                            0.0
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "vector2", 
+                        "_name": "uvCoord", 
+                        "_value": [
+                            0.0, 
+                            0.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float2", 
+                        "_display_name": "Uv Coord", 
+                        "_id": "608322bf-d5ad-40ba-b2a2-f8010b66b1d2", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "vector3", 
+                        "_name": "transparency", 
+                        "_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float3", 
+                        "_display_name": "Transparency", 
+                        "_id": "b46fc1a0-f787-49f2-a3f9-394bbf1c66f7", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "vector3", 
+                        "_name": "outTransparency", 
+                        "_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float3", 
+                        "_display_name": "Out Transparency", 
+                        "_id": "c3a3fd3f-b9e6-451f-93c6-25c94ab91a6b", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            [
+                                0.0, 
+                                0.0, 
+                                0.0
+                            ], 
+                            false, 
+                            [
+                                1.0, 
+                                1.0, 
+                                1.0
+                            ], 
+                            null, 
+                            false, 
+                            0.0, 
+                            1.4910000562667847, 
+                            false, 
+                            0.0010000000474974513, 
+                            1.0, 
+                            null, 
+                            false, 
+                            null, 
+                            false, 
+                            [
+                                1.0, 
+                                1.0, 
+                                1.0
+                            ], 
+                            null, 
+                            false, 
+                            1.0, 
+                            true, 
+                            1.0, 
+                            null, 
+                            false, 
+                            0, 
+                            0.0, 
+                            false, 
+                            false, 
+                            0, 
+                            [
+                                0.0, 
+                                0.0
+                            ], 
+                            0.0, 
+                            [
+                                1.0, 
+                                1.0
+                            ]
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "any", 
+                        "_name": "mdl_material_parameters", 
+                        "_value": [
+                            [
+                                0.0, 
+                                0.0, 
+                                0.0
+                            ], 
+                            false, 
+                            [
+                                1.0, 
+                                1.0, 
+                                1.0
+                            ], 
+                            null, 
+                            false, 
+                            0.0, 
+                            1.4910000562667847, 
+                            false, 
+                            0.0010000000474974513, 
+                            1.0, 
+                            null, 
+                            false, 
+                            null, 
+                            false, 
+                            [
+                                1.0, 
+                                1.0, 
+                                1.0
+                            ], 
+                            null, 
+                            false, 
+                            1.0, 
+                            true, 
+                            1.0, 
+                            null, 
+                            false, 
+                            0, 
+                            0.0, 
+                            false, 
+                            false, 
+                            0, 
+                            [
+                                0.0, 
+                                0.0
+                            ], 
+                            0.0, 
+                            [
+                                1.0, 
+                                1.0
+                            ]
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "TdataCompound", 
+                        "_display_name": "Mdl Material Parameters", 
+                        "_id": "cb0ad893-e77e-42b9-97d1-9212b7891aa1", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "vector3", 
+                        "_name": "absorption_coeff", 
+                        "_value": [
+                            0.0, 
+                            0.0, 
+                            0.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float3", 
+                        "_display_name": "", 
+                        "_id": "933448a2-6d3c-4b8a-8141-31171ceffcfa", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": false, 
+                        "_value_type": "bool", 
+                        "_name": "use_glass_color_texture", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "", 
+                        "_id": "baa7d8cf-e891-4135-b311-9480a277bd98", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": [
+                            1.0, 
+                            1.0, 
+                            1.0
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "vector3", 
+                        "_name": "glass_color", 
+                        "_value": [
+                            1.0, 
+                            1.0, 
+                            1.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float3", 
+                        "_display_name": "Glass Color", 
+                        "_id": "6db9fc05-c8db-43ff-9384-0ae6da138b2a", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "list", 
+                        "_name": "glass_color_texture", 
+                        "_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "string", 
+                        "_display_name": "Glass Color Texture", 
+                        "_id": "c32d990d-173b-42d2-afdf-6214e7f6d1c0", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": false, 
+                        "_value_type": "bool", 
+                        "_name": "glass_color_texturesRGB", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Glass Color Textures R G B", 
+                        "_id": "5cb4f26e-1d9d-41ae-89bb-723ab0056918", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": 0.0, 
+                        "_is_editable": false, 
+                        "_value_type": "float", 
+                        "_name": "frosting_roughness", 
+                        "_value": 0.0, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float", 
+                        "_display_name": "Glass Roughness", 
+                        "_id": "2e5977ac-541e-4288-9599-1ecf9e1d1158", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": 1.4910000562667847, 
+                        "_is_editable": false, 
+                        "_value_type": "float", 
+                        "_name": "glass_ior", 
+                        "_value": 1.4910000562667847, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float", 
+                        "_display_name": "Glass IOR", 
+                        "_id": "e420b868-6388-4c83-8044-4f1f20302d35", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": false, 
+                        "_value_type": "bool", 
+                        "_name": "thin_walled", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Thin Walled", 
+                        "_id": "5e2d67ff-8302-481e-9d1d-c547d122c73d", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": 0.0010000000474974513, 
+                        "_is_editable": false, 
+                        "_value_type": "float", 
+                        "_name": "depth", 
+                        "_value": 0.0010000000474974513, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float", 
+                        "_display_name": "Volume Absorption Scale", 
+                        "_id": "929f049d-d5ce-41a0-9254-5ab5ef7c83ae", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": 1.0, 
+                        "_is_editable": false, 
+                        "_value_type": "float", 
+                        "_name": "roughness_texture_influence", 
+                        "_value": 1.0, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float", 
+                        "_display_name": "Roughness Texture Influence", 
+                        "_id": "f392888c-631a-4a9b-bcc0-3375368fb67c", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "list", 
+                        "_name": "roughness_texture", 
+                        "_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "string", 
+                        "_display_name": "Roughness Texture", 
+                        "_id": "ab0ebb50-1d23-48f7-a5d8-99c6eb8d5357", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": false, 
+                        "_value_type": "bool", 
+                        "_name": "roughness_texturesRGB", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Roughness Textures R G B", 
+                        "_id": "7960aad8-4f55-450b-9753-21d2d9f32f59", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "list", 
+                        "_name": "reflection_color_texture", 
+                        "_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "string", 
+                        "_display_name": "Reflection Color Texture", 
+                        "_id": "db2927c7-d2a9-4e89-923c-8b098bb2c787", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": false, 
+                        "_value_type": "bool", 
+                        "_name": "reflection_color_texturesRGB", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Reflection Color Textures R G B", 
+                        "_id": "7e54c059-5b98-4215-9129-32da4ad33fd2", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": [
+                            1.0, 
+                            1.0, 
+                            1.0
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "vector3", 
+                        "_name": "reflection_color", 
+                        "_value": [
+                            1.0, 
+                            1.0, 
+                            1.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float3", 
+                        "_display_name": "Reflection Color", 
+                        "_id": "51b86ec8-3349-4a1b-94f0-fc8882dacb00", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "list", 
+                        "_name": "normal_map_texture", 
+                        "_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "string", 
+                        "_display_name": "Normal Map Texture", 
+                        "_id": "f9a5feba-2e31-4cf6-8c52-2180fd792082", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": false, 
+                        "_value_type": "bool", 
+                        "_name": "normal_map_texturesRGB", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Normal Map Textures R G B", 
+                        "_id": "b8ee9328-c340-4f67-82d3-14e2fc79f891", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": 1.0, 
+                        "_is_editable": false, 
+                        "_value_type": "float", 
+                        "_name": "normal_map_strength", 
+                        "_value": 1.0, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float", 
+                        "_display_name": "Normal Map Strength", 
+                        "_id": "7b7d5398-0ebe-4540-ac85-4dc641e43ff9", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "list", 
+                        "_name": "cutout_opacity_texture", 
+                        "_value": [
+                            "", 
+                            "auto"
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "string", 
+                        "_display_name": "Opacity Map", 
+                        "_id": "80b366eb-448d-4bdb-b0e4-a4b5c112be86", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": false, 
+                        "_value_type": "bool", 
+                        "_name": "cutout_opacity_texturesRGB", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Cutout Opacity Textures R G B", 
+                        "_id": "30c18847-a545-4100-af1a-f317af9844de", 
+                        "_is_peripheral": true
+                    }, 
+                    {
+                        "_default_value": 0, 
+                        "_is_editable": false, 
+                        "_value_type": "enum", 
+                        "_name": "cutout_opacity_mono_source", 
+                        "_value": 0, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "enum", 
+                        "_display_name": "Opacity Mono Source", 
+                        "_id": "3665b701-3ee5-484c-85bb-c14d9f0ddf81", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": 1.0, 
+                        "_is_editable": false, 
+                        "_value_type": "float", 
+                        "_name": "cutout_opacity", 
+                        "_value": 1.0, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float", 
+                        "_display_name": "Opacity Amount", 
+                        "_id": "9ba1c5fb-0dcb-4583-8328-1a95115472bb", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": false, 
+                        "_value_type": "bool", 
+                        "_name": "project_uvw", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Enable Project UVW Coordinates", 
+                        "_id": "b1accefb-9cd4-41d2-bc16-0a517c87cab4", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": false, 
+                        "_value_type": "bool", 
+                        "_name": "world_or_object", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Enable World Space", 
+                        "_id": "65cb22af-12fd-42c5-9526-6e79648145a9", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": 0, 
+                        "_is_editable": false, 
+                        "_value_type": "int", 
+                        "_name": "uv_space_index", 
+                        "_value": 0, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "long", 
+                        "_display_name": "UV Space Index", 
+                        "_id": "53bfd678-e9b6-447b-ad5e-38f6d7ac2e5b", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": [
+                            0.0, 
+                            0.0
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "any", 
+                        "_name": "texture_translate", 
+                        "_value": [
+                            0.0, 
+                            0.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "TdataCompound", 
+                        "_display_name": "Texture Translate", 
+                        "_id": "78692247-62c9-4eb3-8cdb-2e5343a91afc", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": 0.0, 
+                        "_is_editable": false, 
+                        "_value_type": "float", 
+                        "_name": "texture_rotate", 
+                        "_value": 0.0, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float", 
+                        "_display_name": "Texture Rotate", 
+                        "_id": "3ca3ab3e-315c-4527-a797-9767506540ec", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": [
+                            1.0, 
+                            1.0
+                        ], 
+                        "_is_editable": false, 
+                        "_value_type": "any", 
+                        "_name": "texture_scale", 
+                        "_value": [
+                            1.0, 
+                            1.0
+                        ], 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "TdataCompound", 
+                        "_display_name": "Texture Scale", 
+                        "_id": "654484e2-7d95-409c-9169-bc40fad24016", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": true, 
+                        "_is_editable": false, 
+                        "_value_type": "bool", 
+                        "_name": "enable_opacity", 
+                        "_value": true, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Enable Opacity", 
+                        "_id": "11b06764-6203-459b-b021-8129b735731d", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": 0.0, 
+                        "_is_editable": false, 
+                        "_value_type": "float", 
+                        "_name": "opacity_threshold", 
+                        "_value": 0.0, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "float", 
+                        "_display_name": "Opacity Threshold", 
+                        "_id": "50218d46-030b-4799-b2d0-c42e49bfcabd", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": false, 
+                        "_is_editable": false, 
+                        "_value_type": "bool", 
+                        "_name": "flip_tangent_u", 
+                        "_value": false, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Normal Map Flip U Tangent", 
+                        "_id": "85fd24d9-db5c-4d2d-9973-b485ace9a9d0", 
+                        "_is_peripheral": false
+                    }, 
+                    {
+                        "_default_value": true, 
+                        "_is_editable": false, 
+                        "_value_type": "bool", 
+                        "_name": "flip_tangent_v", 
+                        "_value": true, 
+                        "_enum_values": [], 
+                        "_is_removable": false, 
+                        "_internal_value_type": "bool", 
+                        "_display_name": "Normal Map Flip V Tangent", 
+                        "_id": "9cb25da1-4d96-4736-8a49-6da229958ae6", 
+                        "_is_peripheral": false
+                    }
+                ]
+            }
+        ], 
+        "_outputs": [], 
+        "_revision": 27,
+        "_show_peripheral": false, 
+        "_expansion_state": 0, 
+        "_metadata": {
+            "_supported_clients": [
+                {
+                    "_version": "any", 
+                    "_name": "Maya"
+                }
+            ], 
+            "_category": "Base Materials", 
+            "_keywords": [
+                "Maya", 
+                "omniglassopacity", 
+                "Omni Glass Opacity"
+            ], 
+            "_name": ""
+        }, 
+        "_root_node_id": "012edf26-7699-4814-a32a-150d8d67dd69", 
+        "_show_outputs": true, 
+        "_inputs": [], 
+        "_show_inputs": true, 
+        "_display_name": "Omni Glass Opacity", 
+        "_id": "ef99df7b-29c0-4053-9165-4a546a142b9e", 
+        "_position": null
+    }, 
+    "_header": {
+        "_module": "omni.universalmaterialmap.core.data", 
+        "_class_name": "Target"
+    }
+}

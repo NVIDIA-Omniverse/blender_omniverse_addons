@@ -1,0 +1,228 @@
+{
+    "_header": {
+        "_module": "omni.universalmaterialmap.core.data",
+        "_class_name": "Target"
+    },
+    "_content": {
+        "_id": "c6dec56f-e3d2-42b3-9c06-a6bd22b5db27",
+        "_inputs": [],
+        "_outputs": [],
+        "_display_name": "ShaderNodeSubsurfaceScattering",
+        "_position": null,
+        "_expansion_state": 0,
+        "_show_inputs": true,
+        "_show_outputs": true,
+        "_show_peripheral": false,
+        "_nodes": [
+            {
+                "_id": "cf97af78-0b08-413c-b82e-58bbf6f2853c",
+                "_inputs": [
+                    {
+                        "_id": "1cdc9dcb-2dc2-4d51-b959-fa32a620f543",
+                        "_name": "Color",
+                        "_display_name": "Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ],
+                        "_value": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "d9fdea92-702f-4d98-a68d-598fbe3a1376",
+                        "_name": "Scale",
+                        "_display_name": "Scale",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 1.0,
+                        "_value": 1.0
+                    },
+                    {
+                        "_id": "7974748d-3720-4cc3-9afd-15ab9e90c43c",
+                        "_name": "Radius",
+                        "_display_name": "Radius",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            1.0,
+                            0.20000000298023224,
+                            0.10000000149011612
+                        ],
+                        "_value": [
+                            1.0,
+                            0.20000000298023224,
+                            0.10000000149011612
+                        ]
+                    },
+                    {
+                        "_id": "326bb331-fe31-4204-bfea-1ef29ada9de0",
+                        "_name": "Sharpness",
+                        "_display_name": "Sharpness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "df0fd28a-a27f-4f88-b13c-8c793e3331e4",
+                        "_name": "Texture Blur",
+                        "_display_name": "Texture Blur",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "8674e240-4cc6-4196-9570-89953ee453c9",
+                        "_name": "Normal",
+                        "_display_name": "Normal",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "7fbac237-f747-47a1-b812-e5dd4b74ef97",
+                        "_name": "Color",
+                        "_display_name": "Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ],
+                        "_value": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "ad9c8cca-7e12-4f87-b782-3c91cfb94de3",
+                        "_name": "Scale",
+                        "_display_name": "Scale",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 1.0,
+                        "_value": 1.0
+                    },
+                    {
+                        "_id": "e14849e6-d76f-40a6-8331-a88bd31ee40e",
+                        "_name": "Radius",
+                        "_display_name": "Radius",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            1.0,
+                            0.20000000298023224,
+                            0.10000000149011612
+                        ],
+                        "_value": [
+                            1.0,
+                            0.20000000298023224,
+                            0.10000000149011612
+                        ]
+                    },
+                    {
+                        "_id": "2cf970e4-de78-4a39-badf-659efd922c7c",
+                        "_name": "Sharpness",
+                        "_display_name": "Sharpness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "56862d26-c6d9-41a6-96eb-d85cc29e4ae2",
+                        "_name": "Texture Blur",
+                        "_display_name": "Texture Blur",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "21263234-d062-4e48-a8b8-96ff63b990d4",
+                        "_name": "Normal",
+                        "_display_name": "Normal",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "_class_name": "bpy.types.ShaderNodeSubsurfaceScattering"
+            }
+        ],
+        "_metadata": {
+            "_category": "Connector Materials",
+            "_name": "",
+            "_keywords": [
+                "Blender",
+                "bpy.types.ShaderNodeSubsurfaceScattering",
+                "ShaderNodeSubsurfaceScattering"
+            ],
+            "_supported_clients": [
+                {
+                    "_name": "Blender",
+                    "_version": "any"
+                }
+            ]
+        },
+        "_root_node_id": "cf97af78-0b08-413c-b82e-58bbf6f2853c",
+        "_revision": 1
+    }
+}

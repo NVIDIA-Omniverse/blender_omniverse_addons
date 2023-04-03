@@ -1,0 +1,356 @@
+{
+    "_header": {
+        "_module": "omni.universalmaterialmap.core.data",
+        "_class_name": "Target"
+    },
+    "_content": {
+        "_id": "efcfccdf-7b68-4a31-873a-2e6ec2647f5e",
+        "_inputs": [],
+        "_outputs": [],
+        "_display_name": "ShaderNodeEeveeSpecular",
+        "_position": null,
+        "_expansion_state": 0,
+        "_show_inputs": true,
+        "_show_outputs": true,
+        "_show_peripheral": false,
+        "_nodes": [
+            {
+                "_id": "ab2cca67-a24b-4992-a660-b0524d361f72",
+                "_inputs": [
+                    {
+                        "_id": "536ff9b2-5624-489d-a454-4bcee5e2ac87",
+                        "_name": "Base Color",
+                        "_display_name": "Base Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ],
+                        "_value": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "3e7511db-73dc-4967-bf09-9fa15123cd61",
+                        "_name": "Specular",
+                        "_display_name": "Specular",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0.029999999329447746,
+                            0.029999999329447746,
+                            0.029999999329447746,
+                            1.0
+                        ],
+                        "_value": [
+                            0.029999999329447746,
+                            0.029999999329447746,
+                            0.029999999329447746,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "bfa24f42-46e1-4938-869e-b85cc689e54b",
+                        "_name": "Roughness",
+                        "_display_name": "Roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.20000000298023224,
+                        "_value": 0.20000000298023224
+                    },
+                    {
+                        "_id": "f014e6f4-f986-4af8-8239-fec454fddbf4",
+                        "_name": "Emissive Color",
+                        "_display_name": "Emissive Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "de540d17-36df-46a6-bc7f-27110a83b86c",
+                        "_name": "Transparency",
+                        "_display_name": "Transparency",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "5cf8491a-f5ca-4061-b048-9a24f27388d8",
+                        "_name": "Normal",
+                        "_display_name": "Normal",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    },
+                    {
+                        "_id": "bd357c18-bab2-4b0e-87ca-28b28a789c3e",
+                        "_name": "Clear Coat",
+                        "_display_name": "Clear Coat",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "22c1ba69-37d8-4d38-99c9-64f6cfb44c27",
+                        "_name": "Clear Coat Roughness",
+                        "_display_name": "Clear Coat Roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "27f862d8-e78e-4682-9171-4799cd6ce65e",
+                        "_name": "Clear Coat Normal",
+                        "_display_name": "Clear Coat Normal",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    },
+                    {
+                        "_id": "697dc75a-1366-4d11-8a40-ebd1179c95fb",
+                        "_name": "Ambient Occlusion",
+                        "_display_name": "Ambient Occlusion",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 1.0,
+                        "_value": 1.0
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "eaa08842-e42c-419f-bccc-823e59953397",
+                        "_name": "Base Color",
+                        "_display_name": "Base Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ],
+                        "_value": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "073b7e98-01b5-45ae-8fbb-57e885b2a57f",
+                        "_name": "Specular",
+                        "_display_name": "Specular",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            0.029999999329447746,
+                            0.029999999329447746,
+                            0.029999999329447746,
+                            1.0
+                        ],
+                        "_value": [
+                            0.029999999329447746,
+                            0.029999999329447746,
+                            0.029999999329447746,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "1c1f560b-6634-4d6a-99c7-99410d2f2536",
+                        "_name": "Roughness",
+                        "_display_name": "Roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.20000000298023224,
+                        "_value": 0.20000000298023224
+                    },
+                    {
+                        "_id": "692b0145-a7ae-4c29-868f-6085bf400086",
+                        "_name": "Emissive Color",
+                        "_display_name": "Emissive Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "a2a82252-ca1b-4533-a3e8-4c33a626cb3c",
+                        "_name": "Transparency",
+                        "_display_name": "Transparency",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "47b4dbe2-49d9-4f27-83cb-5befb10910d2",
+                        "_name": "Normal",
+                        "_display_name": "Normal",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    },
+                    {
+                        "_id": "c2123168-b6f8-4c7e-b339-5e7ff9f1d2c0",
+                        "_name": "Clear Coat",
+                        "_display_name": "Clear Coat",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "f7ae74b2-fbd1-4a9d-8fac-f38b496c07f1",
+                        "_name": "Clear Coat Roughness",
+                        "_display_name": "Clear Coat Roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "92ffeabe-3a5e-4544-9154-85f21fa70ced",
+                        "_name": "Clear Coat Normal",
+                        "_display_name": "Clear Coat Normal",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    },
+                    {
+                        "_id": "f27ea3ed-12fd-43f9-a657-f6306af2597b",
+                        "_name": "Ambient Occlusion",
+                        "_display_name": "Ambient Occlusion",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 1.0,
+                        "_value": 1.0
+                    }
+                ],
+                "_class_name": "bpy.types.ShaderNodeEeveeSpecular"
+            }
+        ],
+        "_metadata": {
+            "_category": "Connector Materials",
+            "_name": "",
+            "_keywords": [
+                "Blender",
+                "bpy.types.ShaderNodeEeveeSpecular",
+                "ShaderNodeEeveeSpecular"
+            ],
+            "_supported_clients": [
+                {
+                    "_name": "Blender",
+                    "_version": "any"
+                }
+            ]
+        },
+        "_root_node_id": "ab2cca67-a24b-4992-a660-b0524d361f72",
+        "_revision": 1
+    }
+}

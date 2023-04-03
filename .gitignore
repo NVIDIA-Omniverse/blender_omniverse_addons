@@ -1,0 +1,19 @@
+# python temp paths
+__pycache__/
+*.py[cod]
+
+# editors
+*~
+*.swp
+*.swo
+.idea
+.vscode
+*#
+
+# ms-windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# mac
+.DS_Store

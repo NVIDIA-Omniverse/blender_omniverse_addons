@@ -1,0 +1,168 @@
+{
+    "_header": {
+        "_module": "omni.universalmaterialmap.core.data",
+        "_class_name": "Target"
+    },
+    "_content": {
+        "_id": "3625fa1c-6ead-460a-b599-792d3fb5e943",
+        "_inputs": [],
+        "_outputs": [],
+        "_display_name": "ShaderNodeBsdfGlass",
+        "_position": null,
+        "_expansion_state": 0,
+        "_show_inputs": true,
+        "_show_outputs": true,
+        "_show_peripheral": false,
+        "_nodes": [
+            {
+                "_id": "1ddeb89a-c4af-4380-9e68-0aa3a2f24468",
+                "_inputs": [
+                    {
+                        "_id": "8f4278d6-34e4-4153-bff9-faa6d8215631",
+                        "_name": "Color",
+                        "_display_name": "Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "241a2539-71bc-4bed-9a14-b0814300bb2d",
+                        "_name": "Roughness",
+                        "_display_name": "Roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "1244c1b3-e680-4fba-99c2-599fdc503c3b",
+                        "_name": "IOR",
+                        "_display_name": "IOR",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 1.4500000476837158,
+                        "_value": 1.4500000476837158
+                    },
+                    {
+                        "_id": "bbcce004-753a-45f3-a543-0d1326b2de38",
+                        "_name": "Normal",
+                        "_display_name": "Normal",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "81c7312c-78b8-4a51-a781-954660603b80",
+                        "_name": "Color",
+                        "_display_name": "Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "9eb6fdce-03ff-486b-95e4-76890c10db47",
+                        "_name": "Roughness",
+                        "_display_name": "Roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "db880a09-ba4c-4f2f-a6d8-83c17c17d16d",
+                        "_name": "IOR",
+                        "_display_name": "IOR",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 1.4500000476837158,
+                        "_value": 1.4500000476837158
+                    },
+                    {
+                        "_id": "6252569e-d0b2-45eb-a70d-4066fe67ffcd",
+                        "_name": "Normal",
+                        "_display_name": "Normal",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "_class_name": "bpy.types.ShaderNodeBsdfGlass"
+            }
+        ],
+        "_metadata": {
+            "_category": "Connector Materials",
+            "_name": "",
+            "_keywords": [
+                "Blender",
+                "bpy.types.ShaderNodeBsdfGlass",
+                "ShaderNodeBsdfGlass"
+            ],
+            "_supported_clients": [
+                {
+                    "_name": "Blender",
+                    "_version": "any"
+                }
+            ]
+        },
+        "_root_node_id": "1ddeb89a-c4af-4380-9e68-0aa3a2f24468",
+        "_revision": 1
+    }
+}

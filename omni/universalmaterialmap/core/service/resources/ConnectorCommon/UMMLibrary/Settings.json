@@ -1,0 +1,31 @@
+{
+    "_header": {
+        "_module": "omni.universalmaterialmap.core.data",
+        "_class_name": "Settings"
+    },
+    "_content": {
+        "_libraries": [
+            {
+                "_id": "327ef29b-8358-441b-b2f0-4a16a9afd349",
+                "_name": "Common"
+            },
+            {
+                "_id": "54234a38-cec8-4f63-9345-6bc9f178b40b",
+                "_name": "Maya"
+            },
+            {
+                "_id": "e4aaa983-cdac-4168-bdcd-82f418274c96",
+                "_name": "Max"
+            },
+            {
+                "_id": "195c69e1-7765-4a16-bb3a-ecaa222876d9",
+                "_name": "Blender"
+            }
+        ],
+        "_render_contexts": [
+            "MDL",
+            "USDPreview",
+            "Blender"
+        ]
+    }
+}

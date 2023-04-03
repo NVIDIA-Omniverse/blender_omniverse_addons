@@ -1,0 +1,108 @@
+{
+    "_header": {
+        "_module": "omni.universalmaterialmap.core.data",
+        "_class_name": "Target"
+    },
+    "_content": {
+        "_id": "f5456451-0a8c-45e4-93fc-7642ba46c799",
+        "_inputs": [],
+        "_outputs": [],
+        "_display_name": "ShaderNodeEmission",
+        "_position": null,
+        "_expansion_state": 0,
+        "_show_inputs": true,
+        "_show_outputs": true,
+        "_show_peripheral": false,
+        "_nodes": [
+            {
+                "_id": "12f88157-ff36-43e8-a493-f6d3457ef24f",
+                "_inputs": [
+                    {
+                        "_id": "b4a88b72-d770-466b-be37-bd278a28718a",
+                        "_name": "Color",
+                        "_display_name": "Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "519b8480-4ed2-4aeb-9e54-5928b827a83d",
+                        "_name": "Strength",
+                        "_display_name": "Strength",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 1.0,
+                        "_value": 1.0
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "0e5c6a59-a766-426a-a712-305ebd92843c",
+                        "_name": "Color",
+                        "_display_name": "Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "_value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "3142888a-782b-4510-9085-8ef630c97945",
+                        "_name": "Strength",
+                        "_display_name": "Strength",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 1.0,
+                        "_value": 1.0
+                    }
+                ],
+                "_class_name": "bpy.types.ShaderNodeEmission"
+            }
+        ],
+        "_metadata": {
+            "_category": "Connector Materials",
+            "_name": "",
+            "_keywords": [
+                "Blender",
+                "bpy.types.ShaderNodeEmission",
+                "ShaderNodeEmission"
+            ],
+            "_supported_clients": [
+                {
+                    "_name": "Blender",
+                    "_version": "any"
+                }
+            ]
+        },
+        "_root_node_id": "12f88157-ff36-43e8-a493-f6d3457ef24f",
+        "_revision": 1
+    }
+}

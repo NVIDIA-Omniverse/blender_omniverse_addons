@@ -1,0 +1,674 @@
+{
+    "_header": {
+        "_module": "omni.universalmaterialmap.core.data",
+        "_class_name": "Target"
+    },
+    "_content": {
+        "_id": "3be6ad50-a5cd-41f7-9d60-6ce7d9461752",
+        "_inputs": [],
+        "_outputs": [],
+        "_display_name": "ShaderNodeBsdfPrincipled",
+        "_position": null,
+        "_expansion_state": 0,
+        "_show_inputs": true,
+        "_show_outputs": true,
+        "_show_peripheral": false,
+        "_nodes": [
+            {
+                "_id": "29929ef2-051f-4b6a-9637-44650724bbb9",
+                "_inputs": [
+                    {
+                        "_id": "bb8327c4-3ae2-4adc-8511-ba3dd8d0aa01",
+                        "_name": "Base Color",
+                        "_display_name": "Base Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "3c47377d-c208-4022-994c-815fb743de84",
+                        "_name": "Subsurface",
+                        "_display_name": "Subsurface",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "225127d0-963e-4364-afe6-a1383053ab2e",
+                        "_name": "Subsurface Radius",
+                        "_display_name": "Subsurface Radius",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            1.0,
+                            0.20000000298023224,
+                            0.10000000149011612
+                        ],
+                        "_value": [
+                            1.0,
+                            0.20000000298023224,
+                            0.10000000149011612
+                        ]
+                    },
+                    {
+                        "_id": "64bc2ab1-0428-4f31-b4ef-812f1055d812",
+                        "_name": "Subsurface Color",
+                        "_display_name": "Subsurface Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ],
+                        "_value": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "5aea8261-a9d6-402e-b07a-90a9d42b8ca3",
+                        "_name": "Metallic",
+                        "_display_name": "Metallic",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "78d47c6c-7d10-4b1f-9347-4f17fa418bf5",
+                        "_name": "Specular",
+                        "_display_name": "Specular",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.5,
+                        "_value": 0.5
+                    },
+                    {
+                        "_id": "22397ba2-2355-4ae5-8679-3764616286a8",
+                        "_name": "Specular Tint",
+                        "_display_name": "Specular Tint",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "904cbb2b-d9d1-47e9-8a63-37df2d98b875",
+                        "_name": "Roughness",
+                        "_display_name": "Roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.4000000059604645,
+                        "_value": 0.4000000059604645
+                    },
+                    {
+                        "_id": "d24260ec-ef45-4434-9bc6-75c0a6a84eb3",
+                        "_name": "Anisotropic",
+                        "_display_name": "Anisotropic",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "da1b3391-542e-48cf-a47e-d898f9c12d7d",
+                        "_name": "Anisotropic Rotation",
+                        "_display_name": "Anisotropic Rotation",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "6e744bc2-fe7e-4707-b9fa-35f509ef3696",
+                        "_name": "Sheen",
+                        "_display_name": "Sheen",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "2869c59b-9df7-41c1-8b77-dea5102ebe60",
+                        "_name": "Sheen Tint",
+                        "_display_name": "Sheen Tint",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.5,
+                        "_value": 0.5
+                    },
+                    {
+                        "_id": "541f32fc-22a2-4e23-9ab3-eba03f948c1b",
+                        "_name": "Clearcoat",
+                        "_display_name": "Clearcoat",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "99042a99-c7bc-4c26-84d5-c7bdf0deb37f",
+                        "_name": "Clearcoat Roughness",
+                        "_display_name": "Clearcoat Roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.029999999329447746,
+                        "_value": 0.029999999329447746
+                    },
+                    {
+                        "_id": "650fdaf2-c496-4350-8b74-94b8a889c711",
+                        "_name": "IOR",
+                        "_display_name": "IOR",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 1.4500000476837158,
+                        "_value": 1.4500000476837158
+                    },
+                    {
+                        "_id": "f58d97a9-0a03-4ec2-aba9-1ba6cf780ff5",
+                        "_name": "Transmission",
+                        "_display_name": "Transmission",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "a33f446a-e03c-4a13-b06d-57198c7fd659",
+                        "_name": "Transmission Roughness",
+                        "_display_name": "Transmission Roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "0bd07e9e-4396-4cf3-a392-26b27c9bdac1",
+                        "_name": "Emission",
+                        "_display_name": "Emission",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "45b2b500-84b7-4e41-b8b8-086d1b533a7f",
+                        "_name": "Emission Strength",
+                        "_display_name": "Emission Strength",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 1.0,
+                        "_value": 1.0
+                    },
+                    {
+                        "_id": "54f21abc-2955-40fd-bb51-296343c212ea",
+                        "_name": "Alpha",
+                        "_display_name": "Alpha",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 1.0,
+                        "_value": 1.0
+                    },
+                    {
+                        "_id": "5df4264d-c26e-41ae-a61a-7f4596db6500",
+                        "_name": "Normal",
+                        "_display_name": "Normal",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    },
+                    {
+                        "_id": "7adf69df-a4e2-4ed4-a2e2-a8dcc96715b3",
+                        "_name": "Clearcoat Normal",
+                        "_display_name": "Clearcoat Normal",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    },
+                    {
+                        "_id": "fc65334b-0c2c-4206-a2fe-ec40ceb945da",
+                        "_name": "Tangent",
+                        "_display_name": "Tangent",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "5dafffee-8c3d-4ed5-b988-0095066ec4f5",
+                        "_name": "Base Color",
+                        "_display_name": "Base Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ],
+                        "_value": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "27be2432-1216-4447-9988-70ebb8189d5a",
+                        "_name": "Subsurface",
+                        "_display_name": "Subsurface",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "e736818c-732a-4cdd-a7e9-88d2bda1ea34",
+                        "_name": "Subsurface Radius",
+                        "_display_name": "Subsurface Radius",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            1.0,
+                            0.20000000298023224,
+                            0.10000000149011612
+                        ],
+                        "_value": [
+                            1.0,
+                            0.20000000298023224,
+                            0.10000000149011612
+                        ]
+                    },
+                    {
+                        "_id": "a8c0d921-f2ef-4cc7-b359-877ea73b3de6",
+                        "_name": "Subsurface Color",
+                        "_display_name": "Subsurface Color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ],
+                        "_value": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "83c76c5f-de3e-4f21-84e4-dd8c6470227d",
+                        "_name": "Metallic",
+                        "_display_name": "Metallic",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "734a0bd3-c265-45ff-a3ae-5d62ea6cfc6a",
+                        "_name": "Specular",
+                        "_display_name": "Specular",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.5,
+                        "_value": 0.5
+                    },
+                    {
+                        "_id": "a0b91ab3-ee71-4028-af89-ac9f2e146244",
+                        "_name": "Specular Tint",
+                        "_display_name": "Specular Tint",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "47c855ba-b96a-49d5-a8f4-7d26ec572599",
+                        "_name": "Roughness",
+                        "_display_name": "Roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.4000000059604645,
+                        "_value": 0.4000000059604645
+                    },
+                    {
+                        "_id": "76ca73ba-8827-48f5-9df8-8f2818a43073",
+                        "_name": "Anisotropic",
+                        "_display_name": "Anisotropic",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "01a07f14-c305-4114-abae-798dd5e7612e",
+                        "_name": "Anisotropic Rotation",
+                        "_display_name": "Anisotropic Rotation",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "90fc5508-3e25-4a0d-9e78-31c45fa77c9f",
+                        "_name": "Sheen",
+                        "_display_name": "Sheen",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "6bf2288d-ec83-4d00-b642-e9582db495e7",
+                        "_name": "Sheen Tint",
+                        "_display_name": "Sheen Tint",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.5,
+                        "_value": 0.5
+                    },
+                    {
+                        "_id": "45eb79b8-40e5-4bd7-9083-63b386314ae9",
+                        "_name": "Clearcoat",
+                        "_display_name": "Clearcoat",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "afefb70d-6548-46a9-88c0-08b9e2fb9d76",
+                        "_name": "Clearcoat Roughness",
+                        "_display_name": "Clearcoat Roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.029999999329447746,
+                        "_value": 0.029999999329447746
+                    },
+                    {
+                        "_id": "43d6bf80-a82b-4920-bc0a-1256c934ac85",
+                        "_name": "IOR",
+                        "_display_name": "IOR",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 1.4500000476837158,
+                        "_value": 1.4500000476837158
+                    },
+                    {
+                        "_id": "9150aa25-72e2-4dff-a624-942e996bb615",
+                        "_name": "Transmission",
+                        "_display_name": "Transmission",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "ba74c225-2a29-4e60-b546-27cc4078b46c",
+                        "_name": "Transmission Roughness",
+                        "_display_name": "Transmission Roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "fa409e52-534c-412d-9440-2317cb21a259",
+                        "_name": "Emission",
+                        "_display_name": "Emission",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "fd973be3-ad89-44f4-9b4a-cf2670b7cf68",
+                        "_name": "Emission Strength",
+                        "_display_name": "Emission Strength",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 1.0,
+                        "_value": 1.0
+                    },
+                    {
+                        "_id": "43c56435-9a0d-4d3f-bd3e-dd34f408a5ec",
+                        "_name": "Alpha",
+                        "_display_name": "Alpha",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 1.0,
+                        "_value": 1.0
+                    },
+                    {
+                        "_id": "0b2dd3d8-4a7d-429c-8469-e24f4bc078f3",
+                        "_name": "Normal",
+                        "_display_name": "Normal",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    },
+                    {
+                        "_id": "d1f5a589-ab57-4815-a28b-4b60554d68ed",
+                        "_name": "Clearcoat Normal",
+                        "_display_name": "Clearcoat Normal",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    },
+                    {
+                        "_id": "a078710f-da25-4fc1-91a4-8ddc9f0be571",
+                        "_name": "Tangent",
+                        "_display_name": "Tangent",
+                        "_value_type": "vector3",
+                        "_internal_value_type": "VECTOR",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "_value": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ],
+                "_class_name": "bpy.types.ShaderNodeBsdfPrincipled"
+            }
+        ],
+        "_metadata": {
+            "_category": "Connector Materials",
+            "_name": "",
+            "_keywords": [
+                "Blender",
+                "bpy.types.ShaderNodeBsdfPrincipled",
+                "ShaderNodeBsdfPrincipled"
+            ],
+            "_supported_clients": [
+                {
+                    "_name": "Blender",
+                    "_version": "any"
+                }
+            ]
+        },
+        "_root_node_id": "29929ef2-051f-4b6a-9637-44650724bbb9",
+        "_revision": 6
+    }
+}

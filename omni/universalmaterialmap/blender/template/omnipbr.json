@@ -1,0 +1,2434 @@
+{
+    "name": "Principled Omni PBR",
+    "nodes": [
+        {
+            "name": "Frame.002",
+            "label": "UV Set",
+            "location": [
+                -1583.4996337890625,
+                -247.95455932617188
+            ],
+            "width": 210.0,
+            "height": 164.06552124023438,
+            "parent": null,
+            "class": "NodeFrame",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [
+                {
+                    "name": "use_custom_color",
+                    "value": true
+                },
+                {
+                    "name": "color",
+                    "value": [
+                        0.6104959845542908,
+                        0.06662588566541672,
+                        0.0
+                    ]
+                },
+                {
+                    "name": "shrink",
+                    "value": true
+                }
+            ],
+            "texts": []
+        },
+        {
+            "name": "Frame.001",
+            "label": "UVs",
+            "location": [
+                -1286.206787109375,
+                62.31555938720703
+            ],
+            "width": 200.2772216796875,
+            "height": 784.1096801757812,
+            "parent": null,
+            "class": "NodeFrame",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [
+                {
+                    "name": "use_custom_color",
+                    "value": true
+                },
+                {
+                    "name": "color",
+                    "value": [
+                        0.05612799897789955,
+                        0.6104958653450012,
+                        0.0
+                    ]
+                },
+                {
+                    "name": "shrink",
+                    "value": true
+                }
+            ],
+            "texts": []
+        },
+        {
+            "name": "Frame",
+            "label": "Texture Inputs",
+            "location": [
+                -900.7086791992188,
+                88.20856475830078
+            ],
+            "width": 871.4410400390625,
+            "height": 1152.6026611328125,
+            "parent": null,
+            "class": "NodeFrame",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [
+                {
+                    "name": "use_custom_color",
+                    "value": true
+                },
+                {
+                    "name": "color",
+                    "value": [
+                        0.056128427386283875,
+                        0.6104958653450012,
+                        0.0
+                    ]
+                },
+                {
+                    "name": "shrink",
+                    "value": true
+                }
+            ],
+            "texts": []
+        },
+        {
+            "name": "Frame.004",
+            "label": "Parameters",
+            "location": [
+                84.32209777832031,
+                272.77618408203125
+            ],
+            "width": 395.990234375,
+            "height": 1095.2596435546875,
+            "parent": null,
+            "class": "NodeFrame",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [
+                {
+                    "name": "use_custom_color",
+                    "value": true
+                },
+                {
+                    "name": "color",
+                    "value": [
+                        0.05612799897789955,
+                        0.6104958653450012,
+                        0.0
+                    ]
+                },
+                {
+                    "name": "shrink",
+                    "value": true
+                }
+            ],
+            "texts": []
+        },
+        {
+            "name": "Frame.003",
+            "label": "Output",
+            "location": [
+                508.48785400390625,
+                259.3931884765625
+            ],
+            "width": 524.638427734375,
+            "height": 659.435791015625,
+            "parent": null,
+            "class": "NodeFrame",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [
+                {
+                    "name": "use_custom_color",
+                    "value": true
+                },
+                {
+                    "name": "color",
+                    "value": [
+                        0.6104959845542908,
+                        0.06662588566541672,
+                        0.0
+                    ]
+                },
+                {
+                    "name": "shrink",
+                    "value": true
+                }
+            ],
+            "texts": []
+        },
+        {
+            "name": "Frame.005",
+            "label": "Information",
+            "location": [
+                1222.4765625,
+                -21.232376098632812
+            ],
+            "width": 587.3812255859375,
+            "height": 660.048095703125,
+            "parent": null,
+            "class": "NodeFrame",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [
+                {
+                    "name": "use_custom_color",
+                    "value": false
+                },
+                {
+                    "name": "color",
+                    "value": [
+                        0.6079999804496765,
+                        0.6079999804496765,
+                        0.6079999804496765
+                    ]
+                },
+                {
+                    "name": "shrink",
+                    "value": true
+                }
+            ],
+            "texts": [
+                {
+                    "name": "UMM_OmniPBR_Information",
+                    "contents": "This shader graph is designed for a lossless material pipeline with Omniverse.\n\nAdding nodes, removing nodes, and changing connections can cause the pipeline to no longer be lossless.\n\nYou can change properties on any node in the graph to get the desired look in Blender but only nodes in GREEN frames are evaluated for property values on export. For example, you can select a uv map in the UV Map node but the OmniPBR Compute node's \"UV Space Index\" is what will be exported to the USD file.\n\nAlso, some graph properties will not affect the rendering in Blender. Those properties are simply included to hold values for subsequent exports to Omniverse.\n\nExceptions:\n    \n    OmniPBR Compute.UseNormalMap - local to Blender.\n    OmniPBR Compute.UseDetailNormalMap - local to Blender."
+                }
+            ]
+        },
+        {
+            "name": "UV Map",
+            "label": "",
+            "location": [
+                4.2073974609375,
+                -49.97991943359375
+            ],
+            "width": 150.0,
+            "height": 100.0,
+            "parent": "Frame.002",
+            "class": "ShaderNodeUVMap",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "Base Mapping",
+            "label": "Base Mapping",
+            "location": [
+                47.6136474609375,
+                -48.20588684082031
+            ],
+            "width": 140.0,
+            "height": 100.0,
+            "parent": "Frame.001",
+            "class": "ShaderNodeMapping",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "Detail Mapping",
+            "label": "Detail Mapping",
+            "location": [
+                47.33642578125,
+                -425.1611633300781
+            ],
+            "width": 140.0,
+            "height": 100.0,
+            "parent": "Frame.001",
+            "class": "ShaderNodeMapping",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "Emissive Map",
+            "label": "Emissive Map",
+            "location": [
+                -4.09100341796875,
+                -355.68511962890625
+            ],
+            "width": 240.0,
+            "height": 100.0,
+            "parent": "Frame",
+            "class": "ShaderNodeTexImage",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "Emissive Mask Map",
+            "label": "Emissive Mask Map",
+            "location": [
+                270.14764404296875,
+                -425.734375
+            ],
+            "width": 240.0,
+            "height": 100.0,
+            "parent": "Frame",
+            "class": "ShaderNodeTexImage",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "AO Map",
+            "label": "AO Map",
+            "location": [
+                4.47296142578125,
+                -45.80598449707031
+            ],
+            "width": 240.0,
+            "height": 100.0,
+            "parent": "Frame",
+            "class": "ShaderNodeTexImage",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "Metallic Map",
+            "label": "Metallic Map",
+            "location": [
+                290.48675537109375,
+                -109.12104797363281
+            ],
+            "width": 240.0,
+            "height": 100.0,
+            "parent": "Frame",
+            "class": "ShaderNodeTexImage",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "Roughness Map",
+            "label": "Roughness Map",
+            "location": [
+                567.3500366210938,
+                -159.96913146972656
+            ],
+            "width": 240.0,
+            "height": 100.0,
+            "parent": "Frame",
+            "class": "ShaderNodeTexImage",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "ORM Map",
+            "label": "ORM Map",
+            "location": [
+                566.481201171875,
+                72.37274169921875
+            ],
+            "width": 240.0,
+            "height": 100.0,
+            "parent": "Frame",
+            "class": "ShaderNodeTexImage",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "Albedo Map",
+            "label": "Albedo Map",
+            "location": [
+                286.06646728515625,
+                143.39410400390625
+            ],
+            "width": 240.0,
+            "height": 100.0,
+            "parent": "Frame",
+            "class": "ShaderNodeTexImage",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "Opacity Map",
+            "label": "Opacity Map",
+            "location": [
+                274.18450927734375,
+                -670.9015502929688
+            ],
+            "width": 240.0,
+            "height": 100.0,
+            "parent": "Frame",
+            "class": "ShaderNodeTexImage",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "Detail Normal Map",
+            "label": "Detail Normal Map",
+            "location": [
+                534.9067993164062,
+                -748.8092651367188
+            ],
+            "width": 240.0,
+            "height": 100.0,
+            "parent": "Frame",
+            "class": "ShaderNodeTexImage",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "Normal Map",
+            "label": "Normal Map",
+            "location": [
+                530.9785766601562,
+                -484.42449951171875
+            ],
+            "width": 240.0,
+            "height": 100.0,
+            "parent": "Frame",
+            "class": "ShaderNodeTexImage",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "Principled BSDF",
+            "label": "",
+            "location": [
+                -29.3876953125,
+                -32.7137451171875
+            ],
+            "width": 240.0,
+            "height": 100.0,
+            "parent": "Frame.003",
+            "class": "ShaderNodeBsdfPrincipled",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "Material Output",
+            "label": "",
+            "location": [
+                295.250732421875,
+                -30.9573974609375
+            ],
+            "width": 140.0,
+            "height": 100.0,
+            "parent": "Frame.003",
+            "class": "ShaderNodeOutputMaterial",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "OmniPBR Compute",
+            "label": "OmniPBR Compute",
+            "location": [
+                -46.68115234375,
+                -43.5164794921875
+            ],
+            "width": 335.990234375,
+            "height": 100.0,
+            "parent": "Frame.004",
+            "class": "ShaderNodeGroup",
+            "inputs": [
+                {
+                    "index": 0,
+                    "name": "Albedo Map",
+                    "class": "NodeSocketColor",
+                    "default_value": [
+                        0.5,
+                        0.5,
+                        0.5,
+                        1.0
+                    ]
+                },
+                {
+                    "index": 1,
+                    "name": "Use Albedo Map",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 1,
+                    "default_value": 1
+                },
+                {
+                    "index": 2,
+                    "name": "Albedo RGB",
+                    "class": "NodeSocketColor",
+                    "default_value": [
+                        0.20000000298023224,
+                        0.20000000298023224,
+                        0.20000000298023224,
+                        1.0
+                    ]
+                },
+                {
+                    "index": 3,
+                    "name": "Albedo Add",
+                    "class": "NodeSocketFloatFactor",
+                    "min_value": -1.0,
+                    "max_value": 1.0,
+                    "default_value": 0.0
+                },
+                {
+                    "index": 4,
+                    "name": "Albedo Desaturation",
+                    "class": "NodeSocketFloatFactor",
+                    "min_value": 0.0,
+                    "max_value": 1.0,
+                    "default_value": 0.0
+                },
+                {
+                    "index": 5,
+                    "name": "Albedo Brightness",
+                    "class": "NodeSocketFloatFactor",
+                    "min_value": 0.0,
+                    "max_value": 1.0,
+                    "default_value": 1.0
+                },
+                {
+                    "index": 6,
+                    "name": "Albedo Tint",
+                    "class": "NodeSocketColor",
+                    "default_value": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "index": 7,
+                    "name": "Specular",
+                    "class": "NodeSocketFloatFactor",
+                    "min_value": 0.0,
+                    "max_value": 1.0,
+                    "default_value": 0.5
+                },
+                {
+                    "index": 8,
+                    "name": "Use ORM Map",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 1,
+                    "default_value": 0
+                },
+                {
+                    "index": 9,
+                    "name": "ORM Map",
+                    "class": "NodeSocketColor",
+                    "default_value": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "index": 10,
+                    "name": "AO Map",
+                    "class": "NodeSocketColor",
+                    "default_value": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "index": 11,
+                    "name": "AO to Diffuse",
+                    "class": "NodeSocketFloatFactor",
+                    "min_value": 0.0,
+                    "max_value": 1.0,
+                    "default_value": 0.0
+                },
+                {
+                    "index": 12,
+                    "name": "Metallic Amount",
+                    "class": "NodeSocketFloatFactor",
+                    "min_value": 0.0,
+                    "max_value": 1.0,
+                    "default_value": 0.0
+                },
+                {
+                    "index": 13,
+                    "name": "Metallic Map",
+                    "class": "NodeSocketColor",
+                    "default_value": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "index": 14,
+                    "name": "Metallic Map Influence",
+                    "class": "NodeSocketFloatFactor",
+                    "min_value": 0.0,
+                    "max_value": 1.0,
+                    "default_value": 0.0
+                },
+                {
+                    "index": 15,
+                    "name": "Roughness Amount",
+                    "class": "NodeSocketFloatFactor",
+                    "min_value": 0.0,
+                    "max_value": 1.0,
+                    "default_value": 0.5
+                },
+                {
+                    "index": 16,
+                    "name": "Roughness Map",
+                    "class": "NodeSocketColor",
+                    "default_value": [
+                        0.5,
+                        0.5,
+                        0.5,
+                        1.0
+                    ]
+                },
+                {
+                    "index": 17,
+                    "name": "Roughness Map Influence",
+                    "class": "NodeSocketFloatFactor",
+                    "min_value": 0.0,
+                    "max_value": 1.0,
+                    "default_value": 0.0
+                },
+                {
+                    "index": 18,
+                    "name": "Enable Emission",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 1,
+                    "default_value": 0
+                },
+                {
+                    "index": 19,
+                    "name": "Emissive Intensity",
+                    "class": "NodeSocketFloatFactor",
+                    "min_value": -3.4028234663852886e+38,
+                    "max_value": 3.4028234663852886e+38,
+                    "default_value": 40.0
+                },
+                {
+                    "index": 20,
+                    "name": "Emissive Color",
+                    "class": "NodeSocketColor",
+                    "default_value": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "index": 21,
+                    "name": "Emissive Color Map",
+                    "class": "NodeSocketColor",
+                    "default_value": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "index": 22,
+                    "name": "Use Emission Map",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 1,
+                    "default_value": 0
+                },
+                {
+                    "index": 23,
+                    "name": "Emissive Mask Map",
+                    "class": "NodeSocketColor",
+                    "default_value": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "index": 24,
+                    "name": "Normal Map",
+                    "class": "NodeSocketColor",
+                    "default_value": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "index": 25,
+                    "name": "Normal Map Strength",
+                    "class": "NodeSocketFloatFactor",
+                    "min_value": 0.0,
+                    "max_value": 10.0,
+                    "default_value": 1.0
+                },
+                {
+                    "index": 26,
+                    "name": "Use Normal Map",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 1,
+                    "default_value": 1
+                },
+                {
+                    "index": 27,
+                    "name": "Detail Normal Map",
+                    "class": "NodeSocketColor",
+                    "default_value": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "index": 28,
+                    "name": "Use Detail Normal Map",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 1,
+                    "default_value": 0
+                },
+                {
+                    "index": 29,
+                    "name": "Detail Normal Strength",
+                    "class": "NodeSocketFloatFactor",
+                    "min_value": 0.0,
+                    "max_value": 10.0,
+                    "default_value": 1.0
+                },
+                {
+                    "index": 30,
+                    "name": "Enable Opacity",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 1,
+                    "default_value": 0
+                },
+                {
+                    "index": 31,
+                    "name": "Enable Opacity Texture",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 1,
+                    "default_value": 0
+                },
+                {
+                    "index": 32,
+                    "name": "Opacity Amount",
+                    "class": "NodeSocketFloatFactor",
+                    "min_value": 0.0,
+                    "max_value": 1.0,
+                    "default_value": 0.0
+                },
+                {
+                    "index": 33,
+                    "name": "Opacity Map",
+                    "class": "NodeSocketColor",
+                    "default_value": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "index": 34,
+                    "name": "Opacity Threshold",
+                    "class": "NodeSocketFloatFactor",
+                    "min_value": 0.0,
+                    "max_value": 1.0,
+                    "default_value": 0.0
+                },
+                {
+                    "index": 35,
+                    "name": "Opacity Mono Source",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 3,
+                    "default_value": 1
+                },
+                {
+                    "index": 36,
+                    "name": "Enable Project UVW Coordinates",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 1,
+                    "default_value": 0
+                },
+                {
+                    "index": 37,
+                    "name": "Enable World Space",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 1,
+                    "default_value": 0
+                },
+                {
+                    "index": 38,
+                    "name": "UV Space Index",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 512,
+                    "default_value": 0
+                },
+                {
+                    "index": 39,
+                    "name": "Normal Map Flip U Tangent",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 1,
+                    "default_value": 0
+                },
+                {
+                    "index": 40,
+                    "name": "Normal Map Flip V Tangent",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 1,
+                    "default_value": 1
+                }
+            ],
+            "outputs": [
+                {
+                    "index": 0,
+                    "name": "Albedo",
+                    "class": "NodeSocketColor"
+                },
+                {
+                    "index": 1,
+                    "name": "Metallic",
+                    "class": "NodeSocketColor"
+                },
+                {
+                    "index": 2,
+                    "name": "Specular",
+                    "class": "NodeSocketFloatFactor"
+                },
+                {
+                    "index": 3,
+                    "name": "Roughness",
+                    "class": "NodeSocketColor"
+                },
+                {
+                    "index": 4,
+                    "name": "Normal Map",
+                    "class": "NodeSocketColor"
+                },
+                {
+                    "index": 5,
+                    "name": "Emission",
+                    "class": "NodeSocketColor"
+                },
+                {
+                    "index": 6,
+                    "name": "Emissive Intensity",
+                    "class": "NodeSocketFloatFactor"
+                }
+            ],
+            "nodes": [
+                {
+                    "name": "Mix.006",
+                    "label": "Roughness-Factor",
+                    "location": [
+                        363.3636779785156,
+                        -459.13153076171875
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMixRGB",
+                    "inputs": [
+                        {
+                            "index": 0,
+                            "name": "Fac",
+                            "class": "NodeSocketFloatFactor",
+                            "default_value": 0.5
+                        },
+                        {
+                            "index": 1,
+                            "name": "Color1",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        },
+                        {
+                            "index": 2,
+                            "name": "Color2",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "blend_type",
+                            "value": "MIX"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "Mix.001",
+                    "label": "Apply AO",
+                    "location": [
+                        341.076416015625,
+                        337.81390380859375
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMixRGB",
+                    "inputs": [
+                        {
+                            "index": 0,
+                            "name": "Fac",
+                            "class": "NodeSocketFloatFactor",
+                            "default_value": 1.0
+                        },
+                        {
+                            "index": 1,
+                            "name": "Color1",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        },
+                        {
+                            "index": 2,
+                            "name": "Color2",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "blend_type",
+                            "value": "MULTIPLY"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "Mix",
+                    "label": "Apply Tint",
+                    "location": [
+                        70.11546325683594,
+                        525.7276000976562
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMixRGB",
+                    "inputs": [
+                        {
+                            "index": 0,
+                            "name": "Fac",
+                            "class": "NodeSocketFloatFactor",
+                            "default_value": 1.0
+                        },
+                        {
+                            "index": 1,
+                            "name": "Color1",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        },
+                        {
+                            "index": 2,
+                            "name": "Color2",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "blend_type",
+                            "value": "MULTIPLY"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "Separate RGB",
+                    "label": "",
+                    "location": [
+                        -311.6913146972656,
+                        -177.2138214111328
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeSeparateRGB",
+                    "inputs": [],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [],
+                    "texts": []
+                },
+                {
+                    "name": "RGB",
+                    "label": "",
+                    "location": [
+                        -1060.8045654296875,
+                        -681.1764526367188
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeRGB",
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "index": 0,
+                            "name": "Color",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [],
+                    "texts": []
+                },
+                {
+                    "name": "Mix.002",
+                    "label": "AO to Diffuse",
+                    "location": [
+                        529.94384765625,
+                        525.0449829101562
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMixRGB",
+                    "inputs": [
+                        {
+                            "index": 0,
+                            "name": "Fac",
+                            "class": "NodeSocketFloatFactor",
+                            "default_value": 0.5
+                        },
+                        {
+                            "index": 1,
+                            "name": "Color1",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        },
+                        {
+                            "index": 2,
+                            "name": "Color2",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "blend_type",
+                            "value": "MIX"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "Mix.013",
+                    "label": "Albedo Brightness",
+                    "location": [
+                        -369.7886657714844,
+                        507.16015625
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMixRGB",
+                    "inputs": [
+                        {
+                            "index": 0,
+                            "name": "Fac",
+                            "class": "NodeSocketFloatFactor",
+                            "default_value": 1.0
+                        },
+                        {
+                            "index": 1,
+                            "name": "Color1",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        },
+                        {
+                            "index": 2,
+                            "name": "Color2",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "blend_type",
+                            "value": "MULTIPLY"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "Mix.012",
+                    "label": "Albedo Add",
+                    "location": [
+                        -671.7221069335938,
+                        551.872314453125
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMixRGB",
+                    "inputs": [
+                        {
+                            "index": 0,
+                            "name": "Fac",
+                            "class": "NodeSocketFloatFactor",
+                            "default_value": 0.5
+                        },
+                        {
+                            "index": 1,
+                            "name": "Color1",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        },
+                        {
+                            "index": 2,
+                            "name": "Color2",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "blend_type",
+                            "value": "ADD"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "Mix.014",
+                    "label": "Detail Normal Source Switch",
+                    "location": [
+                        -720.9641723632812,
+                        -907.9030151367188
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMixRGB",
+                    "inputs": [
+                        {
+                            "index": 0,
+                            "name": "Fac",
+                            "class": "NodeSocketFloatFactor",
+                            "default_value": 0.5
+                        },
+                        {
+                            "index": 1,
+                            "name": "Color1",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        },
+                        {
+                            "index": 2,
+                            "name": "Color2",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "blend_type",
+                            "value": "MIX"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "Normal Map",
+                    "label": "",
+                    "location": [
+                        -487.4425964355469,
+                        -584.4586181640625
+                    ],
+                    "width": 150.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeNormalMap",
+                    "inputs": [],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [],
+                    "texts": []
+                },
+                {
+                    "name": "Normal Map.001",
+                    "label": "",
+                    "location": [
+                        -487.21112060546875,
+                        -883.1339721679688
+                    ],
+                    "width": 150.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeNormalMap",
+                    "inputs": [],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [],
+                    "texts": []
+                },
+                {
+                    "name": "Mix.008",
+                    "label": "Albedo Source Switch",
+                    "location": [
+                        -1406.1441650390625,
+                        447.41766357421875
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMixRGB",
+                    "inputs": [
+                        {
+                            "index": 0,
+                            "name": "Fac",
+                            "class": "NodeSocketFloatFactor",
+                            "default_value": 0.5
+                        },
+                        {
+                            "index": 1,
+                            "name": "Color1",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        },
+                        {
+                            "index": 2,
+                            "name": "Color2",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "blend_type",
+                            "value": "MIX"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "Hue Saturation Value",
+                    "label": "",
+                    "location": [
+                        -1065.7901611328125,
+                        607.2035522460938
+                    ],
+                    "width": 150.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeHueSaturation",
+                    "inputs": [],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [],
+                    "texts": []
+                },
+                {
+                    "name": "Mix.003",
+                    "label": "AO-ORM Map Toggle",
+                    "location": [
+                        95.51786804199219,
+                        217.91529846191406
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMixRGB",
+                    "inputs": [
+                        {
+                            "index": 0,
+                            "name": "Fac",
+                            "class": "NodeSocketFloatFactor",
+                            "default_value": 0.5
+                        },
+                        {
+                            "index": 1,
+                            "name": "Color1",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        },
+                        {
+                            "index": 2,
+                            "name": "Color2",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "blend_type",
+                            "value": "MIX"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "RGB.001",
+                    "label": "",
+                    "location": [
+                        -1041.1123046875,
+                        -953.3507080078125
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeRGB",
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "index": 0,
+                            "name": "Color",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5000009536743164,
+                                0.5,
+                                1.0,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [],
+                    "texts": []
+                },
+                {
+                    "name": "Group Input",
+                    "label": "",
+                    "location": [
+                        -1818.1448974609375,
+                        98.1231689453125
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "NodeGroupInput",
+                    "inputs": [],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [],
+                    "texts": []
+                },
+                {
+                    "name": "Group Output",
+                    "label": "",
+                    "location": [
+                        981.2186889648438,
+                        40.883602142333984
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "NodeGroupOutput",
+                    "inputs": [],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [],
+                    "texts": []
+                },
+                {
+                    "name": "Mix.010",
+                    "label": "Emissive Source Switch",
+                    "location": [
+                        -794.0533447265625,
+                        -368.2444763183594
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMixRGB",
+                    "inputs": [
+                        {
+                            "index": 0,
+                            "name": "Fac",
+                            "class": "NodeSocketFloatFactor",
+                            "default_value": 0.5
+                        },
+                        {
+                            "index": 1,
+                            "name": "Color1",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        },
+                        {
+                            "index": 2,
+                            "name": "Color2",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "blend_type",
+                            "value": "MIX"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "Mix.007",
+                    "label": "Metallic Factor",
+                    "location": [
+                        303.339599609375,
+                        -33.23448944091797
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMixRGB",
+                    "inputs": [
+                        {
+                            "index": 0,
+                            "name": "Fac",
+                            "class": "NodeSocketFloatFactor",
+                            "default_value": 0.5
+                        },
+                        {
+                            "index": 1,
+                            "name": "Color1",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        },
+                        {
+                            "index": 2,
+                            "name": "Color2",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "blend_type",
+                            "value": "MIX"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "Mix.011",
+                    "label": "Normal Source Switch",
+                    "location": [
+                        -719.1019287109375,
+                        -712.2954711914062
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMixRGB",
+                    "inputs": [
+                        {
+                            "index": 0,
+                            "name": "Fac",
+                            "class": "NodeSocketFloatFactor",
+                            "default_value": 0.5
+                        },
+                        {
+                            "index": 1,
+                            "name": "Color1",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        },
+                        {
+                            "index": 2,
+                            "name": "Color2",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "blend_type",
+                            "value": "MIX"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "Mix.009",
+                    "label": "Emissive Switch",
+                    "location": [
+                        -1115.2685546875,
+                        -475.1673583984375
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMixRGB",
+                    "inputs": [
+                        {
+                            "index": 0,
+                            "name": "Fac",
+                            "class": "NodeSocketFloatFactor",
+                            "default_value": 0.5
+                        },
+                        {
+                            "index": 1,
+                            "name": "Color1",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        },
+                        {
+                            "index": 2,
+                            "name": "Color2",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "blend_type",
+                            "value": "MIX"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "Mix.004",
+                    "label": "Roughness-ORM Map Toggle",
+                    "location": [
+                        182.2133331298828,
+                        -635.487548828125
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMixRGB",
+                    "inputs": [
+                        {
+                            "index": 0,
+                            "name": "Fac",
+                            "class": "NodeSocketFloatFactor",
+                            "default_value": 0.5
+                        },
+                        {
+                            "index": 1,
+                            "name": "Color1",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        },
+                        {
+                            "index": 2,
+                            "name": "Color2",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "blend_type",
+                            "value": "MIX"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "Mix.005",
+                    "label": "Metallic-ORM Map Toggle",
+                    "location": [
+                        -2.184864044189453,
+                        -227.71604919433594
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMixRGB",
+                    "inputs": [
+                        {
+                            "index": 0,
+                            "name": "Fac",
+                            "class": "NodeSocketFloatFactor",
+                            "default_value": 0.5
+                        },
+                        {
+                            "index": 1,
+                            "name": "Color1",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        },
+                        {
+                            "index": 2,
+                            "name": "Color2",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "blend_type",
+                            "value": "MIX"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                }
+            ],
+            "links": [
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "ORM Map",
+                    "to_node": "Separate RGB",
+                    "to_socket": "Image"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Use ORM Map",
+                    "to_node": "Mix.004",
+                    "to_socket": "Fac"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Roughness Map Influence",
+                    "to_node": "Mix.006",
+                    "to_socket": "Fac"
+                },
+                {
+                    "from_node": "Mix.006",
+                    "from_socket": "Color",
+                    "to_node": "Group Output",
+                    "to_socket": "Roughness"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Metallic Map Influence",
+                    "to_node": "Mix.007",
+                    "to_socket": "Fac"
+                },
+                {
+                    "from_node": "Mix.007",
+                    "from_socket": "Color",
+                    "to_node": "Group Output",
+                    "to_socket": "Metallic"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Albedo Tint",
+                    "to_node": "Mix",
+                    "to_socket": "Color1"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "AO Map",
+                    "to_node": "Mix.003",
+                    "to_socket": "Color1"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "AO to Diffuse",
+                    "to_node": "Mix.002",
+                    "to_socket": "Fac"
+                },
+                {
+                    "from_node": "Mix.002",
+                    "from_socket": "Color",
+                    "to_node": "Group Output",
+                    "to_socket": "Albedo"
+                },
+                {
+                    "from_node": "Mix.004",
+                    "from_socket": "Color",
+                    "to_node": "Mix.006",
+                    "to_socket": "Color2"
+                },
+                {
+                    "from_node": "Mix.005",
+                    "from_socket": "Color",
+                    "to_node": "Mix.007",
+                    "to_socket": "Color2"
+                },
+                {
+                    "from_node": "Mix",
+                    "from_socket": "Color",
+                    "to_node": "Mix.001",
+                    "to_socket": "Color1"
+                },
+                {
+                    "from_node": "Mix",
+                    "from_socket": "Color",
+                    "to_node": "Mix.002",
+                    "to_socket": "Color1"
+                },
+                {
+                    "from_node": "Mix.001",
+                    "from_socket": "Color",
+                    "to_node": "Mix.002",
+                    "to_socket": "Color2"
+                },
+                {
+                    "from_node": "Mix.003",
+                    "from_socket": "Color",
+                    "to_node": "Mix.001",
+                    "to_socket": "Color2"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Use ORM Map",
+                    "to_node": "Mix.005",
+                    "to_socket": "Fac"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Use ORM Map",
+                    "to_node": "Mix.003",
+                    "to_socket": "Fac"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Metallic Amount",
+                    "to_node": "Mix.007",
+                    "to_socket": "Color1"
+                },
+                {
+                    "from_node": "Separate RGB",
+                    "from_socket": "B",
+                    "to_node": "Mix.005",
+                    "to_socket": "Color2"
+                },
+                {
+                    "from_node": "Separate RGB",
+                    "from_socket": "G",
+                    "to_node": "Mix.004",
+                    "to_socket": "Color2"
+                },
+                {
+                    "from_node": "Separate RGB",
+                    "from_socket": "R",
+                    "to_node": "Mix.003",
+                    "to_socket": "Color2"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Roughness Amount",
+                    "to_node": "Mix.006",
+                    "to_socket": "Color1"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Use Albedo Map",
+                    "to_node": "Mix.008",
+                    "to_socket": "Fac"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Use Emission Map",
+                    "to_node": "Mix.009",
+                    "to_socket": "Fac"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Emissive Color",
+                    "to_node": "Mix.009",
+                    "to_socket": "Color1"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Enable Emission",
+                    "to_node": "Mix.010",
+                    "to_socket": "Fac"
+                },
+                {
+                    "from_node": "Mix.009",
+                    "from_socket": "Color",
+                    "to_node": "Mix.010",
+                    "to_socket": "Color2"
+                },
+                {
+                    "from_node": "Mix.010",
+                    "from_socket": "Color",
+                    "to_node": "Group Output",
+                    "to_socket": "Emission"
+                },
+                {
+                    "from_node": "Normal Map",
+                    "from_socket": "Normal",
+                    "to_node": "Group Output",
+                    "to_socket": "Normal Map"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Normal Map Strength",
+                    "to_node": "Normal Map",
+                    "to_socket": "Strength"
+                },
+                {
+                    "from_node": "RGB.001",
+                    "from_socket": "Color",
+                    "to_node": "Mix.011",
+                    "to_socket": "Color1"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Use Normal Map",
+                    "to_node": "Mix.011",
+                    "to_socket": "Fac"
+                },
+                {
+                    "from_node": "Mix.011",
+                    "from_socket": "Color",
+                    "to_node": "Normal Map",
+                    "to_socket": "Color"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Albedo Brightness",
+                    "to_node": "Mix.013",
+                    "to_socket": "Color1"
+                },
+                {
+                    "from_node": "Mix.012",
+                    "from_socket": "Color",
+                    "to_node": "Mix.013",
+                    "to_socket": "Color2"
+                },
+                {
+                    "from_node": "Mix.013",
+                    "from_socket": "Color",
+                    "to_node": "Mix",
+                    "to_socket": "Color2"
+                },
+                {
+                    "from_node": "Mix.008",
+                    "from_socket": "Color",
+                    "to_node": "Hue Saturation Value",
+                    "to_socket": "Color"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Specular",
+                    "to_node": "Group Output",
+                    "to_socket": "Specular"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Use Detail Normal Map",
+                    "to_node": "Mix.014",
+                    "to_socket": "Fac"
+                },
+                {
+                    "from_node": "RGB.001",
+                    "from_socket": "Color",
+                    "to_node": "Mix.014",
+                    "to_socket": "Color1"
+                },
+                {
+                    "from_node": "Mix.014",
+                    "from_socket": "Color",
+                    "to_node": "Normal Map.001",
+                    "to_socket": "Color"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Detail Normal Strength",
+                    "to_node": "Normal Map.001",
+                    "to_socket": "Strength"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Albedo Desaturation",
+                    "to_node": "Hue Saturation Value",
+                    "to_socket": "Fac"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Albedo RGB",
+                    "to_node": "Mix.008",
+                    "to_socket": "Color1"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Albedo Map",
+                    "to_node": "Mix.008",
+                    "to_socket": "Color2"
+                },
+                {
+                    "from_node": "Hue Saturation Value",
+                    "from_socket": "Color",
+                    "to_node": "Mix.012",
+                    "to_socket": "Color1"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Albedo Add",
+                    "to_node": "Mix.012",
+                    "to_socket": "Fac"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Emissive Intensity",
+                    "to_node": "Group Output",
+                    "to_socket": "Emissive Intensity"
+                },
+                {
+                    "from_node": "RGB",
+                    "from_socket": "Color",
+                    "to_node": "Mix.010",
+                    "to_socket": "Color1"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Detail Normal Map",
+                    "to_node": "Mix.014",
+                    "to_socket": "Color2"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Normal Map",
+                    "to_node": "Mix.011",
+                    "to_socket": "Color2"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Emissive Color Map",
+                    "to_node": "Mix.009",
+                    "to_socket": "Color2"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Roughness Map",
+                    "to_node": "Mix.004",
+                    "to_socket": "Color1"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Metallic Map",
+                    "to_node": "Mix.005",
+                    "to_socket": "Color1"
+                }
+            ],
+            "properties": [],
+            "texts": []
+        }
+    ],
+    "links": [
+        {
+            "from_node": "Principled BSDF",
+            "from_socket": "BSDF",
+            "to_node": "Material Output",
+            "to_socket": "Surface"
+        },
+        {
+            "from_node": "ORM Map",
+            "from_socket": "Color",
+            "to_node": "OmniPBR Compute",
+            "to_socket": "ORM Map"
+        },
+        {
+            "from_node": "Metallic Map",
+            "from_socket": "Color",
+            "to_node": "OmniPBR Compute",
+            "to_socket": "Metallic Map"
+        },
+        {
+            "from_node": "OmniPBR Compute",
+            "from_socket": "Roughness",
+            "to_node": "Principled BSDF",
+            "to_socket": "Roughness"
+        },
+        {
+            "from_node": "OmniPBR Compute",
+            "from_socket": "Metallic",
+            "to_node": "Principled BSDF",
+            "to_socket": "Metallic"
+        },
+        {
+            "from_node": "Albedo Map",
+            "from_socket": "Color",
+            "to_node": "OmniPBR Compute",
+            "to_socket": "Albedo Map"
+        },
+        {
+            "from_node": "AO Map",
+            "from_socket": "Color",
+            "to_node": "OmniPBR Compute",
+            "to_socket": "AO Map"
+        },
+        {
+            "from_node": "OmniPBR Compute",
+            "from_socket": "Albedo",
+            "to_node": "Principled BSDF",
+            "to_socket": "Base Color"
+        },
+        {
+            "from_node": "OmniPBR Compute",
+            "from_socket": "Emission",
+            "to_node": "Principled BSDF",
+            "to_socket": "Emission"
+        },
+        {
+            "from_node": "Roughness Map",
+            "from_socket": "Color",
+            "to_node": "OmniPBR Compute",
+            "to_socket": "Roughness Map"
+        },
+        {
+            "from_node": "Emissive Map",
+            "from_socket": "Color",
+            "to_node": "OmniPBR Compute",
+            "to_socket": "Emissive Color Map"
+        },
+        {
+            "from_node": "OmniPBR Compute",
+            "from_socket": "Normal Map",
+            "to_node": "Principled BSDF",
+            "to_socket": "Normal"
+        },
+        {
+            "from_node": "OmniPBR Compute",
+            "from_socket": "Specular",
+            "to_node": "Principled BSDF",
+            "to_socket": "Specular"
+        },
+        {
+            "from_node": "Normal Map",
+            "from_socket": "Color",
+            "to_node": "OmniPBR Compute",
+            "to_socket": "Normal Map"
+        },
+        {
+            "from_node": "UV Map",
+            "from_socket": "UV",
+            "to_node": "Base Mapping",
+            "to_socket": "Vector"
+        },
+        {
+            "from_node": "Base Mapping",
+            "from_socket": "Vector",
+            "to_node": "Albedo Map",
+            "to_socket": "Vector"
+        },
+        {
+            "from_node": "Base Mapping",
+            "from_socket": "Vector",
+            "to_node": "ORM Map",
+            "to_socket": "Vector"
+        },
+        {
+            "from_node": "Base Mapping",
+            "from_socket": "Vector",
+            "to_node": "AO Map",
+            "to_socket": "Vector"
+        },
+        {
+            "from_node": "Base Mapping",
+            "from_socket": "Vector",
+            "to_node": "Metallic Map",
+            "to_socket": "Vector"
+        },
+        {
+            "from_node": "Base Mapping",
+            "from_socket": "Vector",
+            "to_node": "Roughness Map",
+            "to_socket": "Vector"
+        },
+        {
+            "from_node": "Base Mapping",
+            "from_socket": "Vector",
+            "to_node": "Emissive Map",
+            "to_socket": "Vector"
+        },
+        {
+            "from_node": "UV Map",
+            "from_socket": "UV",
+            "to_node": "Detail Mapping",
+            "to_socket": "Vector"
+        },
+        {
+            "from_node": "Base Mapping",
+            "from_socket": "Vector",
+            "to_node": "Normal Map",
+            "to_socket": "Vector"
+        },
+        {
+            "from_node": "Detail Normal Map",
+            "from_socket": "Color",
+            "to_node": "OmniPBR Compute",
+            "to_socket": "Detail Normal Map"
+        },
+        {
+            "from_node": "Detail Mapping",
+            "from_socket": "Vector",
+            "to_node": "Detail Normal Map",
+            "to_socket": "Vector"
+        },
+        {
+            "from_node": "Base Mapping",
+            "from_socket": "Vector",
+            "to_node": "Emissive Mask Map",
+            "to_socket": "Vector"
+        },
+        {
+            "from_node": "Emissive Mask Map",
+            "from_socket": "Color",
+            "to_node": "OmniPBR Compute",
+            "to_socket": "Emissive Mask Map"
+        },
+        {
+            "from_node": "Opacity Map",
+            "from_socket": "Color",
+            "to_node": "OmniPBR Compute",
+            "to_socket": "Opacity Map"
+        },
+        {
+            "from_node": "Base Mapping",
+            "from_socket": "Vector",
+            "to_node": "Opacity Map",
+            "to_socket": "Vector"
+        },
+        {
+            "from_node": "OmniPBR Compute",
+            "from_socket": "Emissive Intensity",
+            "to_node": "Principled BSDF",
+            "to_socket": "Emission Strength"
+        }
+    ]
+}

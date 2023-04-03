@@ -1,0 +1,328 @@
+{
+    "_header": {
+        "_module": "omni.universalmaterialmap.core.data",
+        "_class_name": "Target"
+    },
+    "_content": {
+        "_id": "3f4ed058-5ed5-4125-8d23-32f6fc293a23",
+        "_inputs": [],
+        "_outputs": [],
+        "_display_name": "Material",
+        "_position": null,
+        "_expansion_state": 0,
+        "_show_inputs": true,
+        "_show_outputs": true,
+        "_show_peripheral": false,
+        "_nodes": [
+            {
+                "_id": "1f1c4005-887c-4d9a-947c-f4d1ca20cd25",
+                "_inputs": [
+                    {
+                        "_id": "1d9ca95d-8254-46b9-b928-d1f02a698213",
+                        "_name": "diffuse_color",
+                        "_display_name": "diffuse_color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": [
+                            0.10653112083673477,
+                            0.10653112083673477,
+                            0.10653112083673477,
+                            1.0
+                        ],
+                        "_value": [
+                            0.10653112083673477,
+                            0.10653112083673477,
+                            0.10653112083673477,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "fbcb76c0-3bf8-4360-b15e-b24cc86559ff",
+                        "_name": "metallic",
+                        "_display_name": "metallic",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "cae5adb6-fdf0-43a7-9a97-1dd0f2c9535d",
+                        "_name": "specular_color",
+                        "_display_name": "specular_color",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": "<Color (r=1.0000, g=1.0000, b=1.0000)>",
+                        "_value": "<Color (r=1.0000, g=1.0000, b=1.0000)>"
+                    },
+                    {
+                        "_id": "88f4f41d-dbfa-4e11-aabf-c6d33d61b7c1",
+                        "_name": "roughness",
+                        "_display_name": "roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.5,
+                        "_value": 0.5
+                    },
+                    {
+                        "_id": "b138be48-a071-4172-a73a-958f10f915d8",
+                        "_name": "use_backface_culling",
+                        "_display_name": "use_backface_culling",
+                        "_value_type": "bool",
+                        "_internal_value_type": "BOOLEAN",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": false,
+                        "_value": false
+                    },
+                    {
+                        "_id": "6f55a3c6-c368-4217-a594-9097dcfc0399",
+                        "_name": "blend_method",
+                        "_display_name": "blend_method",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": "OPAQUE",
+                        "_value": "OPAQUE"
+                    },
+                    {
+                        "_id": "caaf0984-43c3-4019-a863-853f69661be3",
+                        "_name": "shadow_method",
+                        "_display_name": "shadow_method",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": "OPAQUE",
+                        "_value": "OPAQUE"
+                    },
+                    {
+                        "_id": "e7eb44b4-37e7-4259-8c5f-82c19435459a",
+                        "_name": "alpha_threshold",
+                        "_display_name": "alpha_threshold",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "574f3a85-dbab-4586-914e-f6d0e3d86cf4",
+                        "_name": "use_screen_refraction",
+                        "_display_name": "use_screen_refraction",
+                        "_value_type": "bool",
+                        "_internal_value_type": "BOOLEAN",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": false,
+                        "_value": false
+                    },
+                    {
+                        "_id": "680f293b-ff61-4213-8437-0dd6a94a8d3c",
+                        "_name": "refraction_depth",
+                        "_display_name": "refraction_depth",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "91628c12-4cc8-4be9-874e-5020976996bb",
+                        "_name": "use_sss_translucency",
+                        "_display_name": "use_sss_translucency",
+                        "_value_type": "bool",
+                        "_internal_value_type": "BOOLEAN",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": false,
+                        "_value": false
+                    },
+                    {
+                        "_id": "009e82f0-e06f-4794-9832-b107b6ebe522",
+                        "_name": "pass_index",
+                        "_display_name": "pass_index",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": false,
+                        "_default_value": 0,
+                        "_value": 0
+                    }
+                ],
+                "_outputs": [
+                    {
+                        "_id": "bff7ca52-25c6-4abb-a69e-fd282c74edff",
+                        "_name": "diffuse_color",
+                        "_display_name": "diffuse_color",
+                        "_value_type": "vector4",
+                        "_internal_value_type": "RGBA",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": [
+                            0.10653112083673477,
+                            0.10653112083673477,
+                            0.10653112083673477,
+                            1.0
+                        ],
+                        "_value": [
+                            0.10653112083673477,
+                            0.10653112083673477,
+                            0.10653112083673477,
+                            1.0
+                        ]
+                    },
+                    {
+                        "_id": "fad7e661-30f3-4375-be09-096f5bcd94c1",
+                        "_name": "metallic",
+                        "_display_name": "metallic",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "633eb886-6fdb-455a-8332-8e6112772d15",
+                        "_name": "specular_color",
+                        "_display_name": "specular_color",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": "<Color (r=1.0000, g=1.0000, b=1.0000)>",
+                        "_value": "<Color (r=1.0000, g=1.0000, b=1.0000)>"
+                    },
+                    {
+                        "_id": "2d2dd095-e327-4a92-9653-7595504855d2",
+                        "_name": "roughness",
+                        "_display_name": "roughness",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.5,
+                        "_value": 0.5
+                    },
+                    {
+                        "_id": "61395586-068f-4549-8775-ecdf2db14d00",
+                        "_name": "use_backface_culling",
+                        "_display_name": "use_backface_culling",
+                        "_value_type": "bool",
+                        "_internal_value_type": "BOOLEAN",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": false,
+                        "_value": false
+                    },
+                    {
+                        "_id": "b69aabfa-5490-4c1d-8a56-138ea0abcedd",
+                        "_name": "blend_method",
+                        "_display_name": "blend_method",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": "OPAQUE",
+                        "_value": "OPAQUE"
+                    },
+                    {
+                        "_id": "a798c56e-6dfd-4569-b602-fac9ec5fcda1",
+                        "_name": "shadow_method",
+                        "_display_name": "shadow_method",
+                        "_value_type": "str",
+                        "_internal_value_type": "STRING",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": "OPAQUE",
+                        "_value": "OPAQUE"
+                    },
+                    {
+                        "_id": "0405e856-f785-4b7b-8eb4-e690571fb26f",
+                        "_name": "alpha_threshold",
+                        "_display_name": "alpha_threshold",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "d004fc2e-25b9-47b5-ad8d-dedb408b37f9",
+                        "_name": "use_screen_refraction",
+                        "_display_name": "use_screen_refraction",
+                        "_value_type": "bool",
+                        "_internal_value_type": "BOOLEAN",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": false,
+                        "_value": false
+                    },
+                    {
+                        "_id": "313665ed-8e49-43da-9d99-4ac0ec1b3b85",
+                        "_name": "refraction_depth",
+                        "_display_name": "refraction_depth",
+                        "_value_type": "float",
+                        "_internal_value_type": "VALUE",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0.0,
+                        "_value": 0.0
+                    },
+                    {
+                        "_id": "df7d1e73-1e3c-4639-9380-6d78f2c1f696",
+                        "_name": "use_sss_translucency",
+                        "_display_name": "use_sss_translucency",
+                        "_value_type": "bool",
+                        "_internal_value_type": "BOOLEAN",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": false,
+                        "_value": false
+                    },
+                    {
+                        "_id": "084b6be8-eac5-4db5-9465-35f69ea965f8",
+                        "_name": "pass_index",
+                        "_display_name": "pass_index",
+                        "_value_type": "int",
+                        "_internal_value_type": "INT",
+                        "_is_peripheral": false,
+                        "_is_editable": true,
+                        "_default_value": 0,
+                        "_value": 0
+                    }
+                ],
+                "_class_name": "bpy.types.Material"
+            }
+        ],
+        "_metadata": {
+            "_category": "Connector Materials",
+            "_name": "",
+            "_keywords": [
+                "Blender",
+                "bpy.types.Material",
+                "Material"
+            ],
+            "_supported_clients": [
+                {
+                    "_name": "Blender",
+                    "_version": "any"
+                }
+            ]
+        },
+        "_root_node_id": "1f1c4005-887c-4d9a-947c-f4d1ca20cd25",
+        "_revision": 1
+    }
+}
