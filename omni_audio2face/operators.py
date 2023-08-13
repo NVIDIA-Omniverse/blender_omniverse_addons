@@ -6,6 +6,7 @@ import os
 import re
 import sys
 from typing import *
+from difflib import SequenceMatcher
 
 import numpy as np
 
@@ -720,13 +721,14 @@ class OMNI_OT_TransferShapeData(bpy.types.Operator):
 	def _build_mapping_table(self, import_meshes:Collection, export_meshes:Collection) -> Dict:
 		result = {}
 		for imported in import_meshes:
-			## Intentionally doing the exported data name but the import object name
-			## because of how the imports work on both sides.
-			token = imported.name.rpartition("__Audio2Face_EX")[0]
+			matches = []
 			for exported in export_meshes:
-				exported_token = exported.data.name.rpartition("__Audio2Face_EX")[0]
-				if exported_token == token:
-					result[imported] = exported
+				similarity = SequenceMatcher(None, imported.name, exported.data.name).ratio()
+				matches.append((exported, similarity))
+
+			best_match = sorted(matches, key=lambda m: m[1])[-1][0]
+			result[imported] = best_match
+		
 		return result
 
 	def _transfer_shapes(self, context:Context, source:Object, target:Object, mapping_object:Object) -> int:
@@ -763,6 +765,10 @@ class OMNI_OT_TransferShapeData(bpy.types.Operator):
 		## Grab the mapping array using the new Attributes API.
 		mapping_indices = np.zeros(len(source.data.vertices), dtype=np.int32)
 		attr = mapping_object.data.attributes['index_orig']
+
+		if len(attr.data) != len(source.data.vertices):
+			raise Exception(f"Vertex count mismatch when trying to transfer shapes from {source.data.name} to {target.data.name}. Did you change the topology or name?")
+
 		attr.data.foreach_get("value", mapping_indices)
 
 		for index, block in enumerate(blocks):
