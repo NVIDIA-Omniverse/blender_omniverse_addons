@@ -765,6 +765,10 @@ class OMNI_OT_TransferShapeData(bpy.types.Operator):
 		## Grab the mapping array using the new Attributes API.
 		mapping_indices = np.zeros(len(source.data.vertices), dtype=np.int32)
 		attr = mapping_object.data.attributes['index_orig']
+
+		if len(attr.data) != len(source.data.vertices):
+			raise Exception(f"Vertex count mismatch when trying to transfer shapes from {source.data.name} to {target.data.name}. Did you change the topology or name?")
+
 		attr.data.foreach_get("value", mapping_indices)
 
 		for index, block in enumerate(blocks):
