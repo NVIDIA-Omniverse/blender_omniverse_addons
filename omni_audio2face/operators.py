@@ -45,7 +45,8 @@ def _get_or_create_collection(collection:Collection, name:str) -> Collection:
 		result_lc.exclude = False
 		result_lc.hide_viewport = False
 	else:
-		print(f"-- Warning: No layer collection found for {result.name}")
+		if not bpy.app.background:
+			print(f"-- Warning: No layer collection found for {result.name}")
 	return result
 
 
@@ -168,8 +169,6 @@ def process_export_mesh(orig:Object, target_collection:Collection, is_dynamic:bo
 										obj_dupe.data.attributes.new("index_orig", "INT", "POINT"))
 	vertex_count = len(obj_dupe.data.vertices)
 	attr.data.foreach_set("value", np.arange(vertex_count))
-
-	bpy.ops.object.mode_set(mode="OBJECT")
 
 	if split:
 		## Delete all unselected faces.
@@ -621,9 +620,7 @@ class OMNI_OT_ImportAnimation(bpy.types.Operator):
 					source.startswith("#usda"),
 					"framesPerSecond = " in source,
 					"uniform token[] blendShapes = [" in source,
-					"float[] blendShapeWeights.timeSamples = {" in source,
-					"token[] custom:mh_curveNames = [" in source,
-					"float[] custom:mh_curveValues.timeSamples = {" in source]):
+					"float[] blendShapeWeights.timeSamples = {" in source]):
 				self.report({"ERROR"}, f"USDA not a weights animation cache: {file_path}")
 				return None
 
@@ -707,10 +704,12 @@ class OMNI_OT_TransferShapeData(bpy.types.Operator):
 
 	@classmethod
 	def poll(cls, context:Context) -> bool:
+		if bpy.app.background:
+			return True
 		collection = _get_import_collection()
 		if collection is None:
 			return False
-		meshes = [x.name for x in collection.objects if x.type == "MESH"]
+		meshes = [x.name for x in collection.all_objects if x.type == "MESH"]
 		return bool(len(meshes))
 
 	def _get_collection_meshes(self, collection:Collection) -> List["bpy.data.Mesh"]:

@@ -146,13 +146,17 @@ def find_osocket_from_identifier(idname, node):
 
 def make_link(f_node_label, f_node_ident, to_node_label, to_node_ident, nodetree):
 	fromnode = find_node_from_label(f_node_label, nodetree.nodes)
-	if (fromnode == False):
+	if fromnode == False:
 		return False
 	fromsocket = find_osocket_from_identifier(f_node_ident, fromnode)
+	if fromsocket == False:
+		return False
 	tonode = find_node_from_label(to_node_label, nodetree.nodes)
-	if (tonode == False):
+	if tonode == False:
 		return False
 	tosocket = find_isocket_from_identifier(to_node_ident, tonode)
+	if tosocket is False:
+		return False
 
 	nodetree.links.new(fromsocket, tosocket)
 	return True
@@ -341,10 +345,24 @@ def _material_can_be_baked(material:Material) -> bool:
 
 	try:
 		from_node = outputs[0].inputs["Surface"].links[0].from_node
+		from_socket = outputs[0].inputs["Surface"].links[0].from_socket
 	except IndexError:
 		return False
 
 	##!TODO: Support one level of mix with principled inputs
+	if from_node.type == "GROUP":
+		## Support for UMM2 groups-- check for direct BSDF pass through
+		try:
+			group_output = [x for x in from_node.node_tree.nodes if x.type == "GROUP_OUTPUT"][0]
+		except IndexError:
+			return False
+
+		try:
+			from_index = int(from_socket.path_from_id().rpartition(".outputs[")[-1][:-1])
+			from_node = group_output.inputs[from_index].links[0].from_node
+		except IndexError:
+			return False
+
 	if not from_node.type == "BSDF_PRINCIPLED":
 		return False
 
@@ -540,14 +558,13 @@ class OBJECT_OT_omni_bake_maps(bpy.types.Operator):
 					bpy.data.images.remove(bpy.data.images[image_name])
 				image = bpy.data.images.new(image_name, self.width, self.height,
 											float_buffer=(image_name.endswith(("NORMAL", "EMIT"))) )
-				# if bake_type in {"DIFFUSE", "EMIT"}:
-				# 	image.colorspace_settings.name = "sRGB"
-				# else:
-				# 	image.colorspace_settings.name = "Non-Color"
-				image.colorspace_settings.name = "Raw"
+				if image_name.endswith(("DIFFUSE", "EMIT")):
+					image.colorspace_settings.name = "sRGB"
+				else:
+					image.colorspace_settings.name = "Non-Color"
 
 				if self.merge_textures:
-					temp_file = NamedTemporaryFile(prefix=bake_type, suffix=".png", delete=False)
+					temp_file = NamedTemporaryFile(prefix=image_name, suffix=".png", delete=False)
 					image.filepath = temp_file.name
 
 			image_index = 0

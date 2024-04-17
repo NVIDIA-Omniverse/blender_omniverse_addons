@@ -64,6 +64,14 @@ def preserve_selection(func, *args, **kwargs):
 
 
 ## ======================================================================
+def message_box(message:str, title:str="Scene Optimizer", icon:str="INFO"):
+	def draw(self, context:Context):
+		self.layout.label(text=message)
+
+	bpy.context.window_manager.popup_menu(draw, title=title, icon=icon)
+
+
+## ======================================================================
 class OmniSceneOptPropertiesMixin:
 	"""
 	Blender Properties that are shared between the in-scene preferences pointer
@@ -322,6 +330,22 @@ class OBJECT_OT_omni_sceneopt_optimize(bpy.types.Operator,
 		eval_objs = [x.evaluated_get(deps) for x in target_objects]
 		return sum([len(x.data.vertices) for x in eval_objs])
 
+	@staticmethod
+	def _collect_targets(scene:Scene, selected:bool=False) -> List[Object]:
+		"""Filter mesh objects to keep only single instances"""
+		targets = [x for x in scene.collection.all_objects if x.type == "MESH"]
+		data = set()
+		result = []
+		for item in targets:
+			if selected and not item.select_get():
+				continue
+			if item.data in data:
+				continue
+			data.add(item.data)
+			result.append(item)
+
+		return result
+
 	def do_validate(self, target_objects:List[Object]) -> List[Object]:
 		"""Expects to be run in Edit Mode with all meshes selected"""
 		total_orig = self._total_vertex_count(target_objects)
@@ -373,6 +397,8 @@ class OBJECT_OT_omni_sceneopt_optimize(bpy.types.Operator,
 		total_orig = self._total_vertex_count(target_objects)
 		total_result = 0
 
+		from .batch import lod
+
 		start = time.time()
 
 		for item in target_objects:
@@ -383,6 +409,14 @@ class OBJECT_OT_omni_sceneopt_optimize(bpy.types.Operator,
 				else:
 					self._remove_shape_keys(item)
 
+
+			lod.decimate_object(item, ratio=self.decimate_ratio / 100.0,
+								use_symmetry = self.decimate_use_symmetry,
+								symmetry_axis=self.decimate_symmetry_axis,
+								min_face_count=self.decimate_min_face_count,
+								create_duplicate=False)
+
+			"""
 			if len(item.data.polygons) < self.decimate_min_face_count:
 				self.report({"INFO"}, f"{item.name} is under face count-- not decimating.")
 				continue
@@ -398,6 +432,7 @@ class OBJECT_OT_omni_sceneopt_optimize(bpy.types.Operator,
 			## we don't need a full context override here
 			self.set_active(item)
 			bpy.ops.object.modifier_apply(modifier=mod.name)
+			"""
 
 			total_result += len(item.data.vertices)
 
@@ -431,19 +466,17 @@ class OBJECT_OT_omni_sceneopt_optimize(bpy.types.Operator,
 		start = time.time()
 
 		active = context.active_object
-		if self.selected:
-			targets = selected_meshes(context.scene)
-		else:
-			targets = [x for x in context.scene.collection.all_objects if x.type == "MESH"]
-			bpy.ops.object.select_all(action="DESELECT")
-			[ x.select_set(True) for x in targets ]
-
-		if active:
-			self.set_active(active)
+		targets = self._collect_targets(context, selected=self.selected)
 
 		if not len(targets):
 			self.info({"ERROR"}, "No targets specified.")
 			return {"CANCELLED"}
+
+		bpy.ops.object.select_all(action="DESELECT")
+		[ x.select_set(True) for x in targets ]
+
+		if active:
+			self.set_active(active)
 
 		self._object_mode()
 
@@ -481,7 +514,12 @@ class OBJECT_OT_omni_sceneopt_optimize(bpy.types.Operator,
 			self.do_chop(targets)
 
 		if self.generate:
-			self.do_generate(targets)
+			if self.generate_duplicate:
+				## special case and bugfix: don't filter selected objects by instances!
+				targets = filter(lambda x: x.type == "MESH" and x.visible_get(),
+								 context.selected_objects if self.selected else context.scene.collection.all_objects)
+
+			self.do_generate(list(targets))
 
 		end = time.time()
 
@@ -561,6 +599,7 @@ class OBJECT_OT_omni_sceneopt_generate(bpy.types.Operator, OmniSceneOptGenerateP
 			bpy.data.node_groups.remove(bpy.data.node_groups[generate_name])
 
 		mod = ob.modifiers.new(name=generate_name, type="NODES")
+
 		bpy.ops.node.new_geometry_node_group_assign()
 		mod.node_group.name = generate_name
 
@@ -575,9 +614,12 @@ class OBJECT_OT_omni_sceneopt_generate(bpy.types.Operator, OmniSceneOptGenerateP
 
 	@preserve_selection
 	def apply_modifiers(self, target_objects:List[Object]):
+		from .batch import lod
+
 		count = 0
 		for item in target_objects:
-			if self.generate_duplicate:
+			target = item
+			if self.generate_duplicate or item.data.users > 1:
 				token = self.generate_type.rpartition("_")[-1]
 				duplicate = self.create_duplicate(item, token=token)
 				duplicate.parent = item.parent
@@ -585,13 +627,18 @@ class OBJECT_OT_omni_sceneopt_generate(bpy.types.Operator, OmniSceneOptGenerateP
 				bpy.context.scene.collection.objects.unlink(duplicate)
 				for collection in item.users_collection:
 					collection.objects.link(duplicate)
-				item = duplicate
+				target = duplicate
 
-			with self.override([item]):
-				mod = self.create_geometry_nodes_modifier(item)
-				bpy.context.view_layer.objects.active = item
-				item.select_set(True)
+			bpy.ops.object.select_all(action="DESELECT")
+			target.select_set(True)
+
+			with self.override([target]):
+				mod = self.create_geometry_nodes_modifier(target)
+				target.modifiers.active = mod
 				bpy.ops.object.modifier_apply(modifier=mod.name)
+
+			if item.data.users > 1 and not self.generate_duplicate:
+				lod.merge_back_and_delete(item, target)
 
 			count += 1
 
@@ -654,6 +701,10 @@ class OBJECT_OT_omni_sceneopt_export(bpy.types.Operator,
 		pass
 
 	def invoke(self, context:Context, event:Event) -> Set[str]:
+		if not len(bpy.data.filepath.strip()):
+			message_box("Please save your scene before exporting.", icon="ERROR")
+			return {"CANCELLED"}
+
 		if len(self.filepath.strip()) == 0:
 			self.filepath = "untitled.usdc"
 		context.window_manager.fileselect_add(self)
@@ -662,8 +713,6 @@ class OBJECT_OT_omni_sceneopt_export(bpy.types.Operator,
 	def execute(self, context:Context) -> Set[str]:
 		output_path = bpy.path.abspath(self.filepath)
 		script_path = os.sep.join((os.path.dirname(os.path.abspath(__file__)), "batch", "optimize_export.py"))
-
-		bpy.ops.omni.progress(message=f"Finished background write to {output_path}")
 
 		bpy.ops.wm.save_mainfile()
 
@@ -680,8 +729,6 @@ class OBJECT_OT_omni_sceneopt_export(bpy.types.Operator,
 		print(command)
 
 		subprocess.check_output(command, shell=True)
-
-		context.scene.omni_progress_active = False
 
 		if self.verbose:
 			self.report({"INFO"}, f"Exported optimized scene to: {output_path}")
