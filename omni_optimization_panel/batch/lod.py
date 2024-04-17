@@ -7,6 +7,7 @@ import bpy
 from bpy.types import (Collection, Context, Image, Object, Material,
 					   Mesh, Node, NodeSocket, NodeTree, Scene)
 from bpy.props import *
+import bmesh
 from mathutils import *
 
 
@@ -96,6 +97,9 @@ def duplicate_object(ob:Object, token:str="D", weld=True) -> Object:
 	if not duplicate.name in bpy.context.scene.collection.all_objects:
 		bpy.context.scene.collection.objects.link(duplicate)
 
+	## bugfix: move duplicate based on world matrix of source object
+	duplicate.matrix_world = ob.matrix_world.copy()
+
 	select_only(duplicate)
 
 	## decimate doesn't work on unwelded triangle soups
@@ -120,6 +124,14 @@ def delete_mesh_object(ob:Object):
 
 
 ## --------------------------------------------------------------------------------
+def merge_back_and_delete(target:Object, source:Object):
+	bm = bmesh.new()
+	bm.from_mesh(source.data)
+	bm.to_mesh(target.data)
+	delete_mesh_object(source)
+
+
+## --------------------------------------------------------------------------------
 def decimate_object(ob:Object, token:str=None, ratio:float=0.5,
 					use_symmetry:bool=False, symmetry_axis="X",
 					min_face_count:int=3,
@@ -129,14 +141,14 @@ def decimate_object(ob:Object, token:str=None, ratio:float=0.5,
 
 	token = token or "DCM"
 
-	if create_duplicate:
+	if len(ob.data.polygons) < min_face_count:
+		print(f"{ob.name} is under face count-- not decimating.")
+		return ob
+
+	if create_duplicate or ob.data.users > 1:
 		target = duplicate_object(ob, token=token)
 	else:
 		target = ob
-
-	if len(target.data.polygons) < min_face_count:
-		print(f"{target.name} is under face count-- not decimating.")
-		return target
 
 	## We're going to use the decimate modifier
 	mod = target.modifiers.new("OmniLOD", type="DECIMATE")
@@ -150,6 +162,10 @@ def decimate_object(ob:Object, token:str=None, ratio:float=0.5,
 	target.select_set(True)
 	bpy.context.view_layer.objects.active = target
 	bpy.ops.object.modifier_apply(modifier=mod.name)
+
+	if ob.data.users > 1 and not create_duplicate:
+		merge_back_and_delete(ob, target)
+		return ob
 
 	return target
 

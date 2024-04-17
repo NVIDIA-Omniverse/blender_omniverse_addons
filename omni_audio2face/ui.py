@@ -5,7 +5,6 @@ import os
 from typing import *
 
 import bpy
-from bpy.utils import previews
 
 from omni_audio2face.operators import (
 	OMNI_OT_PrepareScene,
@@ -20,23 +19,6 @@ from omni_audio2face.operators import (
 
 
 ## ======================================================================
-def preload_icons() -> previews.ImagePreviewCollection:
-	"""Preload icons used by the interface."""
-
-	icons_directory = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icons")
-	all_icons = {
-		"AUDIO2FACE": "omni_audio2face.png",
-	}
-
-	preview = previews.new()
-
-	for name, filepath in all_icons.items():
-		preview.load(name, os.path.join(icons_directory, filepath), "IMAGE")
-
-	return preview
-
-
-## ======================================================================
 class OBJECT_PT_Audio2FacePanel(bpy.types.Panel):
 	bl_space_type = 'VIEW_3D'
 	bl_region_type = 'UI'
@@ -46,7 +28,7 @@ class OBJECT_PT_Audio2FacePanel(bpy.types.Panel):
 
 	version = "0.0.0"
 
-	icons = preload_icons()
+	icons = None
 
 	def draw_header(self, context):
 		self.layout.label(text="", icon_value=self.icons["AUDIO2FACE"].icon_id)

@@ -14,13 +14,23 @@ bl_info = {
 }
 
 ## ======================================================================
-import sys
+_previews = None
+
+
+def __del__(self):
+	if self.icons:
+		bpy.utils.previews.remove(self.icons)
+		self.icons = None
+
+
+## ======================================================================
+import os
 from importlib import reload
 
 import bpy
 from bpy.props import (BoolProperty, CollectionProperty, EnumProperty, FloatProperty,
 					   IntProperty, PointerProperty, StringProperty)
-
+from bpy.utils import previews
 
 from omni_audio2face import (operators, ui)
 for module in (operators, ui):
@@ -76,6 +86,23 @@ class Audio2FaceToolsSettings(bpy.types.PropertyGroup):
 
 
 ## ======================================================================
+def preload_icons() -> previews.ImagePreviewCollection:
+	"""Preload icons used by the interface."""
+
+	icons_directory = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icons")
+	all_icons = {
+		"AUDIO2FACE": "omni_audio2face.png",
+	}
+
+	preview = previews.new()
+
+	for name, filepath in all_icons.items():
+		preview.load(name, os.path.join(icons_directory, filepath), "IMAGE")
+
+	return preview
+
+
+## ======================================================================
 classes = (
 	Audio2FaceToolsSettings,
 
@@ -95,8 +122,13 @@ classes = (
 def register():
 	unregister()
 
+	global _previews
+	_previews = preload_icons()
+
 	for item in classes:
 		bpy.utils.register_class(item)
+
+	OBJECT_PT_Audio2FacePanel.icons = _previews
 
 	bpy.types.Scene.audio2face = bpy.props.PointerProperty(type=Audio2FaceToolsSettings)
 	bpy.types.Object.a2f_original = bpy.props.PointerProperty(type=bpy.types.Object)
@@ -121,3 +153,9 @@ def unregister():
 	if hasattr(bpy.types.Object, "a2f_original"):
 		del bpy.types.Object.a2f_original
 
+	## icons
+	global _previews
+	if _previews:
+		OBJECT_PT_Audio2FacePanel.icons = None
+		bpy.utils.previews.remove(_previews)
+		_previews = None

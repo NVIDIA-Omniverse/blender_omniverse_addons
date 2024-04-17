@@ -110,19 +110,6 @@ class OBJECT_PT_omni_panel(bpy.types.Panel):
                      text='Convert',
                      icon='MOD_PARTICLE_INSTANCE')
 
-        if len(bpy.context.selected_objects) != 0 and bpy.context.active_object != None:
-            if bpy.context.active_object.select_get() and bpy.context.active_object.type == "MESH":
-                layout.separator()
-
-                column = layout.column(align=True)
-                column.label(text="Convert Material to:", icon='SHADING_RENDERED')
-                box = column.box()
-
-                materialCol = box.column(align=True)
-                materialCol.operator('universalmaterialmap.create_template_omnipbr',
-                                     text='OmniPBR')
-                materialCol.operator('universalmaterialmap.create_template_omniglass',
-                                     text='OmniGlass')
 
 
 ## ======================================================================
