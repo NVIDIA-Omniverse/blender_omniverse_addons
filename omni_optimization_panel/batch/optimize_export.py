@@ -116,13 +116,9 @@ if __name__ == "__main__":
 	export_kwargs = {
 		"filepath": output_file,
 		"visible_objects_only": False,
-		"default_prim_path": "/World",
-		"root_prim_path": "/World",
-		"material_prim_path": "/World/materials",
 		"generate_preview_surface": True,
 		"export_materials": True,
 		"export_uvmaps": True,
-		"merge_transform_and_shape": True,
 		"use_instancing": True,
 		"export_textures": sceneopts.export_textures,
 	}

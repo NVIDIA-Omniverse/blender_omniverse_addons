@@ -1,0 +1,1514 @@
+{
+    "name": "Principled Omni Glass",
+    "nodes": [
+        {
+            "name": "Frame",
+            "label": "Texture Inputs",
+            "location": [
+                -1219.9990234375,
+                150.2413330078125
+            ],
+            "width": 302.83935546875,
+            "height": 1134.425048828125,
+            "parent": null,
+            "class": "NodeFrame",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [
+                {
+                    "name": "use_custom_color",
+                    "value": true
+                },
+                {
+                    "name": "color",
+                    "value": [
+                        0.056128427386283875,
+                        0.6104958653450012,
+                        0.0
+                    ]
+                },
+                {
+                    "name": "shrink",
+                    "value": true
+                }
+            ],
+            "texts": []
+        },
+        {
+            "name": "Frame.004",
+            "label": "Parameters",
+            "location": [
+                -367.7474670410156,
+                230.23788452148438
+            ],
+            "width": 395.990234375,
+            "height": 800.721435546875,
+            "parent": null,
+            "class": "NodeFrame",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [
+                {
+                    "name": "use_custom_color",
+                    "value": true
+                },
+                {
+                    "name": "color",
+                    "value": [
+                        0.05612799897789955,
+                        0.6104958653450012,
+                        0.0
+                    ]
+                },
+                {
+                    "name": "shrink",
+                    "value": true
+                }
+            ],
+            "texts": []
+        },
+        {
+            "name": "Frame.003",
+            "label": "Output",
+            "location": [
+                74.83511352539062,
+                187.9180908203125
+            ],
+            "width": 524.638427734375,
+            "height": 655.960693359375,
+            "parent": null,
+            "class": "NodeFrame",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [
+                {
+                    "name": "use_custom_color",
+                    "value": true
+                },
+                {
+                    "name": "color",
+                    "value": [
+                        0.6104959845542908,
+                        0.06662588566541672,
+                        0.0
+                    ]
+                },
+                {
+                    "name": "shrink",
+                    "value": true
+                }
+            ],
+            "texts": []
+        },
+        {
+            "name": "Frame.001",
+            "label": "UVs",
+            "location": [
+                -1149.3697509765625,
+                62.31555938720703
+            ],
+            "width": 200.0,
+            "height": 407.10968017578125,
+            "parent": null,
+            "class": "NodeFrame",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [
+                {
+                    "name": "use_custom_color",
+                    "value": true
+                },
+                {
+                    "name": "color",
+                    "value": [
+                        0.05612799897789955,
+                        0.6104958653450012,
+                        0.0
+                    ]
+                },
+                {
+                    "name": "shrink",
+                    "value": true
+                }
+            ],
+            "texts": []
+        },
+        {
+            "name": "Frame.002",
+            "label": "UV Set",
+            "location": [
+                -1361.139404296875,
+                12.778472900390625
+            ],
+            "width": 210.0,
+            "height": 164.79855346679688,
+            "parent": null,
+            "class": "NodeFrame",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [
+                {
+                    "name": "use_custom_color",
+                    "value": true
+                },
+                {
+                    "name": "color",
+                    "value": [
+                        0.6104959845542908,
+                        0.06662588566541672,
+                        0.0
+                    ]
+                },
+                {
+                    "name": "shrink",
+                    "value": true
+                }
+            ],
+            "texts": []
+        },
+        {
+            "name": "Frame.005",
+            "label": "Information",
+            "location": [
+                640.9189453125,
+                186.14610290527344
+            ],
+            "width": 587.38134765625,
+            "height": 660.048095703125,
+            "parent": null,
+            "class": "NodeFrame",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [
+                {
+                    "name": "use_custom_color",
+                    "value": false
+                },
+                {
+                    "name": "color",
+                    "value": [
+                        0.6079999804496765,
+                        0.6079999804496765,
+                        0.6079999804496765
+                    ]
+                },
+                {
+                    "name": "shrink",
+                    "value": true
+                }
+            ],
+            "texts": [
+                {
+                    "name": "UMM_OmniGlass_Information",
+                    "contents": "This shader graph is designed for a lossless material pipeline with Omniverse.\n\nAdding nodes, removing nodes, and changing connections can cause the pipeline to no longer be lossless.\n\nYou can change properties on any node in the graph to get the desired look in Blender but only nodes in GREEN frames are evaluated for property values on export. For example, you can select a uv map in the UV Map node but the OmniPBR Compute node's \"UV Space Index\" is what will be exported to the USD file.\n\nAlso, some graph properties will not affect the rendering in Blender. Those properties are simply included to hold values for subsequent exports to Omniverse.\n\nExceptions:\n    \n    OmniGlass Compute.UseNormalMap - local to Blender."
+                }
+            ]
+        },
+        {
+            "name": "Material Output",
+            "label": "",
+            "location": [
+                295.250732421875,
+                -30.9573974609375
+            ],
+            "width": 140.0,
+            "height": 100.0,
+            "parent": "Frame.003",
+            "class": "ShaderNodeOutputMaterial",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "UV Map",
+            "label": "",
+            "location": [
+                4.2073974609375,
+                -49.97991943359375
+            ],
+            "width": 150.0,
+            "height": 100.0,
+            "parent": "Frame.002",
+            "class": "ShaderNodeUVMap",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "Base Mapping",
+            "label": "Base Mapping",
+            "location": [
+                47.6136474609375,
+                -48.20588684082031
+            ],
+            "width": 140.0,
+            "height": 100.0,
+            "parent": "Frame.001",
+            "class": "ShaderNodeMapping",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "Glass Color Texture",
+            "label": "Glass Color Texture",
+            "location": [
+                424.06561279296875,
+                150.18365478515625
+            ],
+            "width": 240.0,
+            "height": 100.0,
+            "parent": "Frame",
+            "class": "ShaderNodeTexImage",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "Reflection Color Texture",
+            "label": "Reflection Color Texture",
+            "location": [
+                424.8988037109375,
+                -64.53378295898438
+            ],
+            "width": 240.0,
+            "height": 100.0,
+            "parent": "Frame",
+            "class": "ShaderNodeTexImage",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "Roughness Texture",
+            "label": "Roughness Texture",
+            "location": [
+                423.53704833984375,
+                -286.2510986328125
+            ],
+            "width": 240.0,
+            "height": 100.0,
+            "parent": "Frame",
+            "class": "ShaderNodeTexImage",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "Normal Map",
+            "label": "Normal Map",
+            "location": [
+                425.6619873046875,
+                -507.0989990234375
+            ],
+            "width": 240.0,
+            "height": 100.0,
+            "parent": "Frame",
+            "class": "ShaderNodeTexImage",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "Opacity Map",
+            "label": "Opacity Map",
+            "location": [
+                422.8226318359375,
+                -723.33447265625
+            ],
+            "width": 240.0,
+            "height": 100.0,
+            "parent": "Frame",
+            "class": "ShaderNodeTexImage",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "Principled BSDF",
+            "label": "",
+            "location": [
+                -29.3876953125,
+                -32.7137451171875
+            ],
+            "width": 240.0,
+            "height": 100.0,
+            "parent": "Frame.003",
+            "class": "ShaderNodeBsdfPrincipled",
+            "inputs": [],
+            "outputs": [],
+            "nodes": [],
+            "links": [],
+            "properties": [],
+            "texts": []
+        },
+        {
+            "name": "OmniGlass Compute",
+            "label": "OmniGlass Compute",
+            "location": [
+                -46.68115234375,
+                -43.5164794921875
+            ],
+            "width": 335.990234375,
+            "height": 100.0,
+            "parent": "Frame.004",
+            "class": "ShaderNodeGroup",
+            "inputs": [
+                {
+                    "index": 0,
+                    "name": "Absorbtion Coeff",
+                    "class": "NodeSocketColor",
+                    "default_value": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "index": 1,
+                    "name": "Glass Color",
+                    "class": "NodeSocketColor",
+                    "default_value": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "index": 2,
+                    "name": "Glass Color Texture",
+                    "class": "NodeSocketColor",
+                    "default_value": [
+                        0.5,
+                        0.5,
+                        0.5,
+                        1.0
+                    ]
+                },
+                {
+                    "index": 3,
+                    "name": "Use Glass Color Texture",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 1,
+                    "default_value": 1
+                },
+                {
+                    "index": 4,
+                    "name": "Volume Absorbtion Scale",
+                    "class": "NodeSocketFloatFactor",
+                    "min_value": 0.0,
+                    "max_value": 1.0,
+                    "default_value": 0.0010000000474974513
+                },
+                {
+                    "index": 5,
+                    "name": "Glass Roughness",
+                    "class": "NodeSocketFloatFactor",
+                    "min_value": 0.0,
+                    "max_value": 1.0,
+                    "default_value": 0.0
+                },
+                {
+                    "index": 6,
+                    "name": "Roughness Texture",
+                    "class": "NodeSocketColor",
+                    "default_value": [
+                        0.5,
+                        0.5,
+                        0.5,
+                        1.0
+                    ]
+                },
+                {
+                    "index": 7,
+                    "name": "Roughness Texture Influence",
+                    "class": "NodeSocketFloatFactor",
+                    "min_value": 0.0,
+                    "max_value": 1.0,
+                    "default_value": 0.0
+                },
+                {
+                    "index": 8,
+                    "name": "Glass IOR",
+                    "class": "NodeSocketFloatFactor",
+                    "min_value": 1.0,
+                    "max_value": 4.0,
+                    "default_value": 1.4910000562667847
+                },
+                {
+                    "index": 9,
+                    "name": "Thin Walled",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 1,
+                    "default_value": 0
+                },
+                {
+                    "index": 10,
+                    "name": "Reflection Color",
+                    "class": "NodeSocketColor",
+                    "default_value": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "index": 11,
+                    "name": "Reflection Color Texture",
+                    "class": "NodeSocketColor",
+                    "default_value": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "index": 12,
+                    "name": "Use Reflection Color Texture",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 1,
+                    "default_value": 0
+                },
+                {
+                    "index": 13,
+                    "name": "Normal Map Texture",
+                    "class": "NodeSocketColor",
+                    "default_value": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "index": 14,
+                    "name": "Normal Map Strength",
+                    "class": "NodeSocketFloatFactor",
+                    "min_value": 0.0,
+                    "max_value": 10.0,
+                    "default_value": 1.0
+                },
+                {
+                    "index": 15,
+                    "name": "Use Normal Map",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 1,
+                    "default_value": 1
+                },
+                {
+                    "index": 16,
+                    "name": "Enable Opacity",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 1,
+                    "default_value": 0
+                },
+                {
+                    "index": 17,
+                    "name": "Enable Opacity Texture",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 1,
+                    "default_value": 0
+                },
+                {
+                    "index": 18,
+                    "name": "Opacity Amount",
+                    "class": "NodeSocketFloatFactor",
+                    "min_value": 0.0,
+                    "max_value": 1.0,
+                    "default_value": 1.0
+                },
+                {
+                    "index": 19,
+                    "name": "Opacity Map RGB",
+                    "class": "NodeSocketColor",
+                    "default_value": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "index": 20,
+                    "name": "Opacity Map Alpha",
+                    "class": "NodeSocketFloatFactor",
+                    "min_value": 0.0,
+                    "max_value": 1.0,
+                    "default_value": 0.0
+                },
+                {
+                    "index": 21,
+                    "name": "Opacity Threshold",
+                    "class": "NodeSocketFloatFactor",
+                    "min_value": 0.0,
+                    "max_value": 1.0,
+                    "default_value": 0.0
+                },
+                {
+                    "index": 22,
+                    "name": "Opacity Mono Source",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 3,
+                    "default_value": 1
+                },
+                {
+                    "index": 23,
+                    "name": "Enable Project UVW Coordinates",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 1,
+                    "default_value": 0
+                },
+                {
+                    "index": 24,
+                    "name": "Enable World Space",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 1,
+                    "default_value": 0
+                },
+                {
+                    "index": 25,
+                    "name": "UV Space Index",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 512,
+                    "default_value": 0
+                },
+                {
+                    "index": 26,
+                    "name": "Normal Map Flip U Tangent",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 1,
+                    "default_value": 0
+                },
+                {
+                    "index": 27,
+                    "name": "Normal Map Flip V Tangent",
+                    "class": "NodeSocketIntFactor",
+                    "min_value": 0,
+                    "max_value": 1,
+                    "default_value": 1
+                }
+            ],
+            "outputs": [
+                {
+                    "index": 0,
+                    "name": "Transmission Color",
+                    "class": "NodeSocketColor"
+                },
+                {
+                    "index": 1,
+                    "name": "Reflection Color",
+                    "class": "NodeSocketColor"
+                },
+                {
+                    "index": 2,
+                    "name": "IOR",
+                    "class": "NodeSocketFloatFactor"
+                },
+                {
+                    "index": 3,
+                    "name": "Alpha",
+                    "class": "NodeSocketFloatFactor"
+                },
+                {
+                    "index": 4,
+                    "name": "Roughness",
+                    "class": "NodeSocketColor"
+                },
+                {
+                    "index": 5,
+                    "name": "Normal Map",
+                    "class": "NodeSocketColor"
+                }
+            ],
+            "nodes": [
+                {
+                    "name": "Group Output",
+                    "label": "",
+                    "location": [
+                        -605.4928588867188,
+                        495.60650634765625
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "NodeGroupOutput",
+                    "inputs": [],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [],
+                    "texts": []
+                },
+                {
+                    "name": "Albedo Source Switch",
+                    "label": "Albedo Source Switch",
+                    "location": [
+                        -1369.1771240234375,
+                        535.1587524414062
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMixRGB",
+                    "inputs": [
+                        {
+                            "index": 0,
+                            "name": "Fac",
+                            "class": "NodeSocketFloatFactor",
+                            "default_value": 0.5
+                        },
+                        {
+                            "index": 1,
+                            "name": "Color1",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        },
+                        {
+                            "index": 2,
+                            "name": "Color2",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "blend_type",
+                            "value": "MIX"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "Hue Saturation Value",
+                    "label": "Hue Saturation Value",
+                    "location": [
+                        -1187.199462890625,
+                        529.4342651367188
+                    ],
+                    "width": 150.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeHueSaturation",
+                    "inputs": [],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [],
+                    "texts": []
+                },
+                {
+                    "name": "Roughness-Factor",
+                    "label": "Roughness-Factor",
+                    "location": [
+                        -1357.1849365234375,
+                        330.9080810546875
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMixRGB",
+                    "inputs": [
+                        {
+                            "index": 0,
+                            "name": "Fac",
+                            "class": "NodeSocketFloatFactor",
+                            "default_value": 0.5
+                        },
+                        {
+                            "index": 1,
+                            "name": "Color1",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        },
+                        {
+                            "index": 2,
+                            "name": "Color2",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "blend_type",
+                            "value": "MIX"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "Reflection Source Switch",
+                    "label": "Reflection Source Switch",
+                    "location": [
+                        -1098.20849609375,
+                        329.2177429199219
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMixRGB",
+                    "inputs": [
+                        {
+                            "index": 0,
+                            "name": "Fac",
+                            "class": "NodeSocketFloatFactor",
+                            "default_value": 0.5
+                        },
+                        {
+                            "index": 1,
+                            "name": "Color1",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        },
+                        {
+                            "index": 2,
+                            "name": "Color2",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "blend_type",
+                            "value": "MIX"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "Normal Source Switch",
+                    "label": "Normal Source Switch",
+                    "location": [
+                        -1359.841064453125,
+                        120.04290771484375
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMixRGB",
+                    "inputs": [
+                        {
+                            "index": 0,
+                            "name": "Fac",
+                            "class": "NodeSocketFloatFactor",
+                            "default_value": 0.5
+                        },
+                        {
+                            "index": 1,
+                            "name": "Color1",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5028864145278931,
+                                0.5028865337371826,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        {
+                            "index": 2,
+                            "name": "Color2",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "blend_type",
+                            "value": "MIX"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "Normal Map",
+                    "label": "Normal Map",
+                    "location": [
+                        -1201.84912109375,
+                        125.73359680175781
+                    ],
+                    "width": 150.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeNormalMap",
+                    "inputs": [],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [],
+                    "texts": []
+                },
+                {
+                    "name": "Opacity Source Switch",
+                    "label": "Opacity Source Switch",
+                    "location": [
+                        -1683.62353515625,
+                        -356.88275146484375
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMixRGB",
+                    "inputs": [
+                        {
+                            "index": 0,
+                            "name": "Fac",
+                            "class": "NodeSocketFloatFactor",
+                            "default_value": 0.5
+                        },
+                        {
+                            "index": 1,
+                            "name": "Color1",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        },
+                        {
+                            "index": 2,
+                            "name": "Color2",
+                            "class": "NodeSocketColor",
+                            "default_value": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "blend_type",
+                            "value": "MIX"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "Separate RGB",
+                    "label": "",
+                    "location": [
+                        -1364.6326904296875,
+                        -380.7425231933594
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeSeparateRGB",
+                    "inputs": [],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [],
+                    "texts": []
+                },
+                {
+                    "name": "Math.002",
+                    "label": "",
+                    "location": [
+                        -1196.0693359375,
+                        -361.5117492675781
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMath",
+                    "inputs": [],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "operation",
+                            "value": "MAXIMUM"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "mono_max",
+                    "label": "mono_max",
+                    "location": [
+                        -1028.76025390625,
+                        -366.90924072265625
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMath",
+                    "inputs": [],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "operation",
+                            "value": "MAXIMUM"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "mono_luminance",
+                    "label": "mono_luminance",
+                    "location": [
+                        -1188.9249267578125,
+                        -525.6557006835938
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeVectorMath",
+                    "inputs": [],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "operation",
+                            "value": "DOT_PRODUCT"
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "mono_average",
+                    "label": "mono_average",
+                    "location": [
+                        -1186.8319091796875,
+                        -723.5472412109375
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeVectorMath",
+                    "inputs": [],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "operation",
+                            "value": "DOT_PRODUCT"
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "Math.001",
+                    "label": "",
+                    "location": [
+                        -738.2794799804688,
+                        -472.03607177734375
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMath",
+                    "inputs": [],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "operation",
+                            "value": "GREATER_THAN"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "Math",
+                    "label": "",
+                    "location": [
+                        -743.1312255859375,
+                        -651.5718383789062
+                    ],
+                    "width": 140.0,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "ShaderNodeMath",
+                    "inputs": [],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [
+                        {
+                            "name": "operation",
+                            "value": "COMPARE"
+                        },
+                        {
+                            "name": "use_clamp",
+                            "value": false
+                        }
+                    ],
+                    "texts": []
+                },
+                {
+                    "name": "Group Input",
+                    "label": "",
+                    "location": [
+                        -1995.7642822265625,
+                        450.45562744140625
+                    ],
+                    "width": 255.241943359375,
+                    "height": 100.0,
+                    "parent": null,
+                    "class": "NodeGroupInput",
+                    "inputs": [],
+                    "outputs": [],
+                    "nodes": [],
+                    "links": [],
+                    "properties": [],
+                    "texts": []
+                }
+            ],
+            "links": [
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Roughness Texture Influence",
+                    "to_node": "Roughness-Factor",
+                    "to_socket": "Fac"
+                },
+                {
+                    "from_node": "Roughness-Factor",
+                    "from_socket": "Color",
+                    "to_node": "Group Output",
+                    "to_socket": "Roughness"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Glass Roughness",
+                    "to_node": "Roughness-Factor",
+                    "to_socket": "Color1"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Use Glass Color Texture",
+                    "to_node": "Albedo Source Switch",
+                    "to_socket": "Fac"
+                },
+                {
+                    "from_node": "Normal Map",
+                    "from_socket": "Normal",
+                    "to_node": "Group Output",
+                    "to_socket": "Normal Map"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Normal Map Strength",
+                    "to_node": "Normal Map",
+                    "to_socket": "Strength"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Use Normal Map",
+                    "to_node": "Normal Source Switch",
+                    "to_socket": "Fac"
+                },
+                {
+                    "from_node": "Normal Source Switch",
+                    "from_socket": "Color",
+                    "to_node": "Normal Map",
+                    "to_socket": "Color"
+                },
+                {
+                    "from_node": "Albedo Source Switch",
+                    "from_socket": "Color",
+                    "to_node": "Hue Saturation Value",
+                    "to_socket": "Color"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Glass Color Texture",
+                    "to_node": "Albedo Source Switch",
+                    "to_socket": "Color2"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Normal Map Texture",
+                    "to_node": "Normal Source Switch",
+                    "to_socket": "Color2"
+                },
+                {
+                    "from_node": "Hue Saturation Value",
+                    "from_socket": "Color",
+                    "to_node": "Group Output",
+                    "to_socket": "Transmission Color"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Roughness Texture",
+                    "to_node": "Roughness-Factor",
+                    "to_socket": "Color2"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Glass IOR",
+                    "to_node": "Group Output",
+                    "to_socket": "IOR"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Glass Color",
+                    "to_node": "Albedo Source Switch",
+                    "to_socket": "Color1"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Reflection Color",
+                    "to_node": "Reflection Source Switch",
+                    "to_socket": "Color1"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Reflection Color Texture",
+                    "to_node": "Reflection Source Switch",
+                    "to_socket": "Color2"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Use Reflection Color Texture",
+                    "to_node": "Reflection Source Switch",
+                    "to_socket": "Fac"
+                },
+                {
+                    "from_node": "Reflection Source Switch",
+                    "from_socket": "Color",
+                    "to_node": "Group Output",
+                    "to_socket": "Reflection Color"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Opacity Amount",
+                    "to_node": "Opacity Source Switch",
+                    "to_socket": "Color1"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Opacity Map RGB",
+                    "to_node": "Opacity Source Switch",
+                    "to_socket": "Color2"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Enable Opacity Texture",
+                    "to_node": "Opacity Source Switch",
+                    "to_socket": "Fac"
+                },
+                {
+                    "from_node": "Opacity Source Switch",
+                    "from_socket": "Color",
+                    "to_node": "mono_luminance",
+                    "to_socket": "Vector"
+                },
+                {
+                    "from_node": "Opacity Source Switch",
+                    "from_socket": "Color",
+                    "to_node": "Separate RGB",
+                    "to_socket": "Image"
+                },
+                {
+                    "from_node": "Separate RGB",
+                    "from_socket": "R",
+                    "to_node": "Math.002",
+                    "to_socket": "Value"
+                },
+                {
+                    "from_node": "Separate RGB",
+                    "from_socket": "G",
+                    "to_node": "Math.002",
+                    "to_socket": "Value"
+                },
+                {
+                    "from_node": "Separate RGB",
+                    "from_socket": "B",
+                    "to_node": "mono_max",
+                    "to_socket": "Value"
+                },
+                {
+                    "from_node": "Math.002",
+                    "from_socket": "Value",
+                    "to_node": "mono_max",
+                    "to_socket": "Value"
+                },
+                {
+                    "from_node": "Opacity Source Switch",
+                    "from_socket": "Color",
+                    "to_node": "mono_average",
+                    "to_socket": "Vector"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Opacity Threshold",
+                    "to_node": "Math",
+                    "to_socket": "Value"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Opacity Threshold",
+                    "to_node": "Math.001",
+                    "to_socket": "Value"
+                },
+                {
+                    "from_node": "mono_average",
+                    "from_socket": "Value",
+                    "to_node": "Math.001",
+                    "to_socket": "Value"
+                },
+                {
+                    "from_node": "Group Input",
+                    "from_socket": "Opacity Amount",
+                    "to_node": "Group Output",
+                    "to_socket": "Alpha"
+                }
+            ],
+            "properties": [],
+            "texts": []
+        }
+    ],
+    "links": [
+        {
+            "from_node": "Principled BSDF",
+            "from_socket": "BSDF",
+            "to_node": "Material Output",
+            "to_socket": "Surface"
+        },
+        {
+            "from_node": "OmniGlass Compute",
+            "from_socket": "Roughness",
+            "to_node": "Principled BSDF",
+            "to_socket": "Roughness"
+        },
+        {
+            "from_node": "Glass Color Texture",
+            "from_socket": "Color",
+            "to_node": "OmniGlass Compute",
+            "to_socket": "Glass Color Texture"
+        },
+        {
+            "from_node": "OmniGlass Compute",
+            "from_socket": "Transmission Color",
+            "to_node": "Principled BSDF",
+            "to_socket": "Base Color"
+        },
+        {
+            "from_node": "Roughness Texture",
+            "from_socket": "Color",
+            "to_node": "OmniGlass Compute",
+            "to_socket": "Roughness Texture"
+        },
+        {
+            "from_node": "OmniGlass Compute",
+            "from_socket": "Normal Map",
+            "to_node": "Principled BSDF",
+            "to_socket": "Normal"
+        },
+        {
+            "from_node": "Normal Map",
+            "from_socket": "Color",
+            "to_node": "OmniGlass Compute",
+            "to_socket": "Normal Map Texture"
+        },
+        {
+            "from_node": "UV Map",
+            "from_socket": "UV",
+            "to_node": "Base Mapping",
+            "to_socket": "Vector"
+        },
+        {
+            "from_node": "Base Mapping",
+            "from_socket": "Vector",
+            "to_node": "Glass Color Texture",
+            "to_socket": "Vector"
+        },
+        {
+            "from_node": "Base Mapping",
+            "from_socket": "Vector",
+            "to_node": "Roughness Texture",
+            "to_socket": "Vector"
+        },
+        {
+            "from_node": "Base Mapping",
+            "from_socket": "Vector",
+            "to_node": "Normal Map",
+            "to_socket": "Vector"
+        },
+        {
+            "from_node": "Opacity Map",
+            "from_socket": "Color",
+            "to_node": "OmniGlass Compute",
+            "to_socket": "Opacity Map RGB"
+        },
+        {
+            "from_node": "Base Mapping",
+            "from_socket": "Vector",
+            "to_node": "Opacity Map",
+            "to_socket": "Vector"
+        },
+        {
+            "from_node": "OmniGlass Compute",
+            "from_socket": "IOR",
+            "to_node": "Principled BSDF",
+            "to_socket": "IOR"
+        },
+        {
+            "from_node": "OmniGlass Compute",
+            "from_socket": "Alpha",
+            "to_node": "Principled BSDF",
+            "to_socket": "Alpha"
+        },
+        {
+            "from_node": "Opacity Map",
+            "from_socket": "Alpha",
+            "to_node": "OmniGlass Compute",
+            "to_socket": "Opacity Map Alpha"
+        },
+        {
+            "from_node": "Base Mapping",
+            "from_socket": "Vector",
+            "to_node": "Reflection Color Texture",
+            "to_socket": "Vector"
+        },
+        {
+            "from_node": "Reflection Color Texture",
+            "from_socket": "Color",
+            "to_node": "OmniGlass Compute",
+            "to_socket": "Reflection Color Texture"
+        }
+    ]
+}
