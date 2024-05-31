@@ -416,24 +416,6 @@ class OBJECT_OT_omni_sceneopt_optimize(bpy.types.Operator,
 								min_face_count=self.decimate_min_face_count,
 								create_duplicate=False)
 
-			"""
-			if len(item.data.polygons) < self.decimate_min_face_count:
-				self.report({"INFO"}, f"{item.name} is under face count-- not decimating.")
-				continue
-
-			## We're going to use the decimate modifier
-			mod = item.modifiers.new("OmniLOD", type="DECIMATE")
-			mod.decimate_type = "COLLAPSE"
-			mod.ratio = self.decimate_ratio / 100.0
-			mod.use_collapse_triangulate = True
-			mod.use_symmetry = self.decimate_use_symmetry
-			mod.symmetry_axis = self.decimate_symmetry_axis
-
-			## we don't need a full context override here
-			self.set_active(item)
-			bpy.ops.object.modifier_apply(modifier=mod.name)
-			"""
-
 			total_result += len(item.data.vertices)
 
 		end = time.time()
@@ -469,7 +451,7 @@ class OBJECT_OT_omni_sceneopt_optimize(bpy.types.Operator,
 		targets = self._collect_targets(context, selected=self.selected)
 
 		if not len(targets):
-			self.info({"ERROR"}, "No targets specified.")
+			self.report({"ERROR"}, "No targets specified.")
 			return {"CANCELLED"}
 
 		bpy.ops.object.select_all(action="DESELECT")
